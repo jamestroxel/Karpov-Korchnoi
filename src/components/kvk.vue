@@ -22,26 +22,6 @@
       <!-- <span class="h3" id="time2">0:05:00</span> -->
       <div id="sankey" class="item-c"></div>
       <lowerThird></lowerThird>
-      <!-- <div class="scoreL">
-        <svg>
-          <rect id='barL'></rect>
-        </svg>
-      </div>
-      <div class="notationL">
-        <p class="player">
-          Karpov
-        </p>
-      </div>
-      <div class="scoreR">
-        <svg>
-          <rect id='barR'></rect>
-        </svg>
-      </div>
-      <div class="notationR">
-        <p class="player">
-          Korchnoi
-        </p>
-      </div> -->
       <div class="bottom"></div>
       <div id="engineStatus" class="form-horizontal">...</div>
           <form class="form-horizontal">

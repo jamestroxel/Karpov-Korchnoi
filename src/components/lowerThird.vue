@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    
        <div class="scoreL">
         <svg>
           <rect id='barL'></rect>
@@ -20,7 +20,7 @@
           Korchnoi
         </p>
       </div>
-    </div>
+ 
 </template>
 <script>
 export default {
