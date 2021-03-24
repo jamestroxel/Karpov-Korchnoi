@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div id="pgn" class="moves"></div>
-    <div class="item-a">
+    <div class="item-a-kvk">
       <h1>Moscow 1974</h1>
       <p class="story">
         <!-- <Story></Story>        -->
