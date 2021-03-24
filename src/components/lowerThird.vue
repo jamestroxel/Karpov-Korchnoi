@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-  name: 'lowerThird',
+  name: 'LowerThird',
   props: {
     // scroll: String,
     move: String,
