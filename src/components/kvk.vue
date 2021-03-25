@@ -2,7 +2,8 @@
   <div class="container">
     <div id="pgn" class="moves"></div>
     <div class="item-a-kvk">
-      <h1>Moscow 1974</h1>
+      <h1>Slaying the Dragon</h1>
+      <h2>Moscow, 1974</h2>
       <p class="story">
         <!-- <Story></Story>        -->
       </p>

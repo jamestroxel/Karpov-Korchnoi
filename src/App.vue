@@ -200,22 +200,22 @@
   </div>
   <!--  -->
   <div class="container">
-    <img class="left-image" src="./assets/karpov-korchnoi-1.png" />
+    <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
     <div class="item-c">
       <h1>Introduction</h1>
       <p class="story">
         The contrast between the 1974 Candidates Final and the 1978 World Chess
-        Championship could not be higher. Game 2 of the 1974 match in Moscow has
-        come to be regarded as a modern classic in tactics, strategy, and chess
-        brilliance between two of the game’s best. The absurdist theatre
-        witnessed throughout the entire 1978 Championship instantly earned its
-        reputation as a notorious example of the type of superstition, paranoia
-        and scandal commonly observed in chess lore throughout the game’s rich
-        history. However, there are a few key similarities that will emerge as
-        the focus of this paper that also carry broad implications for the way
-        we extract meaning from information. The visualizations that accompany
-        the game analysis are designed to help readers see chess in the same way
-        that a grandmaster can, and in so doing, help them to identify certain
+        Championship could hardly be sharper. Game two of the 1974 match in
+        Moscow has come to be regarded as a modern classic in tactics, strategy,
+        and chess brilliance between two of the game’s best. The absurdist
+        theatre witnessed throughout the entire 1978 Championship quickly earned
+        notoriety as an example of the type of superstition, paranoia, and
+        scandal commonly observed in chess lore throughout the game’s rich
+        history. However, a few key similarities will emerge as the focus of
+        this paper that also carry broad implications for the way we extract
+        meaning from information. The visualizations that accompany the game
+        analysis are designed to help readers see chess in the same way a
+        grandmaster does, and in so doing, help them to identify certain
         patterns between a grandmaster’s state of mind and their own.
       </p>
     </div>
@@ -228,11 +228,11 @@
       <h1>"Trifles, Which Cannot Be Ignored"</h1>
       <h2>Baguio, 1978</h2>
       <p class="story">
-        Typhoon Emang arrived in the Philippines on the first day of game 5.
+        Typhoon Emang struck the Philippines on the first day of game five.
         Karpov described the sound of the rain as sufficient to drown out the
         noise of an already tempestuous affair inside the brand new Baguio City
-        Convention Center.* Up until this point, the loudest protest had come
-        from the precise meaning of the violet colored yogurt being delivered to
+        Convention Center. Up until this point, the loudest protest came from
+        the precise meaning of the violet colored yogurt being delivered to
         Karpov during each game. “It is clear that a cunningly arranged
         distribution of edible items to one player during the game, emanating
         from one delegation or the other, could convey a kind of coded message,”
@@ -240,17 +240,17 @@
         move 20 could signify ‘we instruct you to offer a draw’; or a sliced
         mango could mean ‘we order you to decline a draw’. A dish of marinated
         quails’ eggs could mean ‘play Ng4 at once’, and so on. The possibilities
-        are limitless,” it continued. But this had, by game 5, become a tightly
-        choreographed ritual, and the colorful yogurt arrived by waiter at
-        7:15pm sharp, without exception. There were of course, other squabbles
-        over which flag Korchnoi should be allowed to play under, for instance,
-        or Karpov’s endless suspicion towards the decisions of the event
-        organizers on everything from the location of the tournament, to the
-        make and model of the chess clocks. Additionally, Korchnoi’s predictable
-        refusal to stand for the Soviet National Anthem during the opening
-        ceremony was rendered moot when the orchestra mistakenly played the
-        Internationale instead. However, it wasn’t until game 5 that things took
-        a dark turn.
+        are limitless,” it continued. But this had, by game five, become a
+        tightly choreographed ritual, and the colorful yogurt arrived by waiter
+        at 7:15pm sharp, without exception. There were of course, other
+        squabbles over which flag Korchnoi should be allowed to play under, for
+        instance, or Karpov’s endless suspicion towards the decisions of the
+        event organizers on everything from the location of the tournament, to
+        the make and model of the chess clocks. Additionally, Korchnoi’s
+        predictable refusal to stand for the Soviet National Anthem during the
+        opening ceremony was rendered moot when the orchestra mistakenly played
+        the Internationale instead. However, it wasn’t until game five that
+        things took a dark turn.
       </p>
       <p class="story">
         There was a growing awareness of Dr. Vladimir Zoukhar’s presence in the
@@ -267,7 +267,7 @@
         spying in Soviet Vienna after World War II. Dr. Vladimir Zoukhar was a
         known psycho-neurologist and director of the Central Laboratory for
         Psychology in Moscow’s School of Medicine. His expertise had been sought
-        ever since the 1974 Candidates Final where Korchnoi bragged that his
+        ever since the 1974 Candidates Final where Korchnoi had bragged that his
         mind games forced Karpov to seek therapy. Karpov repeatedly insisted
         that Zoukhar was not an official member of the Soviet Delegation and
         thereby free to do as he pleased. “The Soviets want to kill him in a
@@ -281,82 +281,67 @@
         it up. Leeuwerik accused Dr. Zoukhar of being a parapsychological
         hooligan and demanded that no official, or unofficial members of either
         camp be allowed in the front row. The Chief Organizer obliged and this
-        sideshow began to compete for attention with the game as this melodrama
+        sideshow began to compete for attention with the game as the melodrama
         unfolded. Dr. Zoukhar’s seating position began to be recorded with
         diligence by all those concerned. The first row on the left during games
-        2, 3, 4 and 5. The right side of row 2 in game 6 and 7. On the left side
-        of the 5th row in game 8 and the right side in game 9. Games 10 and 11
-        have him on the right side again, but back two ranks on the 7th. One
-        begins to imagine the orthogonal movements of a Bishop.
+        two, three, four and five. The right side of row two in game six and
+        seven. On the left side of the fiveth row in game eight and the right
+        side in game nine. Games ten and 11 have him on the right side again,
+        but back two ranks on the seventh. One begins to imagine the diagonal
+        movements of a Bishop.
       </p>
     </div>
   </div>
   <div class="container">
-    <img class="left-image" src="./assets/yoga-small.png" />
+    <img class="left-image" src="./assets/karpov-korchnoi-small-2.png" />
     <div class="item-c">
       <p class="story">
-        Typhoon Emang arrived in the Philippines on the first day of game 5.
-        Karpov described the sound of the rain as sufficient to drown out the
-        noise of an already tempestuous affair inside the brand new Baguio City
-        Convention Center.* Up until this point, the loudest protest had come
-        from the precise meaning of the violet colored yogurt being delivered to
-        Karpov during each game. “It is clear that a cunningly arranged
-        distribution of edible items to one player during the game, emanating
-        from one delegation or the other, could convey a kind of coded message,”
-        read the official complaint to the Chief Arbiter. “Thus, a yogurt after
-        move 20 could signify ‘we instruct you to offer a draw’; or a sliced
-        mango could mean ‘we order you to decline a draw’. A dish of marinated
-        quails’ eggs could mean ‘play Ng4 at once’, and so on. The possibilities
-        are limitless,” it continued. But this had, by game 5, become a tightly
-        choreographed ritual, and the colorful yogurt arrived by waiter at
-        7:15pm sharp, without exception. There were of course, other squabbles
-        over which flag Korchnoi should be allowed to play under, for instance,
-        or Karpov’s endless suspicion towards the decisions of the event
-        organizers on everything from the location of the tournament, to the
-        make and model of the chess clocks. Additionally, Korchnoi’s predictable
-        refusal to stand for the Soviet National Anthem during the opening
-        ceremony was rendered moot when the orchestra mistakenly played the
-        Internationale instead. However, it wasn’t until game 5 that things took
-        a dark turn.
-      </p>
-      <p class="story">
-        A volley of official complaints and counter-complaints over the seating
-        positions of hypnotists would plague the rest of the match. Game 12 saw
-        the introduction of Korchnoi’s own parapsychologist, Dr. Vladimir M.
+        A volley of official complaints and counter complaints over the seating
+        positions of hypnotists plagued the rest of the match. Game 12 saw the
+        introduction of Korchnoi’s own parapsychologist, Dr. Vladimir M.
         Berginer, who, in addition to an army of local students of a
         parapsychology guru named Father Bulatao, had been recruited to counter
         Dr. Zoukhar’s psychic energy. He took a seat in the fourth row to the
         left, where he would remain until game 14, when Karpov took a decisive
         lead after a two-game streak. The post game celebration was interrupted
-        by 3 earthquakes, with Typhoon Miding due to arrive in time for game 15.
+        by three earthquakes, with Typhoon Miding due to strike in time for game
+        15.
       </p>
       <p class="story">
-        Typhoons, earthquakes, floods and at least one deadly landslide menaced
-        the immediate area throughout the event but, given the especially
+        Typhoons, earthquakes, floods, and at least one deadly landslide menaced
+        the immediate area throughout the event. But given the especially
         disastrous turn of events since his arrival, Dr. Berginer’s
         effectiveness as a parapsychologist had quickly come into question by
         the Korchnoi delegation. “Viktor is now convinced that neither Zoukhar
         nor Berginer can have any effect upon a player during a game,” Leeuwerik
         announced before Korchnoi’s game 14 loss. Dr. Berginer left the
-        Philippines shortly after this.
+        Philippines shortly after the game.
       </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="right-imageContainer">
+      <img class="right-image" src="./assets/yoga-small.png" />
+    </div>
+    <div class="item-a">
+      <h2>Analysis</h2>
       <p class="story">
-        There is always a certain amount of psychological warfare that takes
-        place during a chess game. For example, the ongoing fuss over Korchnoi’s
-        mirror-tinted glasses (known at the time as “the device”) was the result
-        of a passive aggressive attempt to thwart Karpov’s own tactic of staring
-        directly into the eyes of his opponent. A compelling argument could also
-        be made that Korchnoi’s accusations against Dr. Zoukhar merely came from
-        an attempt to explain away his own blunders, rather than a deeply held
-        belief in telekinesis. However, there is, in fact, plenty of evidence
-        that points to a familiarity with paranoia, superstition and
-        pseudo-science between the two, which may or may not always track with a
-        number of contradictory statements made by either one. The answer
-        appears to be somewhere in between belief and suspicion, as it were.
+        A certain amount of psychological warfare always takes place during a
+        chess game. For example, the ongoing fuss over Korchnoi’s mirror-tinted
+        glasses (nicknamed “the device” at the time) was the result of a passive
+        aggressive attempt to thwart Karpov’s own tactic of staring directly
+        into the eyes of his opponent. A compelling argument could also be made
+        that Korchnoi’s accusations against Dr. Zoukhar merely came from an
+        attempt to explain away his own blunders, rather than a deeply held
+        belief in telekinesis. There is, in fact, substantial evidence pointing
+        to a familiarity with paranoia, superstition, and pseudo science between
+        the two, which may or may not always track with a number of
+        contradictory statements made by either one. The answer appears to be
+        somewhere between belief and suspicion.
       </p>
       <p class="story">
         Karpov may not demonstrate a remarkable interest in the field of
-        parapsychology beyond a token impulse to avoid being out-gunned on this
+        parapsychology beyond a token impulse to avoid being out gunned on this
         or any other front, but his paranoia is evident through his continued
         suspicion towards the maneuvers of not only the Korchnoi delegation, but
         the allegedly neutral organizing committee itself. As it happens, the
@@ -365,6 +350,55 @@
         every potential scheme, to characterize motivations, and to assess the
         implications for his position in virtually every other stage of the
         event is remarkable.
+      </p>
+      <p class="story">
+        Likewise, we see Korchnoi waffle on his faith in parapsychology at
+        various times throughout the tournament, though the executive director
+        of the U.S. Chess Federation describes Korchnoi’s “fascination” with
+        parapsychology spanning many years. Much has been written about Viktor
+        Korchnoi’s daily regimen that we may also draw from. He laced his
+        morning oatmeal with whiskey and plugged himself into a heating battery
+        at night to treat his hypochondria, believing this condition was in part
+        due to excess static electricity. After the Dr. Berginer debacle,
+        Korchnoi enlisted the help of two particularly militant members of the
+        Ananda Marga religious sect, who were currently out on bail in the
+        Philippines for the attempted murder of an Indian diplomat. Steven Dwyer
+        and Victoria Shepherd, or Dada and Didi, as they became known, had been
+        given a mandate to teach Korchnoi concentration techniques using yoga
+        and other methods for the remainder of the match. His devotion to the
+        teachings of Didi and Dada would become a sticking point going forward.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <img class="left-image" src="./assets/jury-small.png" />
+    <div class="item-c">
+      <p class="story">
+        By game 32, both players’ nerves were shot. Chess at this level is hard
+        enough without having to endure a veritable arms race of
+        parapsychologists, murderous Ananda Marga yogis, and Soviet operatives
+        doing everything they can to subvert your efforts amidst a biblical
+        onslaught of natural disasters. Karpov had missed a number of
+        opportunities to win the match outright going as far back as game eight,
+        and watched as his 5-1 lead dwindled to 5-5 by the final game. “The
+        tiresome weather with its constant rain and wind had suddenly begun to
+        irritate me,” Karpov conceded. The Ananda Marga contingent had maintained
+        a presence “casting spells” in the lotus position until game 20, when
+        the organizers disallowed the attendance of “persons of known criminal
+        records.” The Ananda Margas multiplied, terrifying various officials
+        with threatening messages while Didi and Dada continued to hold
+        clandestine yoga classes from Korchnoi’s FIDE-sponsored hotel room. The
+        Korchnoi delegation became so overwhelmed with offers of support from
+        members of this feared religious cult that they petitioned the appeal
+        jury for protection. The irony was lost on no one. The breach of an
+        agreement reached a month earlier regarding the presence of any and all
+        hypnotists also brought Dr. Zoukhar back to the fourth row for the final
+        game. The conclusion of the longest final in the tournament’s history
+        would arrive in a somewhat anticlimactic fashion. The biggest
+        controversy came from Korchnoi’s refusal to officially concede,
+        preferring instead to simply decline a return to the board after the
+        game had been adjourned for the day. Korchnoi was not seen again for the
+        remainder of the ending ceremonies.
       </p>
     </div>
   </div>
@@ -571,13 +605,12 @@ h2 {
 }
 .left-image {
   width: 100%;
-  grid-column: 1 / 8;
+  grid-column: 2 / 8;
   grid-row: 2;
 }
 .right-imageContainer {
   width: 100%;
-  /* height:400px; */
-  /* height: 100%; */
+  height: 90vh;
   grid-column: 9 / 12;
   grid-row: 2;
   overflow: hidden;
@@ -619,8 +652,8 @@ h2 {
   grid-row-end: 3;
   width: 400px;
   /* min-height: 0; */
-  padding-right: 10px;
-  padding-top: 25px;
+  /* padding-right: 10px; */
+  /* padding-top: 25px; */
   overflow-y: scroll;
   /* bottom: 150px; */
   height: 100%;
@@ -631,7 +664,7 @@ h2 {
   border-color: black;
   border-style: solid;
 }
-.item-a-kvk{
+.item-a-kvk {
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
   grid-column-end: 4;
@@ -661,7 +694,7 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 400px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   overflow-y: scroll;
   border-top: 0px;
   border-bottom: 1px;
