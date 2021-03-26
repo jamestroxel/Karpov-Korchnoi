@@ -13,7 +13,13 @@ export default {
     position: String
   },
   mounted(){
+     var position1 = {
+      d6: 'bK',
+      d4: 'wP',
+      e4: 'wK'
+    }
       ChessBoard('board',"start");
+      ChessBoard('board',position1);
   }
 }
 </script>

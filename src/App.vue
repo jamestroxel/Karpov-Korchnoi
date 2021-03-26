@@ -203,21 +203,40 @@
     <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
     <div class="item-c">
       <h1>Introduction</h1>
-      <p class="story">
-        The contrast between the 1974 Candidates Final and the 1978 World Chess
-        Championship could hardly be sharper. Game two of the 1974 match in
-        Moscow has come to be regarded as a modern classic in tactics, strategy,
-        and chess brilliance between two of the game’s best. The absurdist
-        theatre witnessed throughout the entire 1978 Championship quickly earned
-        notoriety as an example of the type of superstition, paranoia, and
-        scandal commonly observed in chess lore throughout the game’s rich
-        history. However, a few key similarities will emerge as the focus of
-        this paper that also carry broad implications for the way we extract
-        meaning from information. The visualizations that accompany the game
-        analysis are designed to help readers see chess in the same way a
-        grandmaster does, and in so doing, help them to identify certain
-        patterns between a grandmaster’s state of mind and their own.
-      </p>
+      
+      <el-carousel interval="0" indicator-position="outside">
+        <el-carousel-item v-for="item in 1" :key="item" height="auto">
+          <!-- <h3>{{ item }}kljenwrlkjn</h3> -->
+          <p class="story">
+            The contrast between the 1974 Candidates Final and the 1978 World Chess
+            Championship could hardly be sharper. Game two of the 1974 match in
+            Moscow has come to be regarded as a modern classic in tactics, strategy,
+            and chess brilliance between two of the game’s best. The absurdist
+            theatre witnessed throughout the entire 1978 Championship quickly earned
+            notoriety as an example of the type of superstition, paranoia, and
+            scandal commonly observed in chess lore throughout the game’s rich
+            history. However, a few key similarities will emerge as the focus of
+            this paper that also carry broad implications for the way we extract
+            meaning from information. The visualizations that accompany the game
+            analysis are designed to help readers see chess in the same way a
+            grandmaster does, and in so doing, help them to identify certain
+            patterns between a grandmaster’s state of mind and their own.
+          </p>
+        </el-carousel-item>
+         <el-carousel-item v-for="item in 1" :key="item">
+        <p class="story">
+            The absurdist theatre witnessed throughout the entire 1978 Championship quickly earned
+            notoriety as an example of the type of superstition, paranoia, and
+            scandal commonly observed in chess lore throughout the game’s rich
+            history. However, a few key similarities will emerge as the focus of
+            this paper that also carry broad implications for the way we extract
+            meaning from information. The visualizations that accompany the game
+            analysis are designed to help readers see chess in the same way a
+            grandmaster does, and in so doing, help them to identify certain
+            patterns between a grandmaster’s state of mind and their own.
+          </p>
+        </el-carousel-item>
+      </el-carousel>
     </div>
   </div>
   <div class="container">
@@ -328,7 +347,7 @@
       <p class="story">
         A certain amount of psychological warfare always takes place during a
         chess game. For example, the ongoing fuss over Korchnoi’s mirror-tinted
-        glasses (nicknamed “the device” at the time) was the result of a passive
+        glasses (nicknamed, “the device” at the time) was the result of a passive
         aggressive attempt to thwart Karpov’s own tactic of staring directly
         into the eyes of his opponent. A compelling argument could also be made
         that Korchnoi’s accusations against Dr. Zoukhar merely came from an
@@ -408,24 +427,25 @@
 <script>
 // import Story from './components/Story.vue'
 import KvK from "./components/KvK.vue";
+// import json from "./components/story.json";
 export default {
   name: "App",
   components: {
     KvK,
-    // Story
+    // json
   },
 };
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+@import url("//unpkg.com/element-plus/lib/theme-chalk/index.css");
+.el-carousel__item h3 {
+    color: white;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
 @font-face {
   font-family: "Univers LT W01_65 Bold1475968";
   src: url("./Fonts/1475968/8a711a0d-3f17-4bfe-887b-6229858332b3.woff2")
@@ -625,6 +645,7 @@ h2 {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
   min-height: 0;
+  height: auto;
   /* height: 100%; */
   /* margin-bottom: 100%; */
   overflow-y: scroll;
@@ -694,6 +715,7 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 400px;
+  height: auto;
   /* padding-top: 25px; */
   overflow-y: scroll;
   border-top: 0px;
