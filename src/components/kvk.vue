@@ -9,8 +9,8 @@
       </p>
     </div>
       <ChessBoard></ChessBoard>
-      <!-- <Sankey></Sankey> -->
       <LowerThird></LowerThird>
+      <Sankey></Sankey>
       <div class="bottom"></div>
     </div>
 </template>
@@ -19,14 +19,14 @@
 import LowerThird from './LowerThird.vue'
 import ChessBoard from './ChessBoard.vue'
 // import Chessboard from '@chrisoakman/chessboardjs'
-// import Sankey from './sankey.vue'
+import Sankey from './Sankey.vue'
 
 export default {
   name: 'KvK',
   components: {
       LowerThird,
-      ChessBoard
-      // Sankey
+      ChessBoard,
+      Sankey
   },
   props: {
     story: String

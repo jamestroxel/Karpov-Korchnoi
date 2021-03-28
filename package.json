@@ -16,6 +16,7 @@
     "d3-sankey": "^0.12.3",
     "element-plus": "^1.0.2-beta.35",
     "jquery": "^3.6.0",
+    "sass-loader": "^11.0.1",
     "stockfish": "^11.0.0",
     "vue": "^3.0.0"
   },

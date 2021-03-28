@@ -1,7 +1,7 @@
 <template>
- <p class="story">
 
- </p>
+
+
 </template>
 <script>
     import json from './story.json'

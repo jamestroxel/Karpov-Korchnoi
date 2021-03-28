@@ -203,37 +203,39 @@
     <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
     <div class="item-c">
       <h1>Introduction</h1>
-      
+
       <el-carousel interval="0" indicator-position="outside">
-        <el-carousel-item v-for="item in 1" :key="item" height="auto">
+        <el-carousel-item v-for="item in 1" :key="item">
           <!-- <h3>{{ item }}kljenwrlkjn</h3> -->
           <p class="story">
-            The contrast between the 1974 Candidates Final and the 1978 World Chess
-            Championship could hardly be sharper. Game two of the 1974 match in
-            Moscow has come to be regarded as a modern classic in tactics, strategy,
-            and chess brilliance between two of the game’s best. The absurdist
-            theatre witnessed throughout the entire 1978 Championship quickly earned
-            notoriety as an example of the type of superstition, paranoia, and
-            scandal commonly observed in chess lore throughout the game’s rich
-            history. However, a few key similarities will emerge as the focus of
-            this paper that also carry broad implications for the way we extract
-            meaning from information. The visualizations that accompany the game
-            analysis are designed to help readers see chess in the same way a
-            grandmaster does, and in so doing, help them to identify certain
-            patterns between a grandmaster’s state of mind and their own.
+            The contrast between the 1974 Candidates Final and the 1978 World
+            Chess Championship could hardly be sharper. Game two of the 1974
+            match in Moscow has come to be regarded as a modern classic in
+            tactics, strategy, and chess brilliance between two of the game’s
+            best. The absurdist theatre witnessed throughout the entire 1978
+            Championship quickly earned notoriety as an example of the type of
+            superstition, paranoia, and scandal commonly observed in chess lore
+            throughout the game’s rich history. However, a few key similarities
+            will emerge as the focus of this paper that also carry broad
+            implications for the way we extract meaning from information. The
+            visualizations that accompany the game analysis are designed to help
+            readers see chess in the same way a grandmaster does, and in so
+            doing, help them to identify certain patterns between a
+            grandmaster’s state of mind and their own.
           </p>
         </el-carousel-item>
-         <el-carousel-item v-for="item in 1" :key="item">
-        <p class="story">
-            The absurdist theatre witnessed throughout the entire 1978 Championship quickly earned
-            notoriety as an example of the type of superstition, paranoia, and
-            scandal commonly observed in chess lore throughout the game’s rich
-            history. However, a few key similarities will emerge as the focus of
-            this paper that also carry broad implications for the way we extract
-            meaning from information. The visualizations that accompany the game
-            analysis are designed to help readers see chess in the same way a
-            grandmaster does, and in so doing, help them to identify certain
-            patterns between a grandmaster’s state of mind and their own.
+        <el-carousel-item v-for="item in 1" :key="item">
+          <p class="story">
+            The absurdist theatre witnessed throughout the entire 1978
+            Championship quickly earned notoriety as an example of the type of
+            superstition, paranoia, and scandal commonly observed in chess lore
+            throughout the game’s rich history. However, a few key similarities
+            will emerge as the focus of this paper that also carry broad
+            implications for the way we extract meaning from information. The
+            visualizations that accompany the game analysis are designed to help
+            readers see chess in the same way a grandmaster does, and in so
+            doing, help them to identify certain patterns between a
+            grandmaster’s state of mind and their own.
           </p>
         </el-carousel-item>
       </el-carousel>
@@ -347,11 +349,11 @@
       <p class="story">
         A certain amount of psychological warfare always takes place during a
         chess game. For example, the ongoing fuss over Korchnoi’s mirror-tinted
-        glasses (nicknamed, “the device” at the time) was the result of a passive
-        aggressive attempt to thwart Karpov’s own tactic of staring directly
-        into the eyes of his opponent. A compelling argument could also be made
-        that Korchnoi’s accusations against Dr. Zoukhar merely came from an
-        attempt to explain away his own blunders, rather than a deeply held
+        glasses (nicknamed, “the device” at the time) was the result of a
+        passive aggressive attempt to thwart Karpov’s own tactic of staring
+        directly into the eyes of his opponent. A compelling argument could also
+        be made that Korchnoi’s accusations against Dr. Zoukhar merely came from
+        an attempt to explain away his own blunders, rather than a deeply held
         belief in telekinesis. There is, in fact, substantial evidence pointing
         to a familiarity with paranoia, superstition, and pseudo science between
         the two, which may or may not always track with a number of
@@ -401,19 +403,19 @@
         opportunities to win the match outright going as far back as game eight,
         and watched as his 5-1 lead dwindled to 5-5 by the final game. “The
         tiresome weather with its constant rain and wind had suddenly begun to
-        irritate me,” Karpov conceded. The Ananda Marga contingent had maintained
-        a presence “casting spells” in the lotus position until game 20, when
-        the organizers disallowed the attendance of “persons of known criminal
-        records.” The Ananda Margas multiplied, terrifying various officials
-        with threatening messages while Didi and Dada continued to hold
-        clandestine yoga classes from Korchnoi’s FIDE-sponsored hotel room. The
-        Korchnoi delegation became so overwhelmed with offers of support from
-        members of this feared religious cult that they petitioned the appeal
-        jury for protection. The irony was lost on no one. The breach of an
-        agreement reached a month earlier regarding the presence of any and all
-        hypnotists also brought Dr. Zoukhar back to the fourth row for the final
-        game. The conclusion of the longest final in the tournament’s history
-        would arrive in a somewhat anticlimactic fashion. The biggest
+        irritate me,” Karpov conceded. The Ananda Marga contingent had
+        maintained a presence “casting spells” in the lotus position until game
+        20, when the organizers disallowed the attendance of “persons of known
+        criminal records.” The Ananda Margas multiplied, terrifying various
+        officials with threatening messages while Didi and Dada continued to
+        hold clandestine yoga classes from Korchnoi’s FIDE-sponsored hotel room.
+        The Korchnoi delegation became so overwhelmed with offers of support
+        from members of this feared religious cult that they petitioned the
+        appeal jury for protection. The irony was lost on no one. The breach of
+        an agreement reached a month earlier regarding the presence of any and
+        all hypnotists also brought Dr. Zoukhar back to the fourth row for the
+        final game. The conclusion of the longest final in the tournament’s
+        history would arrive in a somewhat anticlimactic fashion. The biggest
         controversy came from Korchnoi’s refusal to officially concede,
         preferring instead to simply decline a return to the board after the
         game had been adjourned for the day. Korchnoi was not seen again for the
@@ -438,14 +440,159 @@ export default {
 </script>
 
 <style>
-@import url("//unpkg.com/element-plus/lib/theme-chalk/index.css");
-.el-carousel__item h3 {
+/* @import url("//unpkg.com/element-plus/lib/theme-chalk/index.css");
+/* .el-carousel__item h3 {
     color: white;
     font-size: 14px;
     opacity: 0.75;
     line-height: 200px;
     margin: 0;
+  } */
+@import "/./node_modules/element-theme-chalk/lib/carousel.css" {
+  .el-carousel {
+    position: relative;
+    height: 100%;
   }
+  .el-carousel--horizontal {
+    overflow-x: hidden;
+  }
+  .el-carousel--vertical {
+    overflow-y: hidden;
+  }
+  .el-carousel__container {
+    position: relative;
+    height: 300px;
+  }
+  .el-carousel__arrow {
+    border: none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 50%;
+    background-color: rgba(31, 45, 61, 0.11);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 12px;
+  }
+  .el-carousel__arrow--left {
+    left: 16px;
+  }
+  .el-carousel__arrow--right {
+    right: 16px;
+  }
+  .el-carousel__arrow:hover {
+    background-color: rgba(31, 45, 61, 0.23);
+  }
+  .el-carousel__arrow i {
+    cursor: pointer;
+  }
+  .el-carousel__indicators {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+  }
+  .el-carousel__indicators--horizontal {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .el-carousel__indicators--vertical {
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .el-carousel__indicators--outside {
+    bottom: 26px;
+    text-align: center;
+    position: static;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .el-carousel__indicators--outside .el-carousel__indicator:hover button {
+    opacity: 0.64;
+  }
+  .el-carousel__indicators--outside button {
+    background-color: #c0c4cc;
+    opacity: 0.24;
+  }
+  .el-carousel__indicators--labels {
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+    transform: none;
+    text-align: center;
+  }
+  .el-carousel__indicators--labels .el-carousel__button {
+    height: auto;
+    width: auto;
+    padding: 2px 18px;
+    font-size: 12px;
+  }
+  .el-carousel__indicators--labels .el-carousel__indicator {
+    padding: 6px 4px;
+  }
+  .el-carousel__indicator {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .el-carousel__indicator:hover button {
+    opacity: 0.72;
+  }
+  .el-carousel__indicator--horizontal {
+    display: inline-block;
+    padding: 12px 4px;
+  }
+  .el-carousel__indicator--vertical {
+    padding: 4px 12px;
+  }
+  .el-carousel__indicator--vertical .el-carousel__button {
+    width: 2px;
+    height: 15px;
+  }
+  .el-carousel__indicator.is-active button {
+    opacity: 1;
+  }
+  .el-carousel__button {
+    display: block;
+    opacity: 0.48;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .carousel-arrow-left-enter,
+  .carousel-arrow-left-leave-active {
+    -webkit-transform: translateY(-50%) translateX(-10px);
+    transform: translateY(-50%) translateX(-10px);
+    opacity: 0;
+  }
+  .carousel-arrow-right-enter,
+  .carousel-arrow-right-leave-active {
+    -webkit-transform: translateY(-50%) translateX(10px);
+    transform: translateY(-50%) translateX(10px);
+    opacity: 0;
+  }
+}
 @font-face {
   font-family: "Univers LT W01_65 Bold1475968";
   src: url("./Fonts/1475968/8a711a0d-3f17-4bfe-887b-6229858332b3.woff2")
@@ -644,7 +791,7 @@ h2 {
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
-  min-height: 0;
+  /* min-height: 0; */
   height: auto;
   /* height: 100%; */
   /* margin-bottom: 100%; */
@@ -715,15 +862,15 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 400px;
-  height: auto;
+  height:100%;
   /* padding-top: 25px; */
-  overflow-y: scroll;
-  border-top: 0px;
+  /* overflow-y: scroll; */
+  /* border-top: 0px;
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
   border-color: black;
-  border-style: solid;
+  border-style: solid; */
 }
 .bottom {
   grid-column: 2 / span 10;
@@ -872,7 +1019,7 @@ h2 {
   cursor: default;
   font-family: "Univers LT W04_59 Ult Cond";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
 }
 .alpha-d2270 {
