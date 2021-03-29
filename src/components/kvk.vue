@@ -15,11 +15,9 @@
     </div>
 </template>
 <script>
-// var board = Chessboard('board')
-import LowerThird from './LowerThird.vue'
-import ChessBoard from './ChessBoard.vue'
-// import Chessboard from '@chrisoakman/chessboardjs'
-import Sankey from './Sankey.vue'
+import LowerThird from './LowerThird.vue';
+import ChessBoard from './ChessBoard.vue';
+import Sankey from './Sankey.vue';
 
 export default {
   name: 'KvK',
@@ -27,9 +25,6 @@ export default {
       LowerThird,
       ChessBoard,
       Sankey
-  },
-  props: {
-    story: String
   }
-}
+};
 </script>

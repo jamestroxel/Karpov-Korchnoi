@@ -1,11 +1,11 @@
 <template>
  <div id="board" class="item-b" style="width: 400px">
-   <el-pagination
+   <!-- <el-pagination
         :page-size="1"
         :pager-count="3"
         layout="prev, pager, next"
         :total="28">
-      </el-pagination>
+      </el-pagination> -->
  </div>
  
 </template>
@@ -20,9 +20,9 @@ export default {
   props: {
     position: String
   },
-  data(){
+  // data(){
 
-  },
+  // },
   mounted(){
     // this.board.move
      var position1 = {
