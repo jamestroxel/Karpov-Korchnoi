@@ -2,7 +2,13 @@
 <div id="sankey" class="item-c">
   <svg :width='width' :height='height'>
     <g>
-      <!-- <rect :x="node" v-for="node in nodes" v-bind:y="node in nodes"></rect> -->
+      <rect :key="node.key" 
+      v-for="node in nodes" 
+      :x="(node) => node.x0" 
+      :y="(node) => node.y0"
+      :height="(node) => node.y1 - node.y0"
+      :width="(node) => node.x1 - node.x0"
+      ></rect>
     </g>
     <g fill="none">
       <path :key="link.key"
@@ -15,8 +21,8 @@
 </template>
 
 <script>
-// import * as d3 from "d3";
-import {sankey as sankey, sankeyLinkHorizontal as sankeyLinkHorizontal } from 'd3-sankey';
+import * as d3 from "d3";
+import {sankey as d3Sankey, sankeyLinkHorizontal} from 'd3-sankey';
 
 import json from './sankey.json'
 
@@ -32,8 +38,10 @@ export default {
 },
   data(){
     return {
-      sankey: sankey,
+      d3: d3,
+      sankey: d3Sankey,
       sankeyLinkHorizontal: sankeyLinkHorizontal,
+      // nodeSort: nodeSort,
       data: null,
       width: 400,
       height: 400
@@ -42,7 +50,8 @@ export default {
   computed: {
   
     sankeyData() {
-      const sankeyGenerator = sankey
+      const sankeyGenerator = this.d3
+        this.sankey()
         .nodeSort(null)
         .linkSort(null)
         .nodeWidth(4)
