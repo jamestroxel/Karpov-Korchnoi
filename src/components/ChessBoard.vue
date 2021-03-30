@@ -25,13 +25,13 @@ export default {
   // },
   mounted(){
     // this.board.move
-     var position1 = {
-      d6: 'bK',
-      d4: 'wP',
-      e4: 'wK'
-    }
+    //  var position1 = {
+    //   d6: 'bK',
+    //   d4: 'wP',
+    //   e4: 'wK'
+    // }
       ChessBoard('board',"start");
-      ChessBoard('board',position1);
+      // ChessBoard('board',position1);
   },
   // data() {
   //   return {

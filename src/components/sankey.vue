@@ -1,11 +1,14 @@
 <template>
 <div id="sankey" class="item-c">
-  <svg :width='width' :height='height' :nodes="nodes" :links="links">
-    <!-- <g>
-      <rect v-bind:x="node in nodes" v-bind:y="node in nodes"></rect>
-    </g> -->
+  <svg :width='width' :height='height'>
+    <g>
+      <!-- <rect :x="node" v-for="node in nodes" v-bind:y="node in nodes"></rect> -->
+    </g>
     <g fill="none">
-      <path v-bind:d="sankeyLinkHorizontal"></path>
+      <path :key="link.key"
+            v-for="link in links" 
+            :d="d3SankeyLinkHorizontal()(link)"  
+      ></path>
     </g>
   </svg>
 </div>
@@ -22,15 +25,42 @@ import json from './sankey.json'
 
 export default {
   name: 'Sankey',
-  // props: {
-  //   data: Object
-  // },
+  components:{
+  // sankey,
+  // sankeyLinkHorizontal,
+  // d3
+},
   data(){
     return {
-      json: null,
+      sankey: sankey,
+      sankeyLinkHorizontal: sankeyLinkHorizontal,
+      data: null,
       width: 400,
-      height: 400,
-
+      height: 400
+    }
+  },
+  computed: {
+  
+    sankeyData() {
+      const sankeyGenerator = sankey
+        .nodeSort(null)
+        .linkSort(null)
+        .nodeWidth(4)
+        .nodePadding(30)
+        .extent([
+      [0, 5],
+      [this.width, this.height - 5],
+    ]);
+      return ({ nodes, links }) => sankeyGenerator(this.data)({
+      nodes: nodes.map((d) => Object.assign({}, d)),
+      links: links.map((d) => Object.assign({}, d)),
+    });
+    },
+    nodes() {
+      return this.sankeyData.nodes
+    },  
+    links() {
+      return this.sankeyData.links
     }
   },
   mounted: function() {
