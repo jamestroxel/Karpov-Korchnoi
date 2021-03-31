@@ -203,20 +203,21 @@
     <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
     <div class="item-c">
       <h1>Introduction</h1>
+      <!-- <Story></Story> -->
       <p class="story">
-        The contrast between the 1974 Candidates Final and the 1978 World Chess
-        Championship could hardly be sharper. Game two of the 1974 match in
-        Moscow has come to be regarded as a modern classic in tactics, strategy,
-        and chess brilliance between two of the game’s best. The absurdist
-        theatre witnessed throughout the entire 1978 Championship quickly earned
-        notoriety as an example of the type of superstition, paranoia, and
-        scandal commonly observed in chess lore throughout the game’s rich
-        history. However, a few key similarities will emerge as the focus of
-        this paper that also carry broad implications for the way we extract
-        meaning from information. The visualizations that accompany the game
-        analysis are designed to help readers see chess in the same way a
-        grandmaster does, and in so doing, help them to identify certain
-        patterns between a grandmaster’s state of mind and their own.
+            The contrast between the 1974 Candidates Final and the 1978 World Chess
+            Championship could hardly be sharper. Game two of the 1974 match in
+            Moscow has come to be regarded as a modern classic in tactics, strategy,
+            and chess brilliance between two of the game’s best. The absurdist
+            theatre witnessed throughout the entire 1978 Championship quickly earned
+            notoriety as an example of the type of superstition, paranoia, and
+            scandal commonly observed in chess lore throughout the game’s rich
+            history. However, a few key similarities will emerge as the focus of
+            this paper that also carry broad implications for the way we extract
+            meaning from information. The visualizations that accompany the game
+            analysis are designed to help readers see chess in the same way a
+            grandmaster does, and in so doing, help them to identify certain
+            patterns between a grandmaster’s state of mind and their own.
       </p>
       <p class="story">
         The absurdist theatre witnessed throughout the entire 1978 Championship
@@ -420,12 +421,18 @@
 // import * as d3 from "d3";
 // import {sankey as sankey} from 'd3-sankey';
 import KvK from "./components/KvK.vue";
-// import json from "./components/story.json";
+// import story from "./components/story.json";
+// import Story from "./components/Story.vue"
 export default {
   name: "App",
   components: {
     KvK,
-  },
+    // Story
+  }
+  // mounted: function() {
+  //   console.log("***", story);
+  //   this.paragraph = story;
+  // },
 };
 </script>
 
@@ -466,7 +473,7 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: 400px;
+  width: 100%;
   margin-top: -30px;
   /* min-height: 0; */
   /* bottom: 150px; */
@@ -513,7 +520,7 @@ body {
 .nav1 {
   grid-column: 2 / span 3;
   grid-row: 1;
-  /* width:100%; */
+  width:100%;
   background: white;
   /* position: fixed;
   top:0; */
@@ -529,7 +536,7 @@ body {
 .nav2 {
   grid-column: 6 / span 6;
   grid-row: 1;
-  /* width:100%; */
+  width:100%;
   background: white;
   /* position: fixed;
   top:0; */
@@ -548,7 +555,7 @@ body {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
-  width: 400px;
+  width: 100%;
   padding-right: 10px;
   padding-top: 0px;
 }
@@ -559,7 +566,7 @@ body {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
-  width: 400px;
+  width: 100%;
   padding-right: 10px;
   padding-top: 0px;
 }
@@ -590,7 +597,7 @@ body {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 1;
-  width: 400px;
+  width: 100%;
   padding-right: 10px;
   padding-top: 0px;
 }
@@ -602,7 +609,23 @@ h1 {
   text-transform: uppercase;
   column-span: all;
 }
+.heading1 {
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  column-span: all;
+}
 h2 {
+  font-family: "Univers LT W01_65 Bold1475968";
+  font-size: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  column-span: all;
+  line-height: 1;
+}
+.heading2 {
   font-family: "Univers LT W01_65 Bold1475968";
   font-size: 1.5em;
   margin-top: 0px;
@@ -627,6 +650,17 @@ h2 {
   /* height: 100vh; */
   grid-column: 9 / 12;
   grid-row: 2;
+}
+.subHead {
+  font-family: "Univers LT W01_65 Bold1475968";
+  font-size: 1em;
+  text-align: start;
+  line-height: 1.5;
+  /* min-height: 0; */
+  /* height: auto; */
+  /* height: 100%; */
+  /* margin-bottom: 100%; */
+  overflow-y: scroll;
 }
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
@@ -677,7 +711,7 @@ h2 {
 .item-a-span {
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
-  grid-column-end: 6;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
@@ -702,7 +736,7 @@ h2 {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: 400px;
+  width: 100%;
   /* min-height: 0; */
   padding-right: 10px;
   padding-top: 25px;
@@ -735,7 +769,7 @@ h2 {
   grid-column-end: 9;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: 400px;
+  width: 100%;
   height: 100%;
   /* padding-top: 25px; */
   overflow-y: scroll;
@@ -751,7 +785,7 @@ h2 {
   grid-column-end: 9;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: 400px;
+  width: 100%;
   height: 100%;
   /* padding-top: 25px; */
   /* overflow-y: scroll;

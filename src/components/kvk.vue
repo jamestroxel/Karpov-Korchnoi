@@ -3,10 +3,7 @@
     <div id="pgn" class="moves"></div>
     <div class="item-a-kvk">
       <h1>Slaying the Dragon</h1>
-      <h2>Moscow, 1974</h2>
-      <p class="story">
-        <!-- <Story></Story>        -->
-      </p>
+      <Story></Story>
     </div>
       <ChessBoard></ChessBoard>
       <LowerThird></LowerThird>
@@ -18,6 +15,7 @@
 import LowerThird from './LowerThird.vue';
 import ChessBoard from './ChessBoard.vue';
 import Sankey from './Sankey.vue';
+import Story from './Story.vue';
 
 import json from './sankey.json'
 
@@ -26,7 +24,8 @@ export default {
   components: {
       LowerThird,
       ChessBoard,
-      Sankey
+      Sankey,
+      Story
   },
   data(){
     return {
