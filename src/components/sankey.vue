@@ -97,7 +97,7 @@ export default {
         .selectAll("text")
         .data(json.nodes)
         .join("text")
-        .attr("x", (d) => (d.x0 < this.width / 2 ? d.x1 + 6 : d.x0 - 6))
+        .attr("x", d => `${d.x0} < this.width / 2` ? `${d.x1} + 6` : `${d.x0} - 6`)
         .attr("y", (d) => (d.y1 + d.y0) / 2)
         .attr("dy", "0.35em")
         .attr("text-anchor", (d) => (d.x0 < this.width / 2 ? "start" : "end"))
