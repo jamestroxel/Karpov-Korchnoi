@@ -19,12 +19,23 @@ import LowerThird from './LowerThird.vue';
 import ChessBoard from './ChessBoard.vue';
 import Sankey from './Sankey.vue';
 
+import json from './sankey.json'
+
 export default {
   name: 'KvK',
   components: {
       LowerThird,
       ChessBoard,
       Sankey
-  }
+  },
+  data(){
+    return {
+      moves: null,
+    }
+  },
+   mounted: function() {
+    console.log('***', json);
+    this.moves = json;
+    },
 };
 </script>

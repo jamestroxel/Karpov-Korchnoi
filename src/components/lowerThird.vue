@@ -17,18 +17,24 @@
       </div>
       <div class="notationR">
         <p class="player">
-          Korchnoi
+          Korchnoi 
         </p>
       </div>
  
 </template>
 <script>
+import json from './sankey.json';
+
 export default {
   name: 'LowerThird',
-  props: {
-    // scroll: String,
-    move: String,
-    score: Number
-  }
+   data(){
+    return {
+      moves: null,
+    }
+  },
+   mounted: function() {
+    console.log('***', json);
+    this.moves = json;
+    },
 }
 </script>

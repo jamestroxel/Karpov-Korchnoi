@@ -203,56 +203,46 @@
     <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
     <div class="item-c">
       <h1>Introduction</h1>
-
-      <el-carousel interval="0" indicator-position="outside">
-        <el-carousel-item v-for="item in 1" :key="item">
-          <!-- <h3>{{ item }}kljenwrlkjn</h3> -->
-          <p class="story">
-            The contrast between the 1974 Candidates Final and the 1978 World
-            Chess Championship could hardly be sharper. Game two of the 1974
-            match in Moscow has come to be regarded as a modern classic in
-            tactics, strategy, and chess brilliance between two of the game’s
-            best. The absurdist theatre witnessed throughout the entire 1978
-            Championship quickly earned notoriety as an example of the type of
-            superstition, paranoia, and scandal commonly observed in chess lore
-            throughout the game’s rich history. However, a few key similarities
-            will emerge as the focus of this paper that also carry broad
-            implications for the way we extract meaning from information. The
-            visualizations that accompany the game analysis are designed to help
-            readers see chess in the same way a grandmaster does, and in so
-            doing, help them to identify certain patterns between a
-            grandmaster’s state of mind and their own.
-          </p>
-        </el-carousel-item>
-        <el-carousel-item v-for="item in 1" :key="item">
-          <p class="story">
-            The absurdist theatre witnessed throughout the entire 1978
-            Championship quickly earned notoriety as an example of the type of
-            superstition, paranoia, and scandal commonly observed in chess lore
-            throughout the game’s rich history. However, a few key similarities
-            will emerge as the focus of this paper that also carry broad
-            implications for the way we extract meaning from information. The
-            visualizations that accompany the game analysis are designed to help
-            readers see chess in the same way a grandmaster does, and in so
-            doing, help them to identify certain patterns between a
-            grandmaster’s state of mind and their own.
-          </p>
-        </el-carousel-item>
-      </el-carousel>
+      <p class="story">
+        The contrast between the 1974 Candidates Final and the 1978 World Chess
+        Championship could hardly be sharper. Game two of the 1974 match in
+        Moscow has come to be regarded as a modern classic in tactics, strategy,
+        and chess brilliance between two of the game’s best. The absurdist
+        theatre witnessed throughout the entire 1978 Championship quickly earned
+        notoriety as an example of the type of superstition, paranoia, and
+        scandal commonly observed in chess lore throughout the game’s rich
+        history. However, a few key similarities will emerge as the focus of
+        this paper that also carry broad implications for the way we extract
+        meaning from information. The visualizations that accompany the game
+        analysis are designed to help readers see chess in the same way a
+        grandmaster does, and in so doing, help them to identify certain
+        patterns between a grandmaster’s state of mind and their own.
+      </p>
+      <p class="story">
+        The absurdist theatre witnessed throughout the entire 1978 Championship
+        quickly earned notoriety as an example of the type of superstition,
+        paranoia, and scandal commonly observed in chess lore throughout the
+        game’s rich history. However, a few key similarities will emerge as the
+        focus of this paper that also carry broad implications for the way we
+        extract meaning from information. The visualizations that accompany the
+        game analysis are designed to help readers see chess in the same way a
+        grandmaster does, and in so doing, help them to identify certain
+        patterns between a grandmaster’s state of mind and their own.
+      </p>
     </div>
   </div>
   <div class="container">
     <div class="right-imageContainer">
       <img class="left-image" src="./assets/Zoukhar-small.png" />
     </div>
-    <div class="item-a">
+    <div class="item-a-span">
       <h1>"Trifles, Which Cannot Be Ignored"</h1>
       <h2>Baguio, 1978</h2>
       <p class="story">
         Typhoon Emang struck the Philippines on the first day of game five.
         Karpov described the sound of the rain as sufficient to drown out the
         noise of an already tempestuous affair inside the brand new Baguio City
-        Convention Center. Up until this point, the loudest protest came from
+        Convention Center.* Up until this point, the loudest protest came from
         the precise meaning of the violet colored yogurt being delivered to
         Karpov during each game. “It is clear that a cunningly arranged
         distribution of edible items to one player during the game, emanating
@@ -344,7 +334,7 @@
     <div class="right-imageContainer">
       <img class="right-image" src="./assets/yoga-small.png" />
     </div>
-    <div class="item-a">
+    <div class="item-a-span">
       <h2>Analysis</h2>
       <p class="story">
         A certain amount of psychological warfare always takes place during a
@@ -434,13 +424,12 @@ import KvK from "./components/KvK.vue";
 export default {
   name: "App",
   components: {
-    KvK
-  }
+    KvK,
+  },
 };
 </script>
 
 <style>
-
 @font-face {
   font-family: "Univers LT W01_65 Bold1475968";
   src: url("./Fonts/1475968/8a711a0d-3f17-4bfe-887b-6229858332b3.woff2")
@@ -611,12 +600,15 @@ h1 {
   margin-top: 0px;
   margin-bottom: 50px;
   text-transform: uppercase;
+  column-span: all;
 }
 h2 {
   font-family: "Univers LT W01_65 Bold1475968";
   font-size: 1.5em;
   margin-top: 0px;
   margin-bottom: 50px;
+  column-span: all;
+  line-height: 1;
 }
 .left-image {
   width: 100%;
@@ -639,8 +631,10 @@ h2 {
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
+  text-align: start;
+  line-height: 1.5;
   /* min-height: 0; */
-  height: auto;
+  /* height: auto; */
   /* height: 100%; */
   /* margin-bottom: 100%; */
   overflow-y: scroll;
@@ -648,7 +642,7 @@ h2 {
 .story:last-child {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
-  min-height: 0;
+  /* min-height: 0; */
   /* max-height: 100%; */
   /* margin-bottom: 100%; */
   overflow-y: scroll;
@@ -667,6 +661,28 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 400px;
+  /* min-height: 0; */
+  /* padding-right: 10px; */
+  /* padding-top: 25px; */
+  /* overflow-y: scroll; */
+  /* bottom: 150px; */
+  height: 100%;
+  /* border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid; */
+}
+.item-a-span {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  /* columns: 2; */
+
   /* min-height: 0; */
   /* padding-right: 10px; */
   /* padding-top: 25px; */
@@ -700,6 +716,16 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 2;
   width: 400px;
+  /* padding-top:168px; */
+  padding-right: 0px;
+  margin: 0px;
+}
+.item-b-kvk {
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  width: 400px;
   padding-top: 25px;
   padding-right: 0px;
   margin: 0px;
@@ -710,10 +736,26 @@ h2 {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 400px;
-  height:100%;
+  height: 100%;
   /* padding-top: 25px; */
-  /* overflow-y: scroll; */
-  /* border-top: 0px;
+  overflow-y: scroll;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+}
+.item-c-kvk {
+  grid-column-start: 9;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 400px;
+  height: 100%;
+  /* padding-top: 25px; */
+  /* overflow-y: scroll;
+  border-top: 0px;
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
@@ -877,5 +919,12 @@ h2 {
 .numeric-fc462 {
   top: 2px;
   left: 3px;
+}
+#sankey {
+  margin-top: 25px;
+}
+.links {
+  opacity: 0.1;
+  mix-blend-mode: multiply;
 }
 </style>

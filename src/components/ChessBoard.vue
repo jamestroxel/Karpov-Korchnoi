@@ -1,5 +1,5 @@
 <template>
- <div id="board" class="item-b" style="width: 400px">
+ <div id="board" class="item-b-kvk" style="width: 400px">
    <!-- <el-pagination
         :page-size="1"
         :pager-count="3"

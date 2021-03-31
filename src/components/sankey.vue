@@ -1,176 +1,108 @@
 <template>
-<div id="sankey" class="item-c">
-  <svg :width='width' :height='height'>
-    <g>
-      <rect :key="node.key" 
-      v-for="node in nodes" 
-      :x="(node) => node.x0" 
-      :y="(node) => node.y0"
-      :height="(node) => node.y1 - node.y0"
-      :width="(node) => node.x1 - node.x0"
-      ></rect>
-    </g>
-    <g fill="none">
-      <path :key="link.key"
-            v-for="link in links" 
-            :d="d3SankeyLinkHorizontal()(link)"  
-      ></path>
-    </g>
-  </svg>
-</div>
+  <div class="item-c-kvk">
+    <svg id="sankey" :width="width" :height="height">
+      <g>
+        <rect
+          :key="node.key"
+          v-for="node in nodes"
+          :x="node.x0"
+          :y="node.y0"
+          :height="node.y1 - node.y0"
+          :width="node.x1 - node.x0"
+        ></rect>
+      </g>
+      <g stroke="black" fill="none">
+        <path
+          class="links"
+          :key="link.key"
+          v-for="link in links"
+          :d="sankeyLinkHorizontal()(link)"
+          :stroke-width="link.width"
+        ></path>
+      </g>
+    </svg>
+  </div>
 </template>
 
 <script>
 import * as d3 from "d3";
-import {sankey as d3Sankey, sankeyLinkHorizontal} from 'd3-sankey';
+import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";
 
-import json from './sankey.json'
+import json from "./sankey.json";
 
-// const height = 400;
-// const width = 400;
+
 
 export default {
-  name: 'Sankey',
-  components:{
-  // sankey,
-  // sankeyLinkHorizontal,
-  // d3
-},
-  data(){
+  name: "Sankey",
+
+  data() {
     return {
       d3: d3,
       sankey: d3Sankey,
       sankeyLinkHorizontal: sankeyLinkHorizontal,
-      // nodeSort: nodeSort,
-      data: null,
+      // nodes: nodes,
+      // links: links,
+      moves: null,
       width: 400,
-      height: 400
-    }
+      height: 400,
+    };
   },
   computed: {
-  
     sankeyData() {
-      const sankeyGenerator = this.d3
-        this.sankey()
+      if (this.moves === null) {
+        return null;
+      }
+      const sankeyGenerator = d3Sankey()
         .nodeSort(null)
         .linkSort(null)
         .nodeWidth(4)
         .nodePadding(30)
         .extent([
-      [0, 5],
-      [this.width, this.height - 5],
-    ]);
-      return ({ nodes, links }) => sankeyGenerator(this.data)({
-      nodes: nodes.map((d) => Object.assign({}, d)),
-      links: links.map((d) => Object.assign({}, d)),
-    });
+          [0, 5],
+          [this.width, this.height - 5],
+        ]);
+      console.log(this.moves);
+      return (({ nodes, links }) =>
+        sankeyGenerator({
+          nodes: nodes.map((d) => Object.assign({}, d)),
+          links: links.map((d) => Object.assign({}, d)),
+        }))(this.moves);
     },
     nodes() {
-      return this.sankeyData.nodes
-    },  
+      if (this.sankeyData) {
+        return this.sankeyData.nodes;
+      } else {
+        return null;
+      }
+    },
     links() {
-      return this.sankeyData.links
-    }
+      if (this.sankeyData) {
+        return this.sankeyData.links;
+      } else {
+        return null;
+      }
+    },
   },
   mounted: function() {
-    //  d3.json("./sankey.json").then((data) => {
-    // console.log(data);
-    //     });
-    console.log('***', json);
-    this.data = json;
-
+    this.sankeyLabels();
+    console.log("***", json);
+    this.moves = json;
+  },
+  methods: {
+    sankeyLabels() {
+      const svg = d3.select("#sankey");
+      svg
+        .append("g")
+        .style("font", "14px 'Univers LT W04_59 Ult Cond'")
+        .selectAll("text")
+        .data(json.nodes)
+        .join("text")
+        .attr("x", (d) => (d.x0 < this.width / 2 ? d.x1 + 6 : d.x0 - 6))
+        .attr("y", (d) => (d.y1 + d.y0) / 2)
+        .attr("dy", "0.35em")
+        .attr("text-anchor", (d) => (d.x0 < this.width / 2 ? "start" : "end"))
+        .text((d) => d.name);
     },
-    
-    
-}
-      //  d3.json("/sankey.json").then((error,data) => {
-//         if (error) throw error;
-//         that.json = data;
-//       console.log(sankey(that.json));
-//       console.log(that.json);
-//       });
-//   }
-// }
-
-
-// function draw(data) {
-//   const svg = d3
-//     .select("#sankey")
-//     .append("svg")
-//     .attr("viewBox", [0, 0, width, height])
-//     .attr("width", width)
-//     .attr("height", height);
-
-//   svg
-//     .append("g")
-//     .selectAll("rect")
-//     .data(data.nodes)
-//     .join("rect")
-//     .attr("x", (d) => d.x0)
-//     .attr("y", (d) => d.y0)
-//     .attr("height", (d) => d.y1 - d.y0)
-//     .attr("width", (d) => d.x1 - d.x0);
-//   // .append("title")
-//   // .text((d) => `${d.name}\n${d.value.toLocaleString()}`);
-//   svg
-//     .append("g")
-//     .attr("fill", "none")
-//     .selectAll("g")
-//     .data(data.links)
-//     .join("path")
-//     .attr("d", d3.sankeyLinkHorizontal())
-//     .attr("stroke", "black")
-//     .attr("opacity", function (d) {
-//       if (data.nodes[0] === 0) {
-//         return 1;
-//       } else {
-//         return 0.1;
-//       }
-//     })
-//     .attr("stroke-width", (d) => d.width)
-//     .style("mix-blend-mode", "multiply");
-//   // .append("title")
-//   // .text((d) => `${d.names.join(" → ")}\n${d.value.toLocaleString()}`);
-
-//   svg
-//     .append("g")
-//     .style("font", "14px 'Univers LT W04_59 Ult Cond'")
-//     .selectAll("text")
-//     .data(data.nodes)
-//     .join("text")
-//     .attr("x", (d) => (d.x0 < width / 2 ? d.x1 + 6 : d.x0 - 6))
-//     .attr("y", (d) => (d.y1 + d.y0) / 2)
-//     .attr("dy", "0.35em")
-//     .attr("text-anchor", (d) => (d.x0 < width / 2 ? "start" : "end"))
-//     .text((d) => d.name);
-
-// }
-// function sankey(data) {
-//   const sankeyGenerator = d3
-//     .sankey()
-//     .nodeSort(null)
-//     .linkSort(null)
-//     .nodeWidth(4)
-//     .nodePadding(30)
-//     .extent([
-//       [0, 5],
-//       [width, height - 5],
-//     ]);
-//   return (({ nodes, links }) =>
-//     sankeyGenerator({
-//       nodes: nodes.map((d) => Object.assign({}, d)),
-//       links: links.map((d) => Object.assign({}, d)),
-//     }))(data);
-// }
-
-// function loadData() {
-//   d3.json("./sankey.json").then((data) => {
-//     console.log(data);
-
-//     console.log(sankey(data));
-//     draw(sankey(data));
-//   });
-// }
-// // loadData();
-
+  },
+};
 </script>
