@@ -4,8 +4,8 @@
   </div>
   <div class="navContainer">
     <div class="nav1"></div>
-    <p class="prologue">Prologue</p>
     <div class="nav2"></div>
+    <p class="prologue">Prologue</p>
     <p class="KvK">Karpov vs. Korchnoi</p>
     <p class="play">Play</p>
   </div>
@@ -203,33 +203,7 @@
     <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
     <div class="item-c">
       <h1>Introduction</h1>
-      <!-- <Story></Story> -->
-      <p class="story">
-            The contrast between the 1974 Candidates Final and the 1978 World Chess
-            Championship could hardly be sharper. Game two of the 1974 match in
-            Moscow has come to be regarded as a modern classic in tactics, strategy,
-            and chess brilliance between two of the game’s best. The absurdist
-            theatre witnessed throughout the entire 1978 Championship quickly earned
-            notoriety as an example of the type of superstition, paranoia, and
-            scandal commonly observed in chess lore throughout the game’s rich
-            history. However, a few key similarities will emerge as the focus of
-            this paper that also carry broad implications for the way we extract
-            meaning from information. The visualizations that accompany the game
-            analysis are designed to help readers see chess in the same way a
-            grandmaster does, and in so doing, help them to identify certain
-            patterns between a grandmaster’s state of mind and their own.
-      </p>
-      <p class="story">
-        The absurdist theatre witnessed throughout the entire 1978 Championship
-        quickly earned notoriety as an example of the type of superstition,
-        paranoia, and scandal commonly observed in chess lore throughout the
-        game’s rich history. However, a few key similarities will emerge as the
-        focus of this paper that also carry broad implications for the way we
-        extract meaning from information. The visualizations that accompany the
-        game analysis are designed to help readers see chess in the same way a
-        grandmaster does, and in so doing, help them to identify certain
-        patterns between a grandmaster’s state of mind and their own.
-      </p>
+      <Intro></Intro>
     </div>
   </div>
   <div class="container">
@@ -237,71 +211,8 @@
       <img class="left-image" src="./assets/Zoukhar-small.png" />
     </div>
     <div class="item-a-span">
-      <h1>"Trifles, Which Cannot Be Ignored"</h1>
-      <h2>Baguio, 1978</h2>
-      <p class="story">
-        Typhoon Emang struck the Philippines on the first day of game five.
-        Karpov described the sound of the rain as sufficient to drown out the
-        noise of an already tempestuous affair inside the brand new Baguio City
-        Convention Center.* Up until this point, the loudest protest came from
-        the precise meaning of the violet colored yogurt being delivered to
-        Karpov during each game. “It is clear that a cunningly arranged
-        distribution of edible items to one player during the game, emanating
-        from one delegation or the other, could convey a kind of coded message,”
-        read the official complaint to the Chief Arbiter. “Thus, a yogurt after
-        move 20 could signify ‘we instruct you to offer a draw’; or a sliced
-        mango could mean ‘we order you to decline a draw’. A dish of marinated
-        quails’ eggs could mean ‘play Ng4 at once’, and so on. The possibilities
-        are limitless,” it continued. But this had, by game five, become a
-        tightly choreographed ritual, and the colorful yogurt arrived by waiter
-        at 7:15pm sharp, without exception. There were of course, other
-        squabbles over which flag Korchnoi should be allowed to play under, for
-        instance, or Karpov’s endless suspicion towards the decisions of the
-        event organizers on everything from the location of the tournament, to
-        the make and model of the chess clocks. Additionally, Korchnoi’s
-        predictable refusal to stand for the Soviet National Anthem during the
-        opening ceremony was rendered moot when the orchestra mistakenly played
-        the Internationale instead. However, it wasn’t until game five that
-        things took a dark turn.
-      </p>
-      <p class="story">
-        There was a growing awareness of Dr. Vladimir Zoukhar’s presence in the
-        room that appeared to arrive with the weather. The storm had knocked out
-        the power and a dim emergency lamp was all that lit the main stage for a
-        time. The opponents played fast. In the middle of this, Petra Leeuwerik,
-        Head of the Korchnoi Delegation, reportedly rose from her party’s
-        designated seating area in the back and, against regulation, quietly
-        advanced towards the front spectator rows. She sat next to Dr. Zoukhar
-        and handed him a copy of “The Gulag Archipelago.” This was not a gift.
-      </p>
-      <p class="story">
-        Petra had spent nine years in the notorious Vorkuta labor camp for
-        spying in Soviet Vienna after World War II. Dr. Vladimir Zoukhar was a
-        known psycho-neurologist and director of the Central Laboratory for
-        Psychology in Moscow’s School of Medicine. His expertise had been sought
-        ever since the 1974 Candidates Final where Korchnoi had bragged that his
-        mind games forced Karpov to seek therapy. Karpov repeatedly insisted
-        that Zoukhar was not an official member of the Soviet Delegation and
-        thereby free to do as he pleased. “The Soviets want to kill him in a
-        mental way” Leeuwerik had said of Korchnoi. The Challenger’s delegation
-        had begun to develop the theory that Dr. Zoukhar was hypnotizing
-        Korchnoi from a distance through his noticeable habit of staring fixedly
-        at the Challenger from the front left row during much of the contest
-        until now. Seemingly every shortcoming of Korchnoi’s was now attributed
-        to the work of this mysterious hypnotist. Naturally, Karpov would
-        repeatedly boast of his ability to overcome these forces. The press ate
-        it up. Leeuwerik accused Dr. Zoukhar of being a parapsychological
-        hooligan and demanded that no official, or unofficial members of either
-        camp be allowed in the front row. The Chief Organizer obliged and this
-        sideshow began to compete for attention with the game as the melodrama
-        unfolded. Dr. Zoukhar’s seating position began to be recorded with
-        diligence by all those concerned. The first row on the left during games
-        two, three, four and five. The right side of row two in game six and
-        seven. On the left side of the fiveth row in game eight and the right
-        side in game nine. Games ten and 11 have him on the right side again,
-        but back two ranks on the seventh. One begins to imagine the diagonal
-        movements of a Bishop.
-      </p>
+      <h1>Trifles, Which Cannot Be Ignored</h1>
+      <Baguio></Baguio>
     </div>
   </div>
   <div class="container">
@@ -332,8 +243,8 @@
     </div>
   </div>
   <div class="container">
-    <div class="right-imageContainer">
-      <img class="right-image" src="./assets/yoga-small.png" />
+    <div class="right-imageContainer-landscape">
+      <img class="right-image-landscape" src="./assets/yoga-small.png" />
     </div>
     <div class="item-a-span">
       <h2>Analysis</h2>
@@ -418,21 +329,17 @@
 </template>
 
 <script>
-// import * as d3 from "d3";
-// import {sankey as sankey} from 'd3-sankey';
 import KvK from "./components/KvK.vue";
-// import story from "./components/story.json";
-// import Story from "./components/Story.vue"
+import Intro from "./components/Introduction.vue";
+import Baguio from "./components/1978.vue";
+
 export default {
   name: "App",
   components: {
     KvK,
-    // Story
+    Intro,
+    Baguio
   }
-  // mounted: function() {
-  //   console.log("***", story);
-  //   this.paragraph = story;
-  // },
 };
 </script>
 
@@ -492,8 +399,7 @@ body {
 
 .title {
   font-family: "Univers LT W04_59 Ult Cond";
-  /* margin-top:25%;
- margin-bottom:25%; */
+  font-size: 1em;
   margin-left: 12.5px;
   padding: 0px;
   transform: rotate(-90deg);
@@ -506,19 +412,20 @@ body {
 }
 .navContainer {
   margin: 0px;
+  
   padding: 0px;
   position: fixed;
   width: 100%;
   height: 50px;
   justify-content: center;
   display: grid;
-  grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-columns: 50px 50px 400px 50px 200px 200px 50px 400px 50px 50px;
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
   background-color: white;
   z-index: 400000;
 }
 .nav1 {
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 2;
   grid-row: 1;
   width:100%;
   background: white;
@@ -534,7 +441,7 @@ body {
   border-style: solid;
 }
 .nav2 {
-  grid-column: 6 / span 6;
+  grid-column: 5 / span 5;
   grid-row: 1;
   width:100%;
   background: white;
@@ -551,8 +458,8 @@ body {
 }
 .prologue {
   font-family: "Univers LT W04_59 Ult Cond";
-  grid-column-start: 4;
-  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
@@ -562,8 +469,8 @@ body {
 .KvK {
   font-family: "Univers LT W04_59 Ult Cond";
   color: red;
-  grid-column-start: 6;
-  grid-column-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
@@ -593,8 +500,8 @@ body {
 }
 .play {
   font-family: "Univers LT W04_59 Ult Cond";
-  grid-column-start: 9;
-  grid-column-end: 9;
+  grid-column-start: 8;
+  grid-column-end: 8;
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
@@ -603,23 +510,23 @@ body {
 }
 h1 {
   font-family: "Univers LT W04_59 Ult Cond";
-  font-size: 2em;
-  margin-top: 0px;
+  font-size: 3.5em;
+  margin-top: -10px;
   margin-bottom: 50px;
   text-transform: uppercase;
   column-span: all;
 }
 .heading1 {
   font-family: "Univers LT W04_59 Ult Cond";
-  font-size: 2em;
-  margin-top: 0px;
+  font-size: 3.5em;
+  margin-top: -10px;
   margin-bottom: 50px;
   text-transform: uppercase;
   column-span: all;
 }
 h2 {
   font-family: "Univers LT W01_65 Bold1475968";
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 0px;
   margin-bottom: 50px;
   column-span: all;
@@ -627,7 +534,7 @@ h2 {
 }
 .heading2 {
   font-family: "Univers LT W01_65 Bold1475968";
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 0px;
   margin-bottom: 50px;
   column-span: all;
@@ -645,10 +552,22 @@ h2 {
   grid-row: 2;
   overflow: hidden;
 }
+.right-imageContainer-landscape {
+  width: 100%;
+  height: 90vh;
+  grid-column: 6 / 12;
+  grid-row: 2;
+  overflow: hidden;
+}
 .right-image {
   width: 100%;
   /* height: 100vh; */
   grid-column: 9 / 12;
+  grid-row: 2;
+}.right-image-landscape {
+  width: 100%;
+  /* height: 100vh; */
+  grid-column: 6 / 12;
   grid-row: 2;
 }
 .subHead {
@@ -664,18 +583,20 @@ h2 {
 }
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1em;
-  text-align: start;
+  font-size: 1.25em;
   line-height: 1.5;
+  text-align: start;
   /* min-height: 0; */
   /* height: auto; */
   /* height: 100%; */
-  /* margin-bottom: 100%; */
+  margin-top: 0px;
   overflow-y: scroll;
 }
 .story:last-child {
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1em;
+  font-size: 1.25em;
+    line-height: 1.5;
+      text-align: start;
   /* min-height: 0; */
   /* max-height: 100%; */
   /* margin-bottom: 100%; */

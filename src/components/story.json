@@ -9,11 +9,19 @@
   },
   { "heading": "The Opening",
     "headingStyle": "heading2",
-    "text": "The English Opening, the Queen’s Gambit, the Ruy Lopez, the Pirc, the Slav and the Grunfeld are examples of the many openings with which all grandmasters are intimately familiar. “The successful choice of opening is a great skill (not only in the chess sense, but also psychologically)”, says Karpov. The study of opening theory includes developing a vocabulary of the opening move sequences collected from centuries of precedent in the Encyclopedia of Chess Openings (ECO). These moves have become known as book moves and account for approximately the first ten moves of the game.",
+    "text": "“The English Opening”, “the Ruy Lopez”, “the Pirc”, “the Slav” and “the Grunfeld” are examples of the many openings with which all grandmasters are intimately familiar. “The successful choice of opening is a great skill (not only in the chess sense, but also psychologically)”, says Karpov.",
     "style": "story"
   },
   { 
-    "text": "Openings can be visualized as tree diagrams, with each branch tracing a variation of a particular line through each move. Different lines give the game a different shape. Will it be the “open” Sicilian or the “closed” variation?  Is it the Queen’s Gambit “accepted”, or “declined?” Players commonly decide which line to take based on their own preferred playing style and that of their opponent. In Karpov’s words, “It is necessary to understand yourself and your opponent, and to use this knowledge in concrete situations on the chessboard; to deviate from the strongest continuation in order to place your opponent in a position he does not like to play.”",
+    "text": "The study of opening theory includes developing a vocabulary of the opening move sequences collected from centuries of precedent in the Encyclopedia of Chess Openings (ECO). These moves have become known as book moves and account for approximately the first ten moves of the game.",
+    "style": "story"
+  },
+  { 
+    "text": "Openings can be visualized as tree diagrams, with each branch tracing a variation of a particular line through each move. Different lines give the game a different shape. Will it be the “open” Sicilian or the “closed” variation?  Is it the Queen’s Gambit “accepted”, or “declined?” Players commonly decide which line to take based on their own preferred playing style and that of their opponent.",
+    "style": "story"
+  },
+  { 
+    "text": "In Karpov’s words, “It is necessary to understand yourself and your opponent, and to use this knowledge in concrete situations on the chessboard; to deviate from the strongest continuation in order to place your opponent in a position he does not like to play.”",
     "style": "story"
   },
   { 
@@ -21,13 +29,29 @@
     "style": "story"
   },
   { 
-    "text": "As it turns out, Karpov had made a good study of Korchnoi, anticipating 5.g6, which marks the “Sicilian Dragon” variation of Black’s position. It is named the “Dragon” for the way Black’s pawns trace the snake-like profile of a dragon, with the soon-to-arrive bishop on g7 defending the King and breathing fire across the board, from f6 down to a1. “The so-called Dragon variation. Korchnoi is probably the strongest player today who still employs it. In particular, this opening was twice used by him in his candidates match in 1971 with Geller,” Karpov states, ”of course, in 1974 I did not overlook the possibility of meeting this variation.” When Karpov sees the formation of the Dragon, he quickly switches plans from castling King-side, to castling Queen-side beginning with Bethree, which he will use to sever the dragon’s head (Bgseven) and begin marching up the weakened king-side. The next several moves follow a common theme when players have castled on opposite flanks, characterized by a rush to castle and use their rooks as battering rams to open a path to the King. White inevitably forces the exchange of bishops on the 17th move with Bh6.",
+    "text": "As it turns out, Karpov had made a good study of Korchnoi, anticipating 5.g6, which marks the “Sicilian Dragon” variation of Black’s position. It is named the “Dragon” for the way Black’s pawns trace the snake-like profile of a dragon, with the soon-to-arrive bishop on g7 defending the King and breathing fire across the board, from f6 down to a1.",
+    "style": "story"
+  },
+  { 
+    "text": "“The so-called Dragon variation. Korchnoi is probably the strongest player today who still employs it. In particular, this opening was twice used by him in his candidates match in 1971 with Geller,” Karpov states, ”of course, in 1974 I did not overlook the possibility of meeting this variation.”",
+    "style": "story"
+  },
+  { 
+    "text": "When Karpov sees the formation of the Dragon, he quickly switches plans from castling King-side, to castling Queen-side beginning with Bethree, which he will use to sever the dragon’s head (Bgseven) and begin marching up the weakened king-side. The next several moves follow a common theme when players have castled on opposite flanks, characterized by a rush to castle and use their rooks as battering rams to open a path to the King. White inevitably forces the exchange of bishops on the 17th move with Bh6.",
     "style": "story"
   },
   { 
     "subHeading": "Misperceptions",
     "subHeadingStyle": "subHead",
-    "text": "Bobby Fischer has pointed to the memorization component of chess to support his theory that the game is largely predetermined. Fischer took this a step further with his frequently repeated claim that the entire 1985 World Chess Championship was rigged. The basis of this conspiracy is placed entirely on the occurrence of 18 consecutive moves landing on white squares during game four of Karpov’s match against Kasparov. Chess, Chance and Conspiracy studies the probability of this claim by first acknowledging that “luck and/or randomness have no apparent role in move selection when the game is played at the highest levels.” The author also notes that while it may not be worth breathing oxygen into the musings of someone with Fischer’s “diminished faculties”, his claim has gained support by other grandmasters, including none other than Boris Spassky, whom Fischer took the title from in 1972. This research began by testing the significance of such a phenomenon against the 5,540 total moves played in the 144 games encompassing both players’  WCC records. This initial test returned a p-value of 0.0105, which is far from what one would call statistically significant. The research found that even when reducing the criterion to practical restrictions such as legal moves, the presence of black or white Bishops, and other covariates, calculations returned a p-value no lower than 0.0065.",
+    "text": "Bobby Fischer has pointed to the memorization component of chess to support his theory that the game is largely predetermined. Fischer took this a step further with his frequently repeated claim that the entire 1985 World Chess Championship was rigged. The basis of this conspiracy is placed entirely on the occurrence of 18 consecutive moves landing on white squares during game four of Karpov’s match against Kasparov.",
+    "style": "story"
+  },
+  { 
+    "text": "Chess, Chance and Conspiracy studies the probability of this claim by first acknowledging that “luck and/or randomness have no apparent role in move selection when the game is played at the highest levels.” The author also notes that while it may not be worth breathing oxygen into the musings of someone with Fischer’s “diminished faculties”, his claim has gained support by other grandmasters, including none other than Boris Spassky, whom Fischer took the title from in 1972.",
+    "style": "story"
+  },
+  { 
+    "text": "This research began by testing the significance of such a phenomenon against the 5,540 total moves played in the 144 games encompassing both players’  WCC records. This initial test returned a p-value of 0.0105, which is far from what one would call statistically significant. The research found that even when reducing the criterion to practical restrictions such as legal moves, the presence of black or white Bishops, and other covariates, calculations returned a p-value no lower than 0.0065.",
     "style": "story"
   },
   { 
@@ -37,15 +61,31 @@
   { 
     "subHeading": "The element of time",
     "subHeadingStyle": "subHead",
-    "text": "“Until this point, Korchnoi and I had both been playing at blitz speed” remarks Karpov.” His last move, Rd3!, is another deviation from the theoretical position of the game and has caused Korchnoi to pause. His overextended Knight standing guard on f6 is the only thing preventing checkmate with Qh7#. Exerting pressure on this Knight is the key to the castle for Karpov and his long game has begun to show its teeth. When two opponents have castled on opposite corners of the board, the game becomes razor sharp. Spotting disturbances in the sequence of moves becomes critical and the fact that they have been playing “at blitz speed” up until now demonstrates the power of pattern recognition at this level.",
+    "text": "“Until this point, Korchnoi and I had both been playing at blitz speed” remarks Karpov.” His last move, Rd3!, is another deviation from the theoretical position of the game and has caused Korchnoi to pause. His overextended Knight standing guard on f6 is the only thing preventing checkmate with Qh7#. Exerting pressure on this Knight is the key to the castle for Karpov and his long game has begun to show its teeth.",
     "style": "story"
   },
   { 
-    "text": "The Effects of Time Pressure on Chess Skill is one of many studies that evaluate this relationship. The authors examined the correlations between chess rankings and time controls using two similar-but-different methods. They start by identifying the two main thought processes at play; pattern recognition and deep search. When pattern recognition and the ability to think ten moves ahead are understood respectively as “fast” and “slow” processes, evaluating this temporality can reveal insights into the more precise roles that these abilities play. Their research does, in fact, show that as time pressure increases, its relationship with player strength increases. This would indicate that sensitivity to pattern recognition is highest under time pressure. While the authors highlight the fact that this positive trend is weaker for grandmasters than for less skilled players, I argue that not only does the positive trend remain, but that this can be accounted for by the fact that grandmasters generally make less mistakes than novices. Grouping the data in Fig. 1 by game format, rather than title shows this pattern more clearly.",
+    "text": "When two opponents have castled on opposite corners of the board, the game becomes razor sharp. Spotting disturbances in the sequence of moves becomes critical and the fact that they have been playing “at blitz speed” up until now demonstrates the power of pattern recognition at this level.",
     "style": "story"
   },
   { 
-    "text": "Even more conclusive is the exhaustive study conducted in Response Time Distributions in Rapid Chess, where researchers acquired rapid-chess game data from Free Internet Chess Server in order to conduct a series of experiments that focus primarily on the time recorded between each move. They found that, “time pressure provokes a selective enhancement of rapid object recognition, favoring the best players, but also increases the likelihood of errors and blunders, which in turn tends to equalize the game.” We have seen the way that this “selective enhancement” can entice players to find meaning in empty signifier, but the authors of this research contend that, “in perfect play, the best move is solely a function of the position and should not depend on how this position was reached or in other elements of the history of the previous moves.” They go on to assert that humans are incapable of this static relationship with the board position and that, “the existence of plans and schemes, the influence of previous thoughts and evaluations, the assessment of the opponent ability in deciding whether to gamble on a risky move, and in particular, the presence of a time constrain, are likely to be reflected in an interaction between successive moves.”",
+    "text": "The Effects of Time Pressure on Chess Skill is one of many studies that evaluate this relationship. The authors examined the correlations between chess rankings and time controls using two similar-but-different methods. They start by identifying the two main thought processes at play; pattern recognition and deep search. When pattern recognition and the ability to think ten moves ahead are understood respectively as “fast” and “slow” processes, evaluating this temporality can reveal insights into the more precise roles that these abilities play.",
+    "style": "story"
+  },
+  { 
+    "text": "Their research does, in fact, show that as time pressure increases, its relationship with player strength increases. This would indicate that sensitivity to pattern recognition is highest under time pressure. While the authors highlight the fact that this positive trend is weaker for grandmasters than for less skilled players, I argue that not only does the positive trend remain, but that this can be accounted for by the fact that grandmasters generally make less mistakes than novices. Grouping the data in Fig. 1 by game format, rather than title shows this pattern more clearly.",
+    "style": "story"
+  },
+  { 
+    "text": "Even more conclusive is the exhaustive study conducted in Response Time Distributions in Rapid Chess, where researchers acquired rapid-chess game data from Free Internet Chess Server in order to conduct a series of experiments that focus primarily on the time recorded between each move. They found that, “time pressure provokes a selective enhancement of rapid object recognition, favoring the best players, but also increases the likelihood of errors and blunders, which in turn tends to equalize the game.”",
+    "style": "story"
+  },
+  { 
+    "text": "We have seen the way that this “selective enhancement” can entice players to find meaning in empty signifier, but the authors of this research contend that, “in perfect play, the best move is solely a function of the position and should not depend on how this position was reached or in other elements of the history of the previous moves.”",
+    "style": "story"
+  },
+  { 
+    "text": "They go on to assert that humans are incapable of maintaining this static relationship with the board position and that, “the existence of plans and schemes, the influence of previous thoughts and evaluations, the assessment of the opponent ability in deciding whether to gamble on a risky move, and in particular, the presence of a time constrain, are likely to be reflected in an interaction between successive moves.”",
     "style": "story"
   },
   { 
@@ -55,19 +95,43 @@
   { 
     "heading": "The Middle Game",
     "headingStyle": "heading2",
-    "text": "At this point in Karpov’s annotation of the game, we follow him as he entertains a number of possible responses to R4c5? while pointing out the themes on the board that make these good or bad decisions.  Board awareness and the ability to recognize the shape of the game inform each player on what strategy to take. The two main openings in this game were the Open Sicilian Defense and eventually the Yugoslav Attack. Both of these openings have flank positions that helped to determine the asymmetrical shape of this position. Rahim Rajahi, a well known figure in the West Village chess community, believes that the Open Sicilian gives you “less space but more time.” By analyzing the board traffic as a heat map, we can see how different strategies determine the space on the board. Here, Korchnoi might be in trouble but his Queen and Rook pose very serious threats if White is not careful. Karpov points out that “in such positions you must ‘sit on your hands’; i.e., not rush to make pretty moves. It is still not too late to lose.” Likewise, Karpov’s attack on the King-side is made possible in part by his castling on the opposite end of the board.",
+    "text": "At this point in Karpov’s annotation of the game, we follow him as he entertains a number of possible responses to R4c5? while pointing out the themes on the board that make these good or bad decisions.  Board awareness and the ability to recognize the shape of the game inform each player on what strategy to take.",
+    "style": "story"
+  },
+  { 
+    "text": "The two main openings in this game were the Open Sicilian Defense and eventually the Yugoslav Attack. Both of these openings have flank positions that helped to determine the asymmetrical shape of this position. Rahim Rajahi, a well known figure in the West Village chess community, believes that the Open Sicilian gives you “less space but more time.”",
+    "style": "story"
+  },
+  { 
+    "text": "By analyzing the board traffic as a heat map, we can see how different strategies determine the space on the board. Here, Korchnoi might be in trouble but his Queen and Rook pose very serious threats if White is not careful. Karpov points out that “in such positions you must ‘sit on your hands’; i.e., not rush to make pretty moves. It is still not too late to lose.” Likewise, Karpov’s attack on the King-side is made possible in part by his castling on the opposite end of the board.",
     "style": "story"
   },
   { 
     "heading": "The End Game",
     "headingStyle": "heading2",
-    "text": "Korchnoi resigns after briefly giving chase to the long-awaited 26. Qxh7+. Rajahi observes that “grandmasters don’t play the books or the lines, they play each other.” Karpov was prepared for Korchnoi by studying his behavioral patterns beyond this single game. He attributes his win merely to “the wrong choice of opening variation.”  This is, of course, an over simplification. The reason it was the wrong opening variation is because Karpov was prepared for it in granular detail. Developing tactics and strategy based on your opponent’s tendencies is the mark of a grandmaster. The conditions required to treat the board as Sigman’s “state function” simply cannot be met with the presence of humans.  Book moves and minor tactical combinations become second nature at this level, forcing the grandmaster to take into account human factors outside of the board.",
+    "text": "Korchnoi resigns after briefly giving chase to the long-awaited 26. Qxh7+. Rajahi observes that “grandmasters don’t play the books or the lines, they play each other.” Karpov was prepared for Korchnoi by studying his behavioral patterns beyond this single game. He attributes his win merely to “the wrong choice of opening variation.”  This is, of course, an over simplification. The reason it was the wrong opening variation is because Karpov was prepared for it in granular detail.",
+    "style": "story"
+  },
+  { 
+    "text": "Developing tactics and strategy based on your opponent’s tendencies is the mark of a grandmaster. The conditions required to treat the board as Sigman’s “state function” simply cannot be met with the presence of humans.  Book moves and minor tactical combinations become second nature at this level, forcing the grandmaster to take into account human factors outside of the board.",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "If we are to use the research cited here as our guide, it would appear as if Viktor Korchnoi struggled to distinguish meaningful cues from meaningless information in 1974, and 1978 in particular. Korchnoi failed to anticipate Karpov’s strategy in game two of the 1974 match in spite of available data and personal experiences with the man. We saw this again in 1978 when his awareness and accounting of external factors were much more apparent, however misguided, in viewing Karpov and his delegation as if they were some twisted version of the Mechanical Turk. Karpov on the other hand, while demonstrating an acute sensitivity to all manner of plots and schemes, was able to discipline his own paranoia in order to exploit that of his opponent. As previously stated, Korchnoi’s attitudes towards parapsychology were well-known by 1978, and it would be naive to claim that Karpov was not aware of this when he invited his own parapsychologist to the Philippines. Are there parallels to be drawn between the pressures experienced by a grandmaster-level chess player and those of our own “disinformation” age? Consider the state of mind of a person experiencing this drama unfold through an extended drip of imminent threats, plots, conspiracies and other developments. Today’s fragmented, 24-hour news cycle conditions us to consume vast amounts of complex information in microseconds. Whether the information we are receiving comes from polling data, marinated quail’s eggs, or YouTube Q-Anon videos, we are often required to digest this stimuli under similar stresses. If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that it has less to do with my gifts as a storyteller, and more to do with certain similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
+    "text": "If we are to use the research cited here as our guide, it would appear as if Viktor Korchnoi struggled to distinguish meaningful cues from meaningless information in 1974 - and 1978 in particular. Korchnoi failed to anticipate Karpov’s strategy in game two of the 1974 match in spite of available data and personal experiences with the man. We saw this again in 1978 when his awareness and accounting of external factors were much more apparent, however misguided, in viewing Karpov and his delegation as if they were some twisted version of the Mechanical Turk.",
+    "style": "story"
+  },
+  {
+    "text": "Karpov on the other hand, while demonstrating an acute sensitivity to all manner of plots and schemes, was able to discipline his own paranoia in order to exploit that of his opponent. As previously stated, Korchnoi’s attitudes towards parapsychology were well-known by 1978, and it would be naive to claim that Karpov was not aware of this when he invited his own parapsychologist to the Philippines. Are there parallels to be drawn between the pressures experienced by a grandmaster-level chess player and those of our own “disinformation” age?",
+    "style": "story"
+  },
+  {
+    "text": "Consider the state of mind of a person experiencing this drama unfold through an extended drip of imminent threats, plots, conspiracies and other developments. Today’s fragmented, 24-hour news cycle conditions us to consume vast amounts of complex information in microseconds. Whether the information we are receiving comes from polling data, marinated quail’s eggs, or YouTube Q-Anon videos, we are often required to digest this stimuli under similar stresses.",
+    "style": "story"
+  },
+  {
+    "text": "If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that it has less to do with my gifts as a storyteller, and more to do with certain similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
     "style": "story"
   }
   

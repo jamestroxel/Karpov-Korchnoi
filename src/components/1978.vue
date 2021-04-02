@@ -1,9 +1,4 @@
 <template>
-<!-- <div v-for="text in copy" :key="text.key">
-    <p :class="text.headingStyle">
-        {{text.heading}}
-    </p>
-</div> -->
     <el-carousel interval=0 height="465px">
         <el-carousel-item v-for="text in copy" :key="text.key">
             <p :class="text.headingStyle">
@@ -19,17 +14,17 @@
     </el-carousel>
 </template>
 <script>
-    import story from './story.json';
+    import Baguio from './1978.json';
     export default {
-        name: 'Story',
+        name: 'Baguio',
         data(){
             return{
-                copy: story
+                copy: Baguio
             }
         },
         mounted: function() {
-            console.log("***", story);
-            this.paragraph = story;
+            console.log("***", Baguio);
+            this.paragraph = Baguio;
         }
     }
 </script>

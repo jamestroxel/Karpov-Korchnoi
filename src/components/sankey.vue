@@ -84,9 +84,11 @@ export default {
     },
   },
   mounted: function() {
-    this.sankeyLabels();
     console.log("***", json);
     this.moves = json;
+  },
+  updated(){
+    this.sankeyLabels();
   },
   methods: {
     sankeyLabels() {
@@ -95,9 +97,9 @@ export default {
         .append("g")
         .style("font", "14px 'Univers LT W04_59 Ult Cond'")
         .selectAll("text")
-        .data(json.nodes)
+        .data(this.sankeyData.nodes)
         .join("text")
-        .attr("x", d => `${d.x0}` < this.width / 2 ? `${d.x1}` + 6 : `${d.x0}` - 6)
+        .attr("x", (d) => (d.x0 < this.width / 2 ? d.x1 + 6 : d.x0 - 6))
         .attr("y", (d) => (d.y1 + d.y0) / 2)
         .attr("dy", "0.35em")
         .attr("text-anchor", (d) => (d.x0 < this.width / 2 ? "start" : "end"))
