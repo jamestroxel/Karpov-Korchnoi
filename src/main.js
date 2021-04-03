@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus';
-import 'element-plus/lib/theme-chalk/index.css';
+import 'element-theme-chalk/lib/element-#FF0000/index.css';
 import App from './App.vue';
 
 const app = createApp(App)

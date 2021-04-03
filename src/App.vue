@@ -4,7 +4,7 @@
   </div>
   <div class="navContainer">
     <div class="nav1"></div>
-    <div class="nav2"></div>
+    <!-- <div class="nav2"></div> -->
     <p class="prologue">Prologue</p>
     <p class="KvK">Karpov vs. Korchnoi</p>
     <p class="play">Play</p>
@@ -419,18 +419,36 @@ body {
   height: 50px;
   justify-content: center;
   display: grid;
-  grid-template-columns: 50px 50px 400px 50px 200px 200px 50px 400px 50px 50px;
+  grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
   background-color: white;
   z-index: 400000;
 }
 .nav1 {
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 10;
   grid-row: 1;
-  width:100%;
+  /* width:100%; */
+  /* background: white;
+    position: absolute;
+    left:50px;
+    right: 50px; */
+  top: 0;
+  padding: 0px;
+  margin: 0px;
+  height: 50px;
+  max-height: 50px;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+  /* overflow-y: hidden; */
+}
+/* .nav1 {
+  grid-column: 2 / span 8;
+  grid-row: 1;
   background: white;
-  /* position: fixed;
-  top:0; */
   margin: 0px;
   height: 50px;
   border-top: 0px;
@@ -439,7 +457,7 @@ body {
   border-right: 0px;
   border-color: black;
   border-style: solid;
-}
+} */
 .nav2 {
   grid-column: 5 / span 5;
   grid-row: 1;
@@ -458,23 +476,23 @@ body {
 }
 .prologue {
   font-family: "Univers LT W04_59 Ult Cond";
-  grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   padding-top: 0px;
 }
 .KvK {
   font-family: "Univers LT W04_59 Ult Cond";
   color: red;
-  grid-column-start: 5;
-  grid-column-end: 5;
+  grid-column-start: 6;
+  grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   padding-top: 0px;
 }
 .moves {
@@ -500,12 +518,12 @@ body {
 }
 .play {
   font-family: "Univers LT W04_59 Ult Cond";
-  grid-column-start: 8;
-  grid-column-end: 8;
+  grid-column-start: 9;
+  grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   padding-top: 0px;
 }
 h1 {
@@ -657,6 +675,7 @@ h2 {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  /* max-width:400px; */
   width: 100%;
   /* min-height: 0; */
   padding-right: 10px;
@@ -881,5 +900,8 @@ h2 {
 .links {
   opacity: 0.1;
   mix-blend-mode: multiply;
+}
+#next{
+  float: right;
 }
 </style>

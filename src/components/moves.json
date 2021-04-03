@@ -1,0 +1,83 @@
+[
+  { 
+    "position":1,
+    "move": "e2-e4",
+    "fen":"rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",
+    "color": "white"
+  },
+  {
+    "position":1,
+    "move": "c7-c5",
+    "fen":"rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR",
+    "color": "black"
+  },
+  {
+    "position":2,
+    "move": "Ng1-Nf3",
+    "color": "white"
+  },
+  {
+    "position":2,
+    "move": "d7-d6",
+    "color": "black"
+  },
+  {"position":3,
+    "move": "d2-d4",
+    "color": "white"
+  },
+  {
+    "position":3,
+    "move": "c5-cxd4",
+    "color": "black"
+  },
+  {
+    "position":4,
+    "move": "Nf3-Nxd4",
+    "color": "white"
+  },
+  {
+    "position":4,
+    "move": "Ng8-Nf6",
+    "color": "black"
+  },
+  {
+    "position":5,
+    "move": "Nb1-Nc3",
+    "color": "black"
+  },
+  {
+    "position":5,
+    "move": "g7-g6",
+    "color": "white"
+  },
+  {
+    "position":6,
+    "move": "Bc1-Be3",
+    "color": "black"
+  },
+  {
+    "position":6,
+    "move": "Bf8-Bg7",
+    "color": "white"
+  },
+  {
+    "position":7,
+    "move": "f2-f3",
+    "color": "black"
+  },
+  {
+    "position":7,
+    "move": "Nb8-Nc6",
+    "color": "white"
+  },
+  {
+    "position":8,
+    "move": "Qd1-Qd2",
+    "color": "white"
+  },
+  {
+    "position":8,
+    "move": "Qd1-Qd2",
+    "color": "white"
+  }
+]

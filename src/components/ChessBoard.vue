@@ -1,28 +1,41 @@
 <template>
- <div id="board" class="item-b-kvk" style="width: 400px">
-   <!-- <el-pagination
-        :page-size="1"
-        :pager-count="3"
-        layout="prev, pager, next"
-        :total="28">
-      </el-pagination> -->
- </div>
+<div class="item-b-kvk">
+  <div id="board" style="width: 400px"></div>
+  <div class="block" style="width: 400px">
+  <button 
+  id="next"
+  type="button">
+  &#62;
+  </button>
+  <button 
+  id="previous"
+  type="button">
+  &#60;
+  </button>
+    <el-pagination
+      layout="prev, pager, next"
+      :total="1000">
+    </el-pagination>
+  </div>
+</div>
  
 </template>
 <script>
 import ChessBoard from "chessboardjs-vue";
+import moves from "./moves.json";
+import $ from 'jquery'
 // var board = Chessboard('board')
 export default {
   name: 'ChessBoard',
   // components: {
   //     ChessBoard
   // },
-  props: {
-    position: String
+   data(){
+    return {
+      position: null,
+    }
   },
-  // data(){
-
-  // },
+  
   mounted(){
     // this.board.move
     //  var position1 = {
@@ -30,27 +43,27 @@ export default {
     //   d4: 'wP',
     //   e4: 'wK'
     // }
-      ChessBoard('board',"start");
+    this.getPosition();
+    this.nextMove();
+    this.previousMove();
+    this.position = moves.move;
+    ChessBoard('board',"start");
       // ChessBoard('board',position1);
   },
-  // data() {
-  //   return {
-  //     board: { 
-  //       ...board, 
-  //       positions: board.positions.map(f => ({ 
-  //         ...f, 
-  //         properties: {
-  //           ...f.properties,
-  //           centroid: d3.geoCentroid(f)
-  //         }
-  //       }))
-  //     },
-  //     colorVar: 'economy',
-  //     colorVars: ['economy', 'income_grp', 'subregion'],
-  //     width: 400,
-  //     height: 500,
-  //     mb: null
-  //   }
-  // },
+  methods: {
+    getPosition(){
+      return ChessBoard('board').fen()
+    },
+    previousMove(){
+      $('#previous').on('click', function () { 
+        ChessBoard('board',moves[0].fen).move(moves[0].move)
+      })
+    },
+    nextMove(){
+      $('#next').on('click', function () {
+        ChessBoard('board',moves[0].fen).move(moves[1].move)
+      })
+    }
+  }
 }
 </script>
