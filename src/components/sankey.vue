@@ -29,6 +29,7 @@ import * as d3 from "d3";
 import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";
 
 import json from "./sankey.json";
+// import json2 from "./sankey2.json";
 
 
 
@@ -99,6 +100,7 @@ export default {
         .selectAll("text")
         .data(this.sankeyData.nodes)
         .join("text")
+        .attr("class","labels")
         .attr("x", (d) => (d.x0 < this.width / 2 ? d.x1 + 6 : d.x0 - 6))
         .attr("y", (d) => (d.y1 + d.y0) / 2)
         .attr("dy", "0.35em")

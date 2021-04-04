@@ -32,38 +32,51 @@ export default {
   // },
    data(){
     return {
-      position: null,
+      moves: moves,
+      moveIndex: 0
+      // position: null,
     }
   },
-  
+  updated(){
+       ChessBoard('board',"start").move();
+  },
   mounted(){
-    // this.board.move
-    //  var position1 = {
-    //   d6: 'bK',
-    //   d4: 'wP',
-    //   e4: 'wK'
-    // }
-    this.getPosition();
     this.nextMove();
     this.previousMove();
-    this.position = moves.move;
-    ChessBoard('board',"start");
-      // ChessBoard('board',position1);
+    this.moves = moves.move;
+      //  ChessBoard('board',"start");
+  },
+  computed: {
+    getMove() {
+      return this.moves[this.moveIndex]
+    }
   },
   methods: {
-    getPosition(){
-      return ChessBoard('board').fen()
-    },
+    // getPosition(){
+    //   return ChessBoard('board').fen()
+    // },
     previousMove(){
+      const pMove = this.getMove - 1;
       $('#previous').on('click', function () { 
-        ChessBoard('board',moves[0].fen).move(moves[0].move)
+        ChessBoard('board',moves[0].fen).move(pMove)
       })
     },
     nextMove(){
+      const nMove = this.getMove + 1;
       $('#next').on('click', function () {
-        ChessBoard('board',moves[0].fen).move(moves[1].move)
+        ChessBoard('board',moves[0].fen).move(nMove)
       })
     }
+    // previousMove(){
+    //   $('#previous').on('click', function () { 
+    //     return this.moveIndex = this.moveIndex - 1
+    //   })
+    // },
+    // nextMove(){
+    //   $('#next').on('click', function () {
+    //     return this.moveIndex = this.moveIndex + 1
+    //   })
+    // }
   }
 }
 </script>
