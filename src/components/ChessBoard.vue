@@ -44,11 +44,14 @@ export default {
     this.nextMove();
     this.previousMove();
     this.moves = moves.move;
-      //  ChessBoard('board',"start");
+       ChessBoard('board',"start");
   },
   computed: {
     getMove() {
       return this.moves[this.moveIndex]
+    },
+    getPosition(){
+      return ChessBoard('board').fen()
     }
   },
   methods: {
@@ -56,27 +59,17 @@ export default {
     //   return ChessBoard('board').fen()
     // },
     previousMove(){
-      const pMove = this.getMove - 1;
       $('#previous').on('click', function () { 
-        ChessBoard('board',moves[0].fen).move(pMove)
+        const pMove = this.getMove - 1;
+        return ChessBoard('board',moves[0].fen).move(pMove)
       })
     },
     nextMove(){
-      const nMove = this.getMove + 1;
       $('#next').on('click', function () {
-        ChessBoard('board',moves[0].fen).move(nMove)
+        const nMove = this.getMove + 1;
+        return ChessBoard('board',moves[1].fen).move(nMove)
       })
     }
-    // previousMove(){
-    //   $('#previous').on('click', function () { 
-    //     return this.moveIndex = this.moveIndex - 1
-    //   })
-    // },
-    // nextMove(){
-    //   $('#next').on('click', function () {
-    //     return this.moveIndex = this.moveIndex + 1
-    //   })
-    // }
   }
 }
 </script>

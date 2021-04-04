@@ -29,7 +29,7 @@ import * as d3 from "d3";
 import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";
 
 import json from "./sankey.json";
-// import json2 from "./sankey2.json";
+import json2 from "./sankey2.json";
 
 
 
@@ -62,12 +62,12 @@ export default {
           [0, 5],
           [this.width, this.height - 5],
         ]);
-      console.log(this.moves);
+      // console.log(this.moves);
       return (({ nodes, links }) =>
         sankeyGenerator({
           nodes: nodes.map((d) => Object.assign({}, d)),
           links: links.map((d) => Object.assign({}, d)),
-        }))(this.moves);
+        }))(this.moves[0]);
     },
     nodes() {
       if (this.sankeyData) {
@@ -86,7 +86,7 @@ export default {
   },
   mounted: function() {
     console.log("***", json);
-    this.moves = json;
+    this.moves = [json, json2];
   },
   updated(){
     this.sankeyLabels();
