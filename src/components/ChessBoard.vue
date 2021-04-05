@@ -3,13 +3,13 @@
   <div id="board" style="width: 400px"></div>
   <div class="block" style="width: 400px">
   <button 
-  @click="nextMove"
+  :onClick="nextMove"
   id="next"
   type="button">
   &#62;
   </button>
   <button 
-  @click="previousMove"
+  :onClick="previousMove"
   id="previous"
   type="button">
   &#60;
@@ -36,18 +36,19 @@ export default {
     }
   },
   updated(){
-       ChessBoard('board',"start").move(this.getMove());
+      //  ChessBoard('board',"start").move(this.getMove);
+      ChessBoard('board',"start").move(this.moves[this.getMove].move);
   },
   mounted(){
     this.nextMove();
     this.previousMove();
     this.moves = moves.move;
-    // this.moveIndex = moves[this.moveIndex].move;
-    // ChessBoard('board',"start");
+    ChessBoard('board',"start");
   },
   computed: {
     getMove() {
-      return this.moves[this.moveIndex].move
+      // return this.moves[this.moveIndex].move
+      return this.moveIndex
     }
   },
   methods: {
@@ -58,10 +59,10 @@ export default {
       return ChessBoard('board').fen()
     },
     nextMove(){
-      return this.moveIndex + 1
+      this.moveIndex = this.moveIndex + 1;
     },
     previousMove(){
-      return this.moveIndex - 1
+      this.moveIndex = this.moveIndex - 1;
     },
     // nextMove(){
     //   $('#next').on('click', function () {

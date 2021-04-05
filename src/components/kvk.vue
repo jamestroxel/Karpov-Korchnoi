@@ -17,8 +17,6 @@ import ChessBoard from './ChessBoard.vue';
 import Sankey from './Sankey.vue';
 import Story from './Story.vue';
 
-import json from './sankey.json'
-
 export default {
   name: 'KvK',
   components: {
@@ -33,8 +31,7 @@ export default {
     }
   },
    mounted: function() {
-    console.log('***', json);
-    this.moves = json;
+
     },
 };
 </script>

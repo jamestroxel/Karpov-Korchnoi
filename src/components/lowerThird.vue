@@ -23,7 +23,7 @@
  
 </template>
 <script>
-import json from './sankey.json';
+
 
 export default {
   name: 'LowerThird',
@@ -33,8 +33,7 @@ export default {
     }
   },
    mounted: function() {
-    console.log('***', json);
-    this.moves = json;
+
     },
 }
 </script>
