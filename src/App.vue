@@ -901,7 +901,54 @@ h2 {
   opacity: 0.1;
   mix-blend-mode: multiply;
 }
-#next{
+/* #next{
   float: right;
+} */
+/* #next{
+  background-color: white;
+  border: none;
+  font-size: 3em;
 }
+#previous{
+  background-color: white;
+  border: none;
+  font-size: 3em;
+} */
+button {
+    display: inline-block;
+    border: none;
+    /* padding: 1rem 2rem; */
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 2em;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover{
+  color: red;
+}
+/* button:focus {
+    background: none;
+    color: black;
+} */
+
+button:focus {
+    outline: 0px solid white;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+     color: black;
+}
+/* Button styles end */
+
 </style>

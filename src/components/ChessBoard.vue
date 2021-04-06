@@ -3,21 +3,21 @@
   <div id="board" style="width: 400px"></div>
   <div class="block" style="width: 400px">
   <button 
-  :onClick="nextMove"
-  id="next"
-  type="button">
-  &#62;
-  </button>
-  <button 
-  :onClick="previousMove"
+  @click="previousMove"
   id="previous"
   type="button">
   &#60;
   </button>
-    <el-pagination
+  <button 
+  @click="nextMove"
+  id="next"
+  type="button">
+  &#62;
+  </button>
+    <!-- <el-pagination
       layout="prev, pager, next"
       :total="1000">
-    </el-pagination>
+    </el-pagination> -->
   </div>
 </div>
  
@@ -36,33 +36,33 @@ export default {
     }
   },
   updated(){
-      //  ChessBoard('board',"start").move(this.getMove);
-      ChessBoard('board',"start").move(this.moves[this.getMove].move);
+      this.cb.move(this.getMove);
   },
   mounted(){
-    this.nextMove();
-    this.previousMove();
-    this.moves = moves.move;
-    ChessBoard('board',"start");
+    this.moves = moves;
+    this.cb = ChessBoard('board', "start");
   },
   computed: {
     getMove() {
-      // return this.moves[this.moveIndex].move
-      return this.moveIndex
+      // return this.moves[this.moveIndex].move;
+      return this.moves[this.moveIndex].move;
     }
   },
   methods: {
     // getPosition(){
     //   return ChessBoard('board').fen()
     // },
-    getPosition(){
-      return ChessBoard('board').fen()
-    },
+    // getPosition(){
+    //   return ChessBoard('board').fen()
+    // },
     nextMove(){
+      // ChessBoard('board', "start").move(this.moves[1].move)
       this.moveIndex = this.moveIndex + 1;
+      console.log(this.moveIndex)
     },
     previousMove(){
       this.moveIndex = this.moveIndex - 1;
+      console.log(this.moveIndex)
     },
     // nextMove(){
     //   $('#next').on('click', function () {

@@ -33,6 +33,8 @@ import c5 from "./c5.json";
 import Nf3 from "./Nf3.json";
 import d6 from "./d6.json";
 import d4 from "./d4.json";
+import cxd4 from "./cxd4.json";
+import Nxd4 from "./Nxd4.json";
 
 
 
@@ -59,8 +61,8 @@ export default {
       const sankeyGenerator = d3Sankey()
         .nodeSort(null)
         .linkSort(null)
-        .nodeWidth(4)
-        .nodePadding(30)
+        .nodeWidth(2)
+        .nodePadding(15)
         .extent([
           [0, 5],
           [this.width, this.height - 5],
@@ -70,7 +72,7 @@ export default {
         sankeyGenerator({
           nodes: nodes.map((d) => Object.assign({}, d)),
           links: links.map((d) => Object.assign({}, d)),
-        }))(this.moves[4]);
+        }))(this.moves[3]);
     },
     nodes() {
       if (this.sankeyData) {
@@ -88,7 +90,7 @@ export default {
     },
   },
   mounted: function() {
-    this.moves = [e4, c5, Nf3, d6, d4];
+    this.moves = [e4, c5, Nf3, d6, d4, cxd4, Nxd4];
   },
   updated(){
     this.sankeyLabels();
