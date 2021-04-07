@@ -72,7 +72,7 @@ export default {
         sankeyGenerator({
           nodes: nodes.map((d) => Object.assign({}, d)),
           links: links.map((d) => Object.assign({}, d)),
-        }))(this.moves[3]);
+        }))(this.moves[5]);
     },
     nodes() {
       if (this.sankeyData) {
