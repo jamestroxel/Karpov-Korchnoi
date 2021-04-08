@@ -2,10 +2,10 @@
   <div class="item-b-kvk">
     <div id="board" style="width: 400px"></div>
     <div class="block" style="width: 400px">
-      <button @click="previousMove" id="previous" type="button">
+      <button @click="previousMove(makeMove)" id="previous" type="button">
         &#60;
       </button>
-      <button @click="nextMove" id="next" type="button">
+      <button @click="nextMove(makeMove)" id="next" type="button">
         &#62;
       </button>
     </div>
@@ -17,11 +17,15 @@ import moves from "./moves.json";
 
 export default {
   name: "ChessBoard",
-
+  props: {
+    moveIndex: Number,
+    previousMove: Function,
+    nextMove: Function
+  },
   data() {
     return {
       moves: moves,
-      moveIndex: 0,
+      // moveIndex: this.moveIndex,
     };
   },
 
@@ -35,24 +39,24 @@ export default {
     },
   },
   methods: {
-    nextMove() {
-      if (this.moveIndex == 53) {
-        return;
-      } else {
-        this.moveIndex = this.moveIndex + 1;
-        this.makeMove();
-        console.log(this.moveIndex);
-      }
-    },
-    previousMove() {
-      if (this.moveIndex == 0) {
-        return;
-      } else {
-        this.moveIndex = this.moveIndex - 1;
-        this.makeMove();
-        console.log(this.moveIndex);
-      }
-    },
+    // nextMove() {
+    //   if (this.moveIndex == 53) {
+    //     return;
+    //   } else {
+    //     this.moveIndex = this.moveIndex + 1;
+    //     this.makeMove();
+    //     console.log(this.moveIndex);
+    //   }
+    // },
+    // previousMove() {
+    //   if (this.moveIndex == 0) {
+    //     return;
+    //   } else {
+    //     this.moveIndex = this.moveIndex - 1;
+    //     this.makeMove();
+    //     console.log(this.moveIndex);
+    //   }
+    // },
     makeMove() {
       this.cb.position(this.moves[this.getMove].fen);
     },

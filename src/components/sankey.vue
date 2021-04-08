@@ -1,6 +1,6 @@
 <template>
   <div class="item-c-kvk">
-    <svg id="sankey" :width="width" :height="height">
+    <svg id="sankey" :width="width" :height="height" preserveAspectRatio="xMidYMid meet">
       <g>
         <rect
           :key="node.key"
@@ -36,25 +36,25 @@ import d4 from "./d4.json";
 import cxd4 from "./cxd4.json";
 import Nxd4 from "./Nxd4.json";
 
-
-
 export default {
   name: "Sankey",
-
+  props: {
+    moveIndex: Number
+  },
   data() {
     return {
       d3: d3,
       sankey: d3Sankey,
       sankeyLinkHorizontal: sankeyLinkHorizontal,
       // nodes: nodes,
-      // links: links,
+      // moveIndex: moveIndex,
       moves: null,
       width: 400,
       height: 400,
     };
   },
   computed: {
-    sankeyData() {
+    sankeyData(index) {
       if (this.moves === null) {
         return null;
       }
@@ -72,7 +72,7 @@ export default {
         sankeyGenerator({
           nodes: nodes.map((d) => Object.assign({}, d)),
           links: links.map((d) => Object.assign({}, d)),
-        }))(this.moves[5]);
+        }))(this.moves[index]);
     },
     nodes() {
       if (this.sankeyData) {
@@ -91,9 +91,11 @@ export default {
   },
   mounted: function() {
     this.moves = [e4, c5, Nf3, d6, d4, cxd4, Nxd4];
+    // this.moveIndex = moveIndex;
   },
   updated(){
     this.sankeyLabels();
+    this.sankeyData(this.moveIndex)
   },
   methods: {
     sankeyLabels() {

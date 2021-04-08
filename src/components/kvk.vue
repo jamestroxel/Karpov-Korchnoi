@@ -5,33 +5,80 @@
       <h1>Slaying the Dragon</h1>
       <Story></Story>
     </div>
-      <ChessBoard></ChessBoard>
-      <LowerThird></LowerThird>
-      <Sankey></Sankey>
-      <div class="bottom"></div>
+    <div class="item-b-kvk">
+      <div id="board" style="width: 400px"></div>
+      <div class="block" style="width: 400px">
+        <button @click="previousMove" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="nextMove" id="next" type="button">
+          &#62;
+        </button>
+      </div>
     </div>
+    <LowerThird></LowerThird>
+    <!-- <ChessBoard></ChessBoard> -->
+    <Sankey></Sankey>
+    <!-- <Cors></Cors> -->
+    <div class="bottom"></div>
+  </div>
 </template>
 <script>
-import LowerThird from './LowerThird.vue';
-import ChessBoard from './ChessBoard.vue';
-import Sankey from './Sankey.vue';
-import Story from './Story.vue';
+import ChessBoard from "chessboardjs-vue";
+import LowerThird from "./LowerThird.vue";
+// import ChessBoard from './ChessBoard.vue';
+import Sankey from "./Sankey.vue";
+// import Cors from "./Correlations.vue";
+import Story from "./Story.vue";
+import moves from "./moves.json";
 
 export default {
-  name: 'KvK',
+  name: "KvK",
   components: {
-      LowerThird,
-      ChessBoard,
-      Sankey,
-      Story
+    LowerThird,
+    // Cors,
+    // ChessBoard,
+    Sankey,
+    Story,
   },
-  data(){
+  data() {
     return {
-      moves: null,
-    }
+      moveIndex: 0,
+      moves: moves,
+    };
   },
-   mounted: function() {
-
+  mounted: function() {
+    this.moves = moves;
+    // this.moveIndex = moveIndex,
+    this.cb = ChessBoard("board", "start");
+  },
+  computed: {
+    getMove() {
+      return this.moveIndex;
     },
+  },
+  methods: {
+    nextMove() {
+      if (this.moveIndex == 53) {
+        return;
+      } else {
+        this.moveIndex = this.moveIndex + 1;
+        this.makeMove();
+        console.log(this.moveIndex);
+      }
+    },
+    previousMove() {
+      if (this.moveIndex == 0) {
+        return;
+      } else {
+        this.moveIndex = this.moveIndex - 1;
+        this.makeMove();
+        console.log(this.moveIndex);
+      }
+    },
+    makeMove() {
+      this.cb.position(this.moves[this.getMove].fen);
+    },
+  },
 };
 </script>

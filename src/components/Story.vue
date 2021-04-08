@@ -4,7 +4,7 @@
         {{text.heading}}
     </p>
 </div> -->
-    <el-carousel indicators=false interval=0 height="465px">
+    <el-carousel indicators=outside interval=0 height="465px">
         <el-carousel-item v-for="text in copy" :key="text.key">
             <p :class="text.headingStyle">
                 {{text.heading}}
@@ -22,6 +22,9 @@
     import story from './story.json';
     export default {
         name: 'Story',
+        props: {
+            moveIndex: Number
+        },
         data(){
             return{
                 copy: story

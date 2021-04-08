@@ -1,0 +1,70 @@
+[
+  { "rank": "GM",
+    "cors": 
+    [
+      {
+        "format":"Standard & Blitz",
+        "value": -0.0175
+      },
+      {
+        "format":"Blitz & Bullet",
+        "value": 0.544
+      },
+      {
+        "format":"One & Five Minute",
+        "value": 0.351
+      }
+    ]
+  },
+  { "rank": "IM",
+    "cors":  
+    [
+      {
+        "format":"Standard & Blitz",
+        "value": 0.307
+      },
+      {
+        "format":"Blitz & Bullet",
+        "value": 0.612
+      },
+      {
+        "format":"One & Five Minute",
+        "value": 0.526
+      }
+    ]
+  },
+  { "rank": "FM",
+    "cors":  
+    [
+      {
+        "format":"Standard & Blitz",
+        "value": 0.433
+      },
+      {
+        "format":"Blitz & Bullet",
+        "value": 0.774
+      },
+      {
+        "format":"One & Five Minute",
+        "value": 0.672
+      }
+    ]
+  },
+  { "rank": "None",
+    "cors":  
+    [
+      {
+        "format":"Standard & Blitz",
+        "value": 0.801
+      },
+      {
+        "format":"Blitz & Bullet",
+        "value": 0.952
+      },
+      {
+        "format":"One & Five Minute",
+        "value": 0.873
+      }
+    ]
+  }
+]

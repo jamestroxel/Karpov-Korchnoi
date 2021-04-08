@@ -386,6 +386,7 @@ body {
   /* bottom: 150px; */
   height: 100%;
 }
+
 .titleContainer {
   margin: 0px;
   padding: 0px;
