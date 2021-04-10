@@ -1,22 +1,28 @@
 <template>
-<!-- <div v-for="text in copy" :key="text.key">
-    <p :class="text.headingStyle">
-        {{text.heading}}
+<div>
+    <p class="heading2">
+        {{copy[this.moveIndex].heading}}
     </p>
-</div> -->
-    <el-carousel indicators=outside interval=0 height="465px">
+        <p class="subHead">
+        {{copy[this.moveIndex].subHeading}}
+    </p>
+    <p class="story">
+        {{ copy[this.moveIndex].text }}
+    </p>
+</div>
+    <!-- <el-carousel indicators=outside :autoplay="false" height="465px">
         <el-carousel-item v-for="text in copy" :key="text.key">
             <p :class="text.headingStyle">
-                {{text.heading}}
+                {{text[this.moveIndex].heading}}
             </p>
              <p :class="text.subHeadingStyle">
-                {{text.subHeading}}
+                {{text[this.moveIndex].subHeading}}
             </p>
             <p :class="text.style">
-                {{ text.text }}
+                {{ text[this.moveIndex].text }}
             </p>
         </el-carousel-item>
-    </el-carousel>
+    </el-carousel> -->
 </template>
 <script>
     import story from './story.json';

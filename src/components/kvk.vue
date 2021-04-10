@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div id="pgn" class="moves"></div>
+    <!-- <div id="pgn" class="moves"></div> -->
     <div class="item-a-kvk">
       <h1>Slaying the Dragon</h1>
-      <Story></Story>
+      <Story :moveIndex="moveIndex"></Story>
     </div>
     <div class="item-b-kvk">
       <div id="board" style="width: 400px"></div>
@@ -16,9 +16,9 @@
         </button>
       </div>
     </div>
-    <LowerThird></LowerThird>
+    <LowerThird :moveIndex="moveIndex"></LowerThird>
     <!-- <ChessBoard></ChessBoard> -->
-    <Sankey></Sankey>
+    <Sankey :moveIndex="moveIndex"></Sankey>
     <!-- <Cors></Cors> -->
     <div class="bottom"></div>
   </div>

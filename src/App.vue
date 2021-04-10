@@ -200,10 +200,59 @@
   </div>
   <!--  -->
   <div class="container">
-    <img class="left-image" src="./assets/karpov-korchnoi-small-1.png" />
-    <div class="item-c">
-      <h1>Introduction</h1>
-      <Intro></Intro>
+    <div class="item-a-span">
+      <p class="teaserHead">Dear colleagues!</p>
+      <p class="teaser">
+        World Champion Anatoly Karpov has asked me, as press attaché of the
+        Soviet delegation, to bring the following to the notice of the
+        representatives of the press. Over a number of years Korchnoi has made
+        insulting remarks about Karpov, other grandmasters, and well-known chess
+        officials. Nevertheless, following the principles of sportsmanship and
+        to meet the wishes of the esteemed organizers of such a significant
+        event as a match for the World Championship, the World Champion was
+        prepared to shake hands with his opponent before the start of each game.
+        And he did this even after, at his pre-match press conference in Manila,
+        Korchnoi once again took the liberty of insulting the World Champion and
+        a number of members of his delegation.
+      </p>
+      <p class="teaser">
+        Recent events have shown that the Challenger has no intention of
+        rejecting his course of aggravating the situation. Under such
+        circumstances Karpov does not wish to shake hands with Korchnoi.
+      </p>
+      <p class="teaserAttribute">
+        <span style="color:red">Aleksander Roshal</span><br />Baguio City,
+        Philippines - 1978
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <img
+      class="right-image-landscape"
+      src="./assets/karpov-korchnoi-small-1.png"
+    />
+    <div class="item-a">
+      <div style="height:100%;">
+        <h1 class="heading1">Introduction</h1>
+        <p class="story">
+          The contrast between the 1974 Candidates Final and the 1978 World
+          Chess Championship could hardly be sharper. Game two of the 1974 match
+          in Moscow has come to be regarded as a modern classic in tactics,
+          strategy, and chess brilliance between two of the game’s best.
+        </p>
+        <p class="story">
+          The absurdist theatre witnessed throughout the entire 1978
+          Championship quickly earned notoriety as an example of the type of
+          superstition, paranoia, and scandal commonly observed in chess lore
+          throughout the game’s rich history.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;"
+          >Anatoly Karpov stares down Viktor Korchnoi.</span
+        ><br />Edmondson, E. B., and Mikhail Tal.<br />Chess Scandals: the 1978
+        World Chess Championship. Oxford, UK: Pergamon Press, 1981.
+      </p>
     </div>
   </div>
   <div class="container">
@@ -211,117 +260,249 @@
       <img class="left-image" src="./assets/Zoukhar-small.png" />
     </div>
     <div class="item-a-span">
-      <h1>Trifles, Which Cannot Be Ignored</h1>
-      <Baguio></Baguio>
+      <div Style="height:100%;">
+        <h1 class="heading1Quote">Trifles, Which Cannot Be Ignored</h1>
+        <h2 class="heading2">
+          Baguio, 1978
+        </h2>
+        <p class="story">
+          Typhoon Emang struck the Philippines on the first day of game five.
+          Karpov described the sound of the rain as sufficient to drown out the
+          noise of an already tempestuous affair inside the brand new Baguio
+          City Convention Center. Up until this point, the loudest protest came
+          from the precise meaning of the violet colored yogurt being delivered
+          to Karpov during each game.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">Dr. Vladimir Zoukhar.</span><br />Edmondson, E.
+        B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
+        Championship. Oxford, UK: Pergamon Press, 1981.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="right-imageContainer">
+      <img class="left-image" src="./assets/smile-small.png" />
+    </div>
+    <div class="item-a-span">
+      <div style="height:100%">
+        <p class="story">
+          “It is clear that a cunningly arranged distribution of edible items to
+          one player during the game, emanating from one delegation or the other,
+          could convey a kind of coded message,” read the official complaint to
+          the Chief Arbiter. “Thus, a yogurt after move 20 could signify ‘we
+          instruct you to offer a draw’; or a sliced mango could mean ‘we order
+          you to decline a draw’. A dish of marinated quails’ eggs could mean
+          ‘play Ng4 at once’, and so on. The possibilities are limitless,” it
+          continued. But this had, by game five, become a tightly choreographed
+          ritual, and the colorful yogurt arrived by waiter at 7:15pm sharp,
+          without exception. There were of course, other squabbles over which flag
+          Korchnoi should be allowed to play under, for instance, or Karpov’s
+          endless suspicion towards the decisions of the event organizers on
+          everything from the location of the tournament, to the make and model of
+          the chess clocks. Additionally, Korchnoi’s predictable refusal to stand
+          for the Soviet National Anthem during the opening ceremony was rendered
+          moot when the orchestra mistakenly played the Internationale instead.
+          However, it wasn’t until game five that things took a dark turn.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">Karpov, having a moment.</span><br>Karpov, Anatoly. My Best Games. Great Neck, NY: R.H.M. Press, 1978. 
+      </p>
     </div>
   </div>
   <div class="container">
     <img class="left-image" src="./assets/karpov-korchnoi-small-2.png" />
     <div class="item-c">
-      <p class="story">
-        A volley of official complaints and counter complaints over the seating
-        positions of hypnotists plagued the rest of the match. Game 12 saw the
-        introduction of Korchnoi’s own parapsychologist, Dr. Vladimir M.
-        Berginer, who, in addition to an army of local students of a
-        parapsychology guru named Father Bulatao, had been recruited to counter
-        Dr. Zoukhar’s psychic energy. He took a seat in the fourth row to the
-        left, where he would remain until game 14, when Karpov took a decisive
-        lead after a two-game streak. The post game celebration was interrupted
-        by three earthquakes, with Typhoon Miding due to strike in time for game
-        15.
+      <div style="height:100%">
+        <p class="story">
+          There was a growing awareness of Dr. Vladimir Zoukhar’s presence in
+          the room that appeared to arrive with the weather. The storm had
+          knocked out the power and a dim emergency lamp was all that lit the
+          main stage for a time. The opponents played fast. In the middle of
+          this, Petra Leeuwerik, Head of the Korchnoi Delegation, reportedly
+          rose from her party’s designated seating area in the back and, against
+          regulation, quietly advanced towards the front spectator rows. She sat
+          next to Dr. Zoukhar and handed him a copy of “The Gulag Archipelago.”
+          This was not a gift.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">Korchnoi's solar array</span><br />Edmondson,
+        E. B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
+        Championship. Oxford, UK: Pergamon Press, 1981.
       </p>
-      <p class="story">
-        Typhoons, earthquakes, floods, and at least one deadly landslide menaced
-        the immediate area throughout the event. But given the especially
-        disastrous turn of events since his arrival, Dr. Berginer’s
-        effectiveness as a parapsychologist had quickly come into question by
-        the Korchnoi delegation. “Viktor is now convinced that neither Zoukhar
-        nor Berginer can have any effect upon a player during a game,” Leeuwerik
-        announced before Korchnoi’s game 14 loss. Dr. Berginer left the
-        Philippines shortly after the game.
-      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div id="floorPlan" class="item-c">
+      <div class="row">
+        <div id="1" class="left">
+        </div>
+        <div id="2" class="right"></div>
+        <div id="3" class="left"></div>
+        <div id="4" class="right"></div>
+        <div id="5" class="left"></div>
+        <div id="6" class="right"></div>
+        <div id="7" class="left"></div>
+        <div id="8" class="right"></div>
+        <div id="9" class="left"></div>
+        <div id="10" class="right"></div>
+        <div id="11" class="left"></div>
+        <div id="12" class="right"></div>
+        <div id="13" class="left"></div>
+        <div id="14" class="right"></div>
+        <div id="15" class="left"></div>
+        <div id="16" class="right"></div>
+
+      </div>
+    </div>
+    <!-- <img class="left-image" src="./assets/karpov-korchnoi-small-2.png" /> -->
+    <div class="item-a-span">
+        <p class="story">
+          Petra had spent nine years in the notorious Vorkuta labor camp for
+          spying in Soviet Vienna after World War II. Dr. Vladimir Zoukhar was a
+          known psycho-neurologist and director of the Central Laboratory for
+          Psychology in Moscow’s School of Medicine. His expertise had been
+          sought ever since the 1974 Candidates Final where Korchnoi had bragged
+          that his mind games forced Karpov to seek therapy. Karpov repeatedly
+          insisted that Zoukhar was not an official member of the Soviet
+          Delegation and thereby free to do as he pleased. “The Soviets want to
+          kill him in a mental way” Leeuwerik had said of Korchnoi.
+        </p>
+        <p class="story">
+          Challenger’s delegation had begun to develop the theory that Dr.
+          Zoukhar was hypnotizing Korchnoi from a distance through his
+          noticeable habit of staring fixedly at the Challenger from the front
+          left row during much of the contest until now. Seemingly every
+          shortcoming of Korchnoi’s was now attributed to the work of this
+          mysterious hypnotist. Naturally, Karpov would repeatedly boast of his
+          ability to overcome these forces. The press ate it up. Leeuwerik
+          accused Dr. Zoukhar of being a parapsychological hooligan and demanded
+          that no official, or unofficial members of either camp be allowed in
+          the front row. The Chief Organizer obliged and this sideshow began to
+          compete for attention with the game as the melodrama unfolded. Dr.
+          Zoukhar’s seating position began to be recorded with diligence by all
+          those concerned. The first row on the left during games two, three,
+          four and five. The right side of row two in game six and seven. On the
+          left side of the fifth row in game eight and the right side in game
+          nine. Games ten and 11 have him on the right side again, but back two
+          ranks on the seventh. One begins to imagine the diagonal movements of
+          a Bishop.
+        </p>
+      <!-- <p class="teaserAttribute">
+        <span style="color:red;">Korchnoi's solar array</span><br />Edmondson,
+        E. B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
+        Championship. Oxford, UK: Pergamon Press, 1981.
+      </p> -->
     </div>
   </div>
   <div class="container">
     <div class="right-imageContainer-landscape">
       <img class="right-image-landscape" src="./assets/yoga-small.png" />
     </div>
+    <div class="item-a">
+      <div style="height:100%">
+        <h2>Analysis</h2>
+        <p class="story">
+          A certain amount of psychological warfare always takes place during a
+          chess game. For example, the ongoing fuss over Korchnoi’s
+          mirror-tinted glasses (nicknamed, “the device” at the time) was the
+          result of a passive aggressive attempt to thwart Karpov’s own tactic
+          of staring directly into the eyes of his opponent.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">Concentration techniques.</span
+        ><br />Edmondson, E. B., and Mikhail Tal.<br />Chess Scandals: the 1978
+        World Chess Championship. Oxford, UK: Pergamon Press, 1981.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="right-imageContainer">
+      <img class="right-image" src="./assets/MTurk-02.svg" />
+    </div>
     <div class="item-a-span">
-      <h2>Analysis</h2>
-      <p class="story">
-        A certain amount of psychological warfare always takes place during a
-        chess game. For example, the ongoing fuss over Korchnoi’s mirror-tinted
-        glasses (nicknamed, “the device” at the time) was the result of a
-        passive aggressive attempt to thwart Karpov’s own tactic of staring
-        directly into the eyes of his opponent. A compelling argument could also
-        be made that Korchnoi’s accusations against Dr. Zoukhar merely came from
-        an attempt to explain away his own blunders, rather than a deeply held
-        belief in telekinesis. There is, in fact, substantial evidence pointing
-        to a familiarity with paranoia, superstition, and pseudo science between
-        the two, which may or may not always track with a number of
-        contradictory statements made by either one. The answer appears to be
-        somewhere between belief and suspicion.
+      <div style="height:100%">
+        <p class="story">
+          A compelling argument could also be made that Korchnoi’s accusations
+          against Dr. Zoukhar merely came from an attempt to explain away his
+          own blunders, rather than a deeply held belief in telekinesis. There
+          is, in fact, substantial evidence pointing to a familiarity with
+          paranoia, superstition, and pseudo science between the two, which may
+          or may not always track with a number of contradictory statements made
+          by either one. The answer, befittingly enough, appears to be somewhere
+          between belief and suspicion.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">"Somewhere between belief and suspicion."</span
+        ><br />The original Mechanical Turk first unveiled by Wolfgang von
+        Kempelen in 1770.
       </p>
-      <p class="story">
-        Karpov may not demonstrate a remarkable interest in the field of
-        parapsychology beyond a token impulse to avoid being out gunned on this
-        or any other front, but his paranoia is evident through his continued
-        suspicion towards the maneuvers of not only the Korchnoi delegation, but
-        the allegedly neutral organizing committee itself. As it happens, the
-        scrutiny that Karpov placed on the bidding process for the host city was
-        not entirely unwarranted, but the length to which he goes to account for
-        every potential scheme, to characterize motivations, and to assess the
-        implications for his position in virtually every other stage of the
-        event is remarkable.
-      </p>
-      <p class="story">
-        Likewise, we see Korchnoi waffle on his faith in parapsychology at
-        various times throughout the tournament, though the executive director
-        of the U.S. Chess Federation describes Korchnoi’s “fascination” with
-        parapsychology spanning many years. Much has been written about Viktor
-        Korchnoi’s daily regimen that we may also draw from. He laced his
-        morning oatmeal with whiskey and plugged himself into a heating battery
-        at night to treat his hypochondria, believing this condition was in part
-        due to excess static electricity. After the Dr. Berginer debacle,
-        Korchnoi enlisted the help of two particularly militant members of the
-        Ananda Marga religious sect, who were currently out on bail in the
-        Philippines for the attempted murder of an Indian diplomat. Steven Dwyer
-        and Victoria Shepherd, or Dada and Didi, as they became known, had been
-        given a mandate to teach Korchnoi concentration techniques using yoga
-        and other methods for the remainder of the match. His devotion to the
-        teachings of Didi and Dada would become a sticking point going forward.
-      </p>
+    </div>
+  </div>
+  <div class="container">
+    <!-- <div class="right-imageContainer">
+      <img class="right-image" src="./assets/MTurk-02.svg" />
+    </div> -->
+    <div class="item-a-span">
+      <div style="height:100%">
+        <p class="story">
+          Karpov may not demonstrate a remarkable interest in the field of
+          parapsychology beyond a token impulse to avoid being out gunned on
+          this or any other front, but his paranoia is evident through his
+          continued suspicion towards the maneuvers of not only the Korchnoi
+          delegation, but the allegedly neutral organizing committee itself. As
+          it happens, the scrutiny that Karpov placed on the bidding process for
+          the host city was not entirely unwarranted, but the length to which he
+          goes to account for every potential scheme, to characterize
+          motivations, and to assess the implications for his position in
+          virtually every other stage of the event is remarkable.
+        </p>
+        <p class="story">
+          Likewise, we see Korchnoi waffle on his faith in parapsychology at
+          various times throughout the tournament, though the executive director
+          of the U.S. Chess Federation describes Korchnoi’s “fascination” with
+          parapsychology spanning many years. Much has been written about Viktor
+          Korchnoi’s daily regimen that we may also draw from. He laced his
+          morning oatmeal with whiskey and plugged himself into a heating
+          battery at night to treat his hypochondria, believing this condition
+          was in part due to excess static electricity. After the Dr. Berginer
+          debacle, Korchnoi enlisted the help of two particularly militant
+          members of the Ananda Marga religious sect, who were currently out on
+          bail in the Philippines for the attempted murder of an Indian
+          diplomat. Steven Dwyer and Victoria Shepherd, or Dada and Didi, as
+          they became known, had been given a mandate to teach Korchnoi
+          concentration techniques using yoga and other methods for the
+          remainder of the match. His devotion to the teachings of Didi and Dada
+          would become a sticking point going forward.
+        </p>
+      </div>
     </div>
   </div>
   <div class="container">
     <img class="left-image" src="./assets/jury-small.png" />
     <div class="item-c">
-      <p class="story">
-        By game 32, both players’ nerves were shot. Chess at this level is hard
-        enough without having to endure a veritable arms race of
-        parapsychologists, murderous Ananda Marga yogis, and Soviet operatives
-        doing everything they can to subvert your efforts amidst a biblical
-        onslaught of natural disasters. Karpov had missed a number of
-        opportunities to win the match outright going as far back as game eight,
-        and watched as his 5-1 lead dwindled to 5-5 by the final game. “The
-        tiresome weather with its constant rain and wind had suddenly begun to
-        irritate me,” Karpov conceded. The Ananda Marga contingent had
-        maintained a presence “casting spells” in the lotus position until game
-        20, when the organizers disallowed the attendance of “persons of known
-        criminal records.” The Ananda Margas multiplied, terrifying various
-        officials with threatening messages while Didi and Dada continued to
-        hold clandestine yoga classes from Korchnoi’s FIDE-sponsored hotel room.
-        The Korchnoi delegation became so overwhelmed with offers of support
-        from members of this feared religious cult that they petitioned the
-        appeal jury for protection. The irony was lost on no one. The breach of
-        an agreement reached a month earlier regarding the presence of any and
-        all hypnotists also brought Dr. Zoukhar back to the fourth row for the
-        final game. The conclusion of the longest final in the tournament’s
-        history would arrive in a somewhat anticlimactic fashion. The biggest
-        controversy came from Korchnoi’s refusal to officially concede,
-        preferring instead to simply decline a return to the board after the
-        game had been adjourned for the day. Korchnoi was not seen again for the
-        remainder of the ending ceremonies.
+      <div style="height:100%">
+        <p class="story">
+          By game 32, both players’ nerves were shot. Chess at this level is
+          hard enough without having to endure a veritable arms race of
+          parapsychologists, murderous Ananda Marga yogis, and Soviet operatives
+          doing everything they can to subvert your efforts amidst a biblical
+          onslaught of natural disasters. Karpov had missed a number of
+          opportunities to win the match outright going as far back as game
+          eight, and watched as his 5-1 lead dwindled to 5-5 by the final game.
+          “The tiresome weather with its constant rain and wind had suddenly
+          begun to irritate me,” Karpov conceded.
+        </p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">The jurors.</span><br />Edmondson, E. B., and
+        Mikhail Tal.<br />Chess Scandals: the 1978 World Chess Championship.
+        Oxford, UK: Pergamon Press, 1981.
       </p>
     </div>
   </div>
@@ -330,16 +511,12 @@
 
 <script>
 import KvK from "./components/KvK.vue";
-import Intro from "./components/Introduction.vue";
-import Baguio from "./components/1978.vue";
 
 export default {
   name: "App",
   components: {
     KvK,
-    Intro,
-    Baguio
-  }
+  },
 };
 </script>
 
@@ -413,7 +590,7 @@ body {
 }
 .navContainer {
   margin: 0px;
-  
+
   padding: 0px;
   position: fixed;
   width: 100%;
@@ -462,7 +639,7 @@ body {
 .nav2 {
   grid-column: 5 / span 5;
   grid-row: 1;
-  width:100%;
+  width: 100%;
   background: white;
   /* position: fixed;
   top:0; */
@@ -535,6 +712,27 @@ h1 {
   text-transform: uppercase;
   column-span: all;
 }
+.heading1Quote:before {
+  font-family: "Univers LT W01_55 Roman1475956";
+  color: black;
+  line-height: 1.5;
+  content: "“";
+  position: absolute;
+  margin-left: -0.5em;
+}
+.heading1Quote:after {
+  font-family: "Univers LT W01_55 Roman1475956";
+  line-height: 1.5;
+  content: "”";
+}
+.heading1Quote {
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 3.5em;
+  margin-top: -10px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  column-span: all;
+}
 .heading1 {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 3.5em;
@@ -583,7 +781,8 @@ h2 {
   /* height: 100vh; */
   grid-column: 9 / 12;
   grid-row: 2;
-}.right-image-landscape {
+}
+.right-image-landscape {
   width: 100%;
   /* height: 100vh; */
   grid-column: 6 / 12;
@@ -591,7 +790,7 @@ h2 {
 }
 .subHead {
   font-family: "Univers LT W01_65 Bold1475968";
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: start;
   line-height: 1.5;
   /* min-height: 0; */
@@ -600,6 +799,53 @@ h2 {
   /* margin-bottom: 100%; */
   overflow-y: scroll;
 }
+.teaser {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: start;
+  /* min-height: 0; */
+  /* height: auto; */
+  height: 100%;
+  margin-top: 0px;
+}
+.teaserAttribute {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
+  line-height: 1.5;
+  position: relative;
+  text-align: end;
+  /* min-height: 0; */
+  /* height: auto; */
+  height: auto;
+  margin-bottom: 10px;
+  float: right;
+}
+.teaserHead {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: start;
+  /* min-height: 0; */
+  height: auto;
+  /* height: 100%; */
+  margin-top: 0px;
+}
+.teaserHead:before {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 6vw;
+  color: red;
+  line-height: 0.8;
+  content: "“";
+  position: absolute;
+  margin-left: -0.75em;
+}
+/* .teaser:after {
+   font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 2em;
+  line-height: 1.5;
+    content: '”';
+} */
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1.25em;
@@ -609,17 +855,14 @@ h2 {
   /* height: auto; */
   /* height: 100%; */
   margin-top: 0px;
-  overflow-y: scroll;
+  margin-bottom: 10px;
 }
 .story:last-child {
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1.25em;
-    line-height: 1.5;
-      text-align: start;
-  /* min-height: 0; */
-  /* max-height: 100%; */
-  /* margin-bottom: 100%; */
-  overflow-y: scroll;
+  /* text-align: start; */
+  /* position:relative; */
+  height: 100%;
+  /* margin-top: 0px; */
 }
 .container {
   width: 100%;
@@ -629,6 +872,8 @@ h2 {
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
 }
 .item-a {
+  display: flex;
+  flex-direction: column;
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
   grid-column-end: 4;
@@ -641,17 +886,19 @@ h2 {
   /* overflow-y: scroll; */
   /* bottom: 150px; */
   height: 100%;
-  /* border-top: 0px;
+  border-top: 0px;
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
   border-color: black;
-  border-style: solid; */
+  border-style: solid;
 }
 .item-a-span {
+  display: flex;
+  flex-direction: column;
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
-  grid-column-end: 4;
+  grid-column-end: 8;
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
@@ -660,7 +907,7 @@ h2 {
   /* min-height: 0; */
   /* padding-right: 10px; */
   /* padding-top: 25px; */
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* bottom: 150px; */
   height: 100%;
   border-top: 0px;
@@ -681,7 +928,7 @@ h2 {
   /* min-height: 0; */
   padding-right: 10px;
   padding-top: 25px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* bottom: 150px; */
   height: 100%;
 }
@@ -706,6 +953,8 @@ h2 {
   margin: 0px;
 }
 .item-c {
+  display: flex;
+  flex-direction: column;
   grid-column-start: 9;
   grid-column-end: 9;
   grid-row-start: 2;
@@ -713,7 +962,7 @@ h2 {
   width: 100%;
   height: 100%;
   /* padding-top: 25px; */
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   border-top: 0px;
   border-bottom: 1px;
   border-left: 0px;
@@ -760,8 +1009,7 @@ h2 {
 }
 .notationL {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content:space-between;
   grid-column: 6;
   grid-row: 4;
   width: 200px;
@@ -783,8 +1031,9 @@ h2 {
 }
 .notationR {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: row;
+  justify-content:space-between;
+  /* align-items: center; */
   grid-column: 7;
   grid-row: 4;
   width: 200px;
@@ -834,7 +1083,7 @@ h2 {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 3em;
   text-transform: uppercase;
-  margin: 0px;
+  margin-top: 5px;
 }
 .form-horizontal {
   height: 0px;
@@ -897,10 +1146,29 @@ h2 {
 }
 #sankey {
   margin-top: 25px;
+    transition-property: height;
+  transition-duration: 20s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 20s;
 }
 .links {
   opacity: 0.1;
   mix-blend-mode: multiply;
+}
+.white{
+  font-family: "Univers LT W01_65 Bold1475968";
+  font-size: 1.25em;
+  color:red;
+  margin-top: 34px;
+  margin-right: 10px;
+}
+.black{
+  font-family: "Univers LT W01_65 Bold1475968";
+  font-size: 1.25em;
+  height:100%;
+  margin-top: 34px;
+  margin-left: 10px;
+  color: red;
 }
 /* #next{
   float: right;
@@ -916,24 +1184,24 @@ h2 {
   font-size: 3em;
 } */
 button {
-    display: inline-block;
-    border: none;
-    /* padding: 1rem 2rem; */
-    margin: 0;
-    text-decoration: none;
-    background: none;
-    color: black;
-    font-family: sans-serif;
-    font-size: 2em;
-    line-height: 1;
-    cursor: pointer;
-    text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  display: inline-block;
+  border: none;
+  /* padding: 1rem 2rem; */
+  margin: 0;
+  text-decoration: none;
+  background: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 2em;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-button:hover{
+button:hover {
   color: red;
 }
 /* button:focus {
@@ -942,14 +1210,39 @@ button:hover{
 } */
 
 button:focus {
-    outline: 0px solid white;
-    outline-offset: -4px;
+  outline: 0px solid white;
+  outline-offset: -4px;
 }
 
 button:active {
-    transform: scale(0.99);
-     color: black;
+  transform: scale(0.99);
+  color: black;
+}
+
+#floorPlan {
+  display:flex;
+  flex-direction: column;
+   border: 1px;
+  height:400px;
+  width:400px;
+  border-color: black;
+  border-style: solid;
+}
+.left{
+  float:left;
+  height:50px;
+  width:200px;
+  -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red;
+}
+.right{
+  float:right;
+  height:50px;
+  width:200px;
+  -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red;
 }
 /* Button styles end */
-
 </style>
