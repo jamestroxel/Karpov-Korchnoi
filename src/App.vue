@@ -273,6 +273,12 @@
           from the precise meaning of the violet colored yogurt being delivered
           to Karpov during each game.
         </p>
+        <button @click="previousMove" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="nextMove" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Dr. Vladimir Zoukhar.</span><br />Edmondson, E.
@@ -433,13 +439,13 @@
           is, in fact, substantial evidence pointing to a familiarity with
           paranoia, superstition, and pseudo science between the two, which may
           or may not always track with a number of contradictory statements made
-          by either one. The answer, befittingly enough, appears to be somewhere
+          by either one. It seems befitting that the answer appears to be somewhere
           between belief and suspicion.
         </p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">"Somewhere between belief and suspicion."</span
-        ><br />The original Mechanical Turk first unveiled by Wolfgang von
+        ><br />The original "Mechanical Turk", first unveiled by Wolfgang von
         Kempelen in 1770.
       </p>
     </div>
@@ -511,11 +517,18 @@
 
 <script>
 import KvK from "./components/KvK.vue";
+// import baguio from "./components/1978.json"
 
 export default {
   name: "App",
   components: {
     KvK,
+    // baguio
+  },
+  data(){
+      return{
+          // trifles: baguio
+      }
   },
 };
 </script>
@@ -589,6 +602,15 @@ body {
   transform-origin: top left;
 }
 .navContainer {
+    position: fixed;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: white;
+   z-index: 400000;
+  grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
+}
+/* .navContainer {
   margin: 0px;
 
   padding: 0px;
@@ -597,22 +619,25 @@ body {
   height: 50px;
   justify-content: center;
   display: grid;
-  grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
-  grid-template-rows: 50px 2fr 12.5px 75px 50px;
+  grid-template-columns:  1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr ;
   background-color: white;
   z-index: 400000;
-}
+} */
 .nav1 {
-  grid-column: 2 / span 10;
+  /* position: fixed; */
+  grid-column-start: 2;
+  grid-column-end:  12;
   grid-row: 1;
-  /* width:100%; */
+  width:100%;
   /* background: white;
     position: absolute;
     left:50px;
     right: 50px; */
   top: 0;
   padding: 0px;
-  margin: 0px;
+  /* margin: 0px; */
+  /* margin-left:50px;
+  margin-right:50px; */
   height: 50px;
   max-height: 50px;
   border-top: 0px;
@@ -987,7 +1012,8 @@ h2 {
   border-style: solid; */
 }
 .bottom {
-  grid-column: 2 / span 10;
+  grid-column: 1 ;
+  grid-column-end: 13;
   grid-row: 5;
   /* width:100%; */
   /* background: white;
@@ -997,6 +1023,8 @@ h2 {
   bottom: 0;
   padding: 0px;
   margin: 0px;
+  margin-left:50px;
+  margin-right:50px;
   height: 50px;
   max-height: 50px;
   border-top: 1px;
@@ -1067,6 +1095,8 @@ h2 {
   border-style: solid;
 }
 .scoreR {
+  display:flex;
+  flex-direction: row;
   height: 12.5px;
   width: 200px;
   grid-column: 7;
@@ -1077,7 +1107,7 @@ h2 {
   border-right: 0px;
   border-color: black;
   border-style: solid;
-  float: left;
+  
 }
 .player {
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1146,43 +1176,41 @@ h2 {
 }
 #sankey {
   margin-top: 25px;
-    transition-property: height;
-  transition-duration: 20s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 20s;
 }
 .links {
   opacity: 0.1;
   mix-blend-mode: multiply;
+  transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
+  /* transition-delay: 1s; */
+}
+.nodes{
+  transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
+}
+.name{
+   transition: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 .white{
-  font-family: "Univers LT W01_65 Bold1475968";
+  font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
   color:red;
   margin-top: 34px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .black{
-  font-family: "Univers LT W01_65 Bold1475968";
+  font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
   height:100%;
   margin-top: 34px;
-  margin-left: 10px;
+  margin-left: 20px;
   color: red;
 }
-/* #next{
-  float: right;
-} */
-/* #next{
-  background-color: white;
-  border: none;
-  font-size: 3em;
-}
-#previous{
-  background-color: white;
-  border: none;
-  font-size: 3em;
-} */
+
 button {
   display: inline-block;
   border: none;
@@ -1243,6 +1271,16 @@ button:active {
   -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
   box-shadow: inset 0 0 3px 3px red;
+}
+#barR{
+   transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
+}
+#barL{
+   transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
 }
 /* Button styles end */
 </style>
