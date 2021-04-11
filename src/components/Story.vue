@@ -1,5 +1,8 @@
 <template>
 <div>
+    <h1 class="heading1">
+        {{copy[this.moveIndex].title}}
+    </h1>
     <p class="heading2">
         {{copy[this.moveIndex].heading}}
     </p>

@@ -2,7 +2,6 @@
   <div class="container">
     <!-- <div id="pgn" class="moves"></div> -->
     <div class="item-a-kvk">
-      <h1>Slaying the Dragon</h1>
       <Story :moveIndex="moveIndex"></Story>
     </div>
     <div class="item-b-kvk">
@@ -59,7 +58,7 @@ export default {
   },
   methods: {
     nextMove() {
-      if (this.moveIndex == 53) {
+      if (this.moveIndex == 57) {
         return;
       } else {
         this.moveIndex = this.moveIndex + 1;

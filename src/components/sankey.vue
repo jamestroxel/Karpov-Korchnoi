@@ -121,7 +121,7 @@ export default {
   
   },
   mounted: function() {
-    this.moves = [e4, e4, c5, Nf3, d6, d4, cxd4, Nxd4, Nf6, Nc3, g6, Be3, Bg7, f3, Nc6];
+    this.moves = [e4,e4,e4,e4,e4, e4, c5, Nf3, d6, d4, cxd4, Nxd4, Nf6, Nc3, g6, Be3, Bg7, f3, Nc6];
     this.sankey = this.sankeyData
   },
   updated(){
@@ -140,37 +140,12 @@ export default {
   labelAnchor(d){
     return (d.x0 < this.width / 2 ? "start" : "end")
   },
-  //  nodeTransition(){
-  //    d3.selectAll('.nodes')
-  //    .data(this.sankeyData.nodes)
-  //    .transition()
-  //    .delay(5000)
-  //    .duration(10000)
-  //    .attr("transform", function(d) {
-  //       return "translate(" + d.x + "," + d.y + ")";
-  //     });
-  //  },
-  // linkTransition(){
-  //    d3.selectAll('.links')
-  //    .data(this.sankeyData.links)
-  //    .transition()
-  //    .delay(5000)
-  //    .duration(10000)
-  //    .attr("transform", function(d) {
-  //       return "translate(" + d.x + "," + d.y + ")";
-  //     });
-  //  },
+
     sankeyNodes(){
       const svg = d3.select("#sankey");
       svg
-        // .append("g")
         .selectAll("rect")
         .data(this.sankeyData.nodes)
-        // .join("rect")
-        // .attr("x", (d) => d.x0)
-        // .attr("y", (d) => d.y0)
-        // .attr("height", (d) => d.y1 - d.y0)
-        // .attr("width", (d) => d.x1 - d.x0)
         .attr("fill",function(d) {
         if (d.name === "e4" && d.node == 0){  
           return "red"}

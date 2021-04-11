@@ -1,6 +1,6 @@
 <template>
   <div class="titleContainer">
-    <p class="title">Chess, Patterns and Paranoia</p>
+    <p class="title">Visualizing Chess, Patterns and Paranoia</p>
   </div>
   <div class="navContainer">
     <div class="nav1"></div>
@@ -194,12 +194,12 @@
         fill="#231f20"
       />
     </svg>
-    <div class="right-imageContainer">
+    <div class="right-titleImageContainer">
       <img class="right-image" src="./assets/GettyImages-535003872.jpg" />
     </div>
   </div>
   <!--  -->
-  <div class="container">
+  <div class="container" style="margin-top:50px;">
     <div class="item-a-span">
       <p class="teaserHead">Dear colleagues!</p>
       <p class="teaser">
@@ -257,7 +257,7 @@
   </div>
   <div class="container">
     <div class="right-imageContainer">
-      <img class="left-image" src="./assets/Zoukhar-small.png" />
+      <img class="left-image" src="./assets/smile-small.png" />
     </div>
     <div class="item-a-span">
       <div Style="height:100%;">
@@ -266,34 +266,42 @@
           Baguio, 1978
         </h2>
         <p class="story">
+          {{ this.trifles[this.triflesIndex].text }}
+        </p>
+        <!-- <p class="story">
           Typhoon Emang struck the Philippines on the first day of game five.
           Karpov described the sound of the rain as sufficient to drown out the
           noise of an already tempestuous affair inside the brand new Baguio
           City Convention Center. Up until this point, the loudest protest came
           from the precise meaning of the violet colored yogurt being delivered
           to Karpov during each game.
-        </p>
-        <button @click="previousMove" id="previous" type="button">
+        </p> -->
+      </div>
+      <div class="block" style="width: 400px">
+        <button @click="triflesPrevious" id="previous" type="button">
           &#60;
         </button>
-        <button @click="nextMove" id="next" type="button">
+        <button @click="triflesNext" id="next" type="button">
           &#62;
         </button>
       </div>
       <p class="teaserAttribute">
-        <span style="color:red;">Dr. Vladimir Zoukhar.</span><br />Edmondson, E.
-        B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
-        Championship. Oxford, UK: Pergamon Press, 1981.
+        <span style="color:red;">The insufferable glutton.</span
+        ><br />Karpov, Anatoly. My Best Games. Great Neck, NY: R.H.M. Press,
+        1978.
       </p>
     </div>
   </div>
   <div class="container">
     <div class="right-imageContainer">
-      <img class="left-image" src="./assets/smile-small.png" />
+      <img class="left-image" src="./assets/Zoukhar-small.png" />
     </div>
     <div class="item-a-span">
       <div style="height:100%">
         <p class="story">
+          {{ this.triflesTwo[this.triflesTwoIndex].text }}
+        </p>
+        <!-- <p class="story">
           “It is clear that a cunningly arranged distribution of edible items to
           one player during the game, emanating from one delegation or the other,
           could convey a kind of coded message,” read the official complaint to
@@ -311,10 +319,20 @@
           for the Soviet National Anthem during the opening ceremony was rendered
           moot when the orchestra mistakenly played the Internationale instead.
           However, it wasn’t until game five that things took a dark turn.
-        </p>
+        </p> -->
+      </div>
+      <div class="block" style="width: 400px">
+        <button @click="triflesTwoPrevious" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="triflesTwoNext" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
-        <span style="color:red;">Karpov, having a moment.</span><br>Karpov, Anatoly. My Best Games. Great Neck, NY: R.H.M. Press, 1978. 
+        <span style="color:red;">Dr. Vladimir Zoukhar.</span><br />Edmondson, E.
+        B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
+        Championship. Oxford, UK: Pergamon Press, 1981.
       </p>
     </div>
   </div>
@@ -323,6 +341,9 @@
     <div class="item-c">
       <div style="height:100%">
         <p class="story">
+          {{ this.triflesThree[this.triflesThreeIndex].text }}
+        </p>
+        <!-- <p class="story">
           There was a growing awareness of Dr. Vladimir Zoukhar’s presence in
           the room that appeared to arrive with the weather. The storm had
           knocked out the power and a dim emergency lamp was all that lit the
@@ -332,7 +353,15 @@
           regulation, quietly advanced towards the front spectator rows. She sat
           next to Dr. Zoukhar and handed him a copy of “The Gulag Archipelago.”
           This was not a gift.
-        </p>
+        </p> -->
+      </div>
+      <div class="block" style="width: 400px">
+        <button @click="triflesThreePrevious" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="triflesThreeNext" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Korchnoi's solar array</span><br />Edmondson,
@@ -342,82 +371,25 @@
     </div>
   </div>
   <div class="container">
-    <div id="floorPlan" class="item-c">
-      <div class="row">
-        <div id="1" class="left">
-        </div>
-        <div id="2" class="right"></div>
-        <div id="3" class="left"></div>
-        <div id="4" class="right"></div>
-        <div id="5" class="left"></div>
-        <div id="6" class="right"></div>
-        <div id="7" class="left"></div>
-        <div id="8" class="right"></div>
-        <div id="9" class="left"></div>
-        <div id="10" class="right"></div>
-        <div id="11" class="left"></div>
-        <div id="12" class="right"></div>
-        <div id="13" class="left"></div>
-        <div id="14" class="right"></div>
-        <div id="15" class="left"></div>
-        <div id="16" class="right"></div>
-
-      </div>
-    </div>
-    <!-- <img class="left-image" src="./assets/karpov-korchnoi-small-2.png" /> -->
-    <div class="item-a-span">
-        <p class="story">
-          Petra had spent nine years in the notorious Vorkuta labor camp for
-          spying in Soviet Vienna after World War II. Dr. Vladimir Zoukhar was a
-          known psycho-neurologist and director of the Central Laboratory for
-          Psychology in Moscow’s School of Medicine. His expertise had been
-          sought ever since the 1974 Candidates Final where Korchnoi had bragged
-          that his mind games forced Karpov to seek therapy. Karpov repeatedly
-          insisted that Zoukhar was not an official member of the Soviet
-          Delegation and thereby free to do as he pleased. “The Soviets want to
-          kill him in a mental way” Leeuwerik had said of Korchnoi.
-        </p>
-        <p class="story">
-          Challenger’s delegation had begun to develop the theory that Dr.
-          Zoukhar was hypnotizing Korchnoi from a distance through his
-          noticeable habit of staring fixedly at the Challenger from the front
-          left row during much of the contest until now. Seemingly every
-          shortcoming of Korchnoi’s was now attributed to the work of this
-          mysterious hypnotist. Naturally, Karpov would repeatedly boast of his
-          ability to overcome these forces. The press ate it up. Leeuwerik
-          accused Dr. Zoukhar of being a parapsychological hooligan and demanded
-          that no official, or unofficial members of either camp be allowed in
-          the front row. The Chief Organizer obliged and this sideshow began to
-          compete for attention with the game as the melodrama unfolded. Dr.
-          Zoukhar’s seating position began to be recorded with diligence by all
-          those concerned. The first row on the left during games two, three,
-          four and five. The right side of row two in game six and seven. On the
-          left side of the fifth row in game eight and the right side in game
-          nine. Games ten and 11 have him on the right side again, but back two
-          ranks on the seventh. One begins to imagine the diagonal movements of
-          a Bishop.
-        </p>
-      <!-- <p class="teaserAttribute">
-        <span style="color:red;">Korchnoi's solar array</span><br />Edmondson,
-        E. B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
-        Championship. Oxford, UK: Pergamon Press, 1981.
-      </p> -->
-    </div>
-  </div>
-  <div class="container">
     <div class="right-imageContainer-landscape">
       <img class="right-image-landscape" src="./assets/yoga-small.png" />
     </div>
     <div class="item-a">
       <div style="height:100%">
-        <h2>Analysis</h2>
+        <h2 class="heading2">
+          Analysis
+        </h2>
         <p class="story">
-          A certain amount of psychological warfare always takes place during a
-          chess game. For example, the ongoing fuss over Korchnoi’s
-          mirror-tinted glasses (nicknamed, “the device” at the time) was the
-          result of a passive aggressive attempt to thwart Karpov’s own tactic
-          of staring directly into the eyes of his opponent.
+          {{ this.analysis[this.analysisIndex].text }}
         </p>
+      </div>
+      <div class="block" style="width: 400px">
+        <button @click="analysisPrevious" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="analysisNext" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Concentration techniques.</span
@@ -427,21 +399,22 @@
     </div>
   </div>
   <div class="container">
-    <div class="right-imageContainer">
-      <img class="right-image" src="./assets/MTurk-02.svg" />
+    <div class="right-svgContainer">
+      <img class="right-svg" src="./assets/MTurk-02.svg" />
     </div>
     <div class="item-a-span">
       <div style="height:100%">
         <p class="story">
-          A compelling argument could also be made that Korchnoi’s accusations
-          against Dr. Zoukhar merely came from an attempt to explain away his
-          own blunders, rather than a deeply held belief in telekinesis. There
-          is, in fact, substantial evidence pointing to a familiarity with
-          paranoia, superstition, and pseudo science between the two, which may
-          or may not always track with a number of contradictory statements made
-          by either one. It seems befitting that the answer appears to be somewhere
-          between belief and suspicion.
+          {{ this.analysisTwo[this.analysisTwoIndex].text }}
         </p>
+      </div>
+      <div class="block" style="width: 400px">
+        <button @click="analysisTwoPrevious" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="analysisTwoNext" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">"Somewhere between belief and suspicion."</span
@@ -451,58 +424,24 @@
     </div>
   </div>
   <div class="container">
-    <!-- <div class="right-imageContainer">
-      <img class="right-image" src="./assets/MTurk-02.svg" />
-    </div> -->
-    <div class="item-a-span">
-      <div style="height:100%">
-        <p class="story">
-          Karpov may not demonstrate a remarkable interest in the field of
-          parapsychology beyond a token impulse to avoid being out gunned on
-          this or any other front, but his paranoia is evident through his
-          continued suspicion towards the maneuvers of not only the Korchnoi
-          delegation, but the allegedly neutral organizing committee itself. As
-          it happens, the scrutiny that Karpov placed on the bidding process for
-          the host city was not entirely unwarranted, but the length to which he
-          goes to account for every potential scheme, to characterize
-          motivations, and to assess the implications for his position in
-          virtually every other stage of the event is remarkable.
-        </p>
-        <p class="story">
-          Likewise, we see Korchnoi waffle on his faith in parapsychology at
-          various times throughout the tournament, though the executive director
-          of the U.S. Chess Federation describes Korchnoi’s “fascination” with
-          parapsychology spanning many years. Much has been written about Viktor
-          Korchnoi’s daily regimen that we may also draw from. He laced his
-          morning oatmeal with whiskey and plugged himself into a heating
-          battery at night to treat his hypochondria, believing this condition
-          was in part due to excess static electricity. After the Dr. Berginer
-          debacle, Korchnoi enlisted the help of two particularly militant
-          members of the Ananda Marga religious sect, who were currently out on
-          bail in the Philippines for the attempted murder of an Indian
-          diplomat. Steven Dwyer and Victoria Shepherd, or Dada and Didi, as
-          they became known, had been given a mandate to teach Korchnoi
-          concentration techniques using yoga and other methods for the
-          remainder of the match. His devotion to the teachings of Didi and Dada
-          would become a sticking point going forward.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
     <img class="left-image" src="./assets/jury-small.png" />
     <div class="item-c">
       <div style="height:100%">
+        <h2 class="heading2">
+          Discussion
+        </h2>
         <p class="story">
-          By game 32, both players’ nerves were shot. Chess at this level is
-          hard enough without having to endure a veritable arms race of
-          parapsychologists, murderous Ananda Marga yogis, and Soviet operatives
-          doing everything they can to subvert your efforts amidst a biblical
-          onslaught of natural disasters. Karpov had missed a number of
-          opportunities to win the match outright going as far back as game
-          eight, and watched as his 5-1 lead dwindled to 5-5 by the final game.
-          “The tiresome weather with its constant rain and wind had suddenly
-          begun to irritate me,” Karpov conceded.
+          Though many factors and dynamics stand out about this match, time was
+          clearly the most important factor, first and foremost. Spanning almost
+          100 days, the individual games were often split into multi-day
+          sprints. Could the way each player experienced time be a factor in the
+          quality of their attention in Baguio? How exactly does time effect
+          what each player sees or doesn’t see? Neither player exhibited much
+          brilliance when given such an extended opportunity to demonstrate
+          their abilities. How did two exemplars of a game defined by supposedly rational
+          thinking become so consumed with fear and loathing in Baguio? A look
+          back four years to game two of their Candidates Final in Moscow helps
+          answer these questions.
         </p>
       </div>
       <p class="teaserAttribute">
@@ -517,7 +456,11 @@
 
 <script>
 import KvK from "./components/KvK.vue";
-// import baguio from "./components/1978.json"
+import baguio from "./components/1978.json";
+import PartTwo from "./components/1978PartTwo.json";
+import PartThree from "./components/1978PartThree.json";
+import Analysis from "./components/1978Analysis.json";
+import AnalysisTwo from "./components/1978AnalysisPartTwo.json";
 
 export default {
   name: "App",
@@ -525,10 +468,91 @@ export default {
     KvK,
     // baguio
   },
-  data(){
-      return{
-          // trifles: baguio
+  data() {
+    return {
+      triflesIndex: 0,
+      triflesTwoIndex: 0,
+      triflesThreeIndex: 0,
+      analysisIndex: 0,
+      analysisTwoIndex: 0,
+      trifles: baguio,
+      triflesTwo: PartTwo,
+      triflesThree: PartThree,
+      analysis: Analysis,
+      analysisTwo: AnalysisTwo
+    };
+  },
+  methods: {
+    triflesNext() {
+      if (this.triflesIndex == 3) {
+        return;
+      } else {
+        this.triflesIndex = this.triflesIndex + 1;
       }
+    },
+    triflesPrevious() {
+      if (this.triflesIndex == 0) {
+        return;
+      } else {
+        this.triflesIndex = this.triflesIndex - 1;
+      }
+    },
+    triflesTwoNext() {
+      if (this.triflesTwoIndex == 1) {
+        return;
+      } else {
+        this.triflesTwoIndex = this.triflesTwoIndex + 1;
+      }
+    },
+    triflesTwoPrevious() {
+      if (this.triflesTwoIndex == 0) {
+        return;
+      } else {
+        this.triflesTwoIndex = this.triflesTwoIndex - 1;
+      }
+    },
+    triflesThreeNext() {
+      if (this.triflesThreeIndex == 3) {
+        return;
+      } else {
+        this.triflesThreeIndex = this.triflesThreeIndex + 1;
+      }
+    },
+    triflesThreePrevious() {
+      if (this.triflesThreeIndex == 0) {
+        return;
+      } else {
+        this.triflesThreeIndex = this.triflesThreeIndex - 1;
+      }
+    },
+    analysisNext() {
+      if (this.analysisIndex == 3) {
+        return;
+      } else {
+        this.analysisIndex = this.analysisIndex + 1;
+      }
+    },
+    analysisPrevious() {
+      if (this.analysisIndex == 0) {
+        return;
+      } else {
+        this.analysisIndex = this.analysisIndex - 1;
+      }
+    },
+    analysisTwoNext() {
+      if (this.analysisTwoIndex == 3) {
+        return;
+      } else {
+        this.analysisTwoIndex = this.analysisTwoIndex + 1;
+      }
+    },
+    analysisTwoPrevious() {
+      if (this.analysisTwoIndex == 0) {
+        return;
+      } else {
+        this.analysisTwoIndex = this.analysisTwoIndex - 1;
+      }
+    }
   },
 };
 </script>
@@ -571,14 +595,14 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
-  margin-top: -30px;
+  
   /* min-height: 0; */
   /* bottom: 150px; */
   height: 100%;
 }
 
 .titleContainer {
-  margin: 0px;
+  
   padding: 0px;
   position: fixed;
   display: flex;
@@ -586,12 +610,15 @@ body {
   align-content: center;
   align-items: center;
   justify-content: space-around;
+  pointer-events: none;
 }
 
 .title {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1em;
   margin-left: 12.5px;
+  margin-bottom: -275px;
+  /* margin-bottom: -50px; */
   padding: 0px;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -602,12 +629,12 @@ body {
   transform-origin: top left;
 }
 .navContainer {
-    position: fixed;
+  position: fixed;
   width: 100%;
   height: 50px;
   display: grid;
   background-color: white;
-   z-index: 400000;
+  z-index: 400000;
   grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
 }
 /* .navContainer {
@@ -626,9 +653,9 @@ body {
 .nav1 {
   /* position: fixed; */
   grid-column-start: 2;
-  grid-column-end:  12;
+  grid-column-end: 12;
   grid-row: 1;
-  width:100%;
+  width: 100%;
   /* background: white;
     position: absolute;
     left:50px;
@@ -789,10 +816,38 @@ h2 {
 }
 .right-imageContainer {
   width: 100%;
-  height: 90vh;
+  /* height: 100%; */
   grid-column: 9 / 12;
   grid-row: 2;
   overflow: hidden;
+}
+.right-titleImageContainer {
+  width: 100%;
+  height: 100vh;
+  grid-column: 9 / 12;
+  grid-row: 2;
+  overflow: hidden;
+}
+.right-svgContainer {
+  width: 100%;
+  position: relative;
+  /* height: 100%; */
+  grid-column: 9 / 12;
+  grid-row: 2;
+  overflow: hidden;
+}
+.right-svg {
+  width: 100vw;
+  height: 110vh;
+  grid-column: 9 / 12;
+  grid-row: 2;
+}
+.right-turk {
+  width: 100%;
+  margin-left: 100px;
+  /* height: 110vh; */
+  grid-column: 9 / 12;
+  grid-row: 2;
 }
 .right-imageContainer-landscape {
   width: 100%;
@@ -1012,7 +1067,7 @@ h2 {
   border-style: solid; */
 }
 .bottom {
-  grid-column: 1 ;
+  grid-column: 1;
   grid-column-end: 13;
   grid-row: 5;
   /* width:100%; */
@@ -1023,8 +1078,8 @@ h2 {
   bottom: 0;
   padding: 0px;
   margin: 0px;
-  margin-left:50px;
-  margin-right:50px;
+  margin-left: 50px;
+  margin-right: 50px;
   height: 50px;
   max-height: 50px;
   border-top: 1px;
@@ -1037,7 +1092,7 @@ h2 {
 }
 .notationL {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   grid-column: 6;
   grid-row: 4;
   width: 200px;
@@ -1060,7 +1115,7 @@ h2 {
 .notationR {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   /* align-items: center; */
   grid-column: 7;
   grid-row: 4;
@@ -1095,7 +1150,7 @@ h2 {
   border-style: solid;
 }
 .scoreR {
-  display:flex;
+  display: flex;
   flex-direction: row;
   height: 12.5px;
   width: 200px;
@@ -1107,7 +1162,6 @@ h2 {
   border-right: 0px;
   border-color: black;
   border-style: solid;
-  
 }
 .player {
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1181,31 +1235,31 @@ h2 {
   opacity: 0.1;
   mix-blend-mode: multiply;
   transition: all;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
   /* transition-delay: 1s; */
 }
-.nodes{
+.nodes {
   transition: all;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
-.name{
-   transition: all;
+.name {
+  transition: all;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
-.white{
+.white {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
-  color:red;
+  color: red;
   margin-top: 34px;
   margin-right: 20px;
 }
-.black{
+.black {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
-  height:100%;
+  height: 100%;
   margin-top: 34px;
   margin-left: 20px;
   color: red;
@@ -1248,38 +1302,38 @@ button:active {
 }
 
 #floorPlan {
-  display:flex;
+  display: flex;
   flex-direction: column;
-   border: 1px;
-  height:400px;
-  width:400px;
+  border: 1px;
+  height: 400px;
+  width: 400px;
   border-color: black;
   border-style: solid;
 }
-.left{
-  float:left;
-  height:50px;
-  width:200px;
+.left {
+  float: left;
+  height: 50px;
+  width: 200px;
   -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
   box-shadow: inset 0 0 3px 3px red;
 }
-.right{
-  float:right;
-  height:50px;
-  width:200px;
+.right {
+  float: right;
+  height: 50px;
+  width: 200px;
   -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
   box-shadow: inset 0 0 3px 3px red;
 }
-#barR{
-   transition: all;
-  transition-duration: .25s;
+#barR {
+  transition: all;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
-#barL{
-   transition: all;
-  transition-duration: .25s;
+#barL {
+  transition: all;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
 /* Button styles end */

@@ -6,6 +6,30 @@
     "color": "white"
   },
   { 
+    "position":0,
+    "move": "",
+    "fen":"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":0,
+    "move": "",
+    "fen":"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":0,
+    "move": "",
+    "fen":"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":0,
+    "move": "",
+    "fen":"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
     "position":1,
     "move": "e4",
     "fen":"rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",
