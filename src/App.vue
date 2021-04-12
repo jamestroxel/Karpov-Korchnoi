@@ -5,8 +5,8 @@
   <div class="navContainer">
     <div class="nav1"></div>
     <!-- <div class="nav2"></div> -->
-    <p class="prologue">Prologue</p>
-    <p class="KvK">Karpov vs. Korchnoi</p>
+    <a href="#top" class="prologue">Prologue</a>
+    <a href="javascript: document.body.scrollIntoView(false);" class="KvK">Karpov vs. Korchnoi</a>
     <p class="play">Play</p>
   </div>
   <!-- logo -->
@@ -286,9 +286,8 @@
         </button>
       </div>
       <p class="teaserAttribute">
-        <span style="color:red;">The insufferable glutton.</span
-        ><br />Karpov, Anatoly. My Best Games. Great Neck, NY: R.H.M. Press,
-        1978.
+        <span style="color:red;">The insufferable glutton.</span><br />Karpov,
+        Anatoly. My Best Games. Great Neck, NY: R.H.M. Press, 1978.
       </p>
     </div>
   </div>
@@ -438,10 +437,10 @@
           quality of their attention in Baguio? How exactly does time effect
           what each player sees or doesn’t see? Neither player exhibited much
           brilliance when given such an extended opportunity to demonstrate
-          their abilities. How did two exemplars of a game defined by supposedly rational
-          thinking become so consumed with fear and loathing in Baguio? A look
-          back four years to game two of their Candidates Final in Moscow helps
-          answer these questions.
+          their abilities. How did two exemplars of a game defined by supposedly
+          rational thinking become so consumed with fear and loathing in Baguio?
+          A look back four years to game two of their Candidates Final in Moscow
+          helps answer these questions.
         </p>
       </div>
       <p class="teaserAttribute">
@@ -479,7 +478,7 @@ export default {
       triflesTwo: PartTwo,
       triflesThree: PartThree,
       analysis: Analysis,
-      analysisTwo: AnalysisTwo
+      analysisTwo: AnalysisTwo,
     };
   },
   methods: {
@@ -552,7 +551,7 @@ export default {
       } else {
         this.analysisTwoIndex = this.analysisTwoIndex - 1;
       }
-    }
+    },
   },
 };
 </script>
@@ -595,14 +594,13 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
-  
+
   /* min-height: 0; */
   /* bottom: 150px; */
   height: 100%;
 }
 
 .titleContainer {
-  
   padding: 0px;
   position: fixed;
   display: flex;
@@ -713,10 +711,16 @@ body {
   width: 100%;
   /* padding-right: 10px; */
   padding-top: 0px;
+  margin-top: 15px;
+  text-decoration: none;
 }
+a {color:black;}         /* Unvisited link  */
+a:visited {color:black;} /* Visited link    */
+a:hover {color:red;}   /* Mouse over link */
+a:active {color:red;}  /* Selected link   */
 .KvK {
   font-family: "Univers LT W04_59 Ult Cond";
-  color: red;
+  color: black;
   grid-column-start: 6;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -724,6 +728,8 @@ body {
   width: 100%;
   /* padding-right: 10px; */
   padding-top: 0px;
+  margin-top: 15px;
+   text-decoration: none;
 }
 .moves {
   display: flex;
@@ -755,6 +761,8 @@ body {
   width: 100%;
   /* padding-right: 10px; */
   padding-top: 0px;
+  margin-top: 15px;
+   text-decoration: none;
 }
 h1 {
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1051,6 +1059,8 @@ h2 {
   border-style: solid;
 }
 .item-c-kvk {
+  display: flex;
+  flex-direction: column;
   grid-column-start: 9;
   grid-column-end: 9;
   grid-row-start: 2;
@@ -1255,6 +1265,9 @@ h2 {
   color: red;
   margin-top: 34px;
   margin-right: 20px;
+  transition: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
 }
 .black {
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1263,6 +1276,9 @@ h2 {
   margin-top: 34px;
   margin-left: 20px;
   color: red;
+  transition: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
 }
 
 button {
@@ -1335,6 +1351,31 @@ button:active {
   transition: all;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+}
+.chartTitle {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
+  line-height: 2;
+  color: red;
+  margin-top: 20px;
+  border-top: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+}
+.chartSubTitle {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
+  color: black;
+  margin-top: 0px;
+}
+.chartSource {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 0.75em;
+  color: black;
+  margin-top: 0px;
 }
 /* Button styles end */
 </style>

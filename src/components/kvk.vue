@@ -18,6 +18,7 @@
     <LowerThird :moveIndex="moveIndex"></LowerThird>
     <!-- <ChessBoard></ChessBoard> -->
     <Sankey :moveIndex="moveIndex"></Sankey>
+  
     <!-- <Cors></Cors> -->
     <div class="bottom"></div>
   </div>

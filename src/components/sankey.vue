@@ -34,8 +34,43 @@
           :text-anchor='labelAnchor(label)'
           dy="0.35em"
         >{{label.name}}</text>
+        <text
+          class="name"
+          style="font:14px 'Univers LT W04_59 Ult Cond'"
+          fill='black'
+          opacity=".2"
+          x="0"
+          y="395"
+          text-anchor='left'
+          dy="0.35em"
+        >1. Current move</text>
+         <text
+          class="name"
+          style="font:14px 'Univers LT W04_59 Ult Cond'"
+          fill='black'
+          x="207"
+          y="395"
+          opacity=".2"
+          text-anchor='left'
+          dy="0.35em"
+        >2.</text>
+        <text
+          class="name"
+          style="font:14px 'Univers LT W04_59 Ult Cond'"
+          fill='black'
+          x="387"
+          y="395"
+          opacity=".2"
+          text-anchor='left'
+          dy="0.35em"
+        >3.</text>
       </g>
     </svg>
+      <div>
+        <p class="chartTitle"> Decision flow, 3 moves deep</p>
+        <p class="chartSubTitle"> Distribution of the top five responses to the current move, and the top five reponses to each of those.</p>
+        <p class="chartSource"> Source: Chessbase</p>
+      </div>
   </div>
 </template>
 
@@ -57,6 +92,11 @@ import Be3 from "./Be3.json";
 import Bg7 from "./Bg7.json";
 import f3 from "./f3.json";
 import Nc6 from "./Nc6.json";
+import Qd2 from "./Qd2.json";
+import castle1 from "./0-0.json";
+import Bc4 from "./Bc4.json";
+import Bd7 from "./Bd7.json";
+import h4 from "./h4.json";
 
 export default {
   name: "Sankey",
@@ -77,14 +117,6 @@ export default {
   },
   computed: {
      sankeyData() {
-      // const position = {
-      //   pos: this.moveIndex,
-      //   get index(){
-      //     return this.pos
-      //   }
-      // };
-      // console.log(position.index);
-      
       if (this.moves === null) {
         return null;
       }
@@ -95,7 +127,7 @@ export default {
         .nodePadding(15)
         .extent([
           [0, 5],
-          [this.width, this.height - 5],
+          [this.width, this.height - 25],
         ]);
       // console.log(this.moves);
       return (({ nodes, links }) =>
@@ -121,7 +153,7 @@ export default {
   
   },
   mounted: function() {
-    this.moves = [e4,e4,e4,e4,e4, e4, c5, Nf3, d6, d4, cxd4, Nxd4, Nf6, Nc3, g6, Be3, Bg7, f3, Nc6];
+    this.moves = [e4,e4,e4,e4,e4, e4, c5, Nf3, d6, d4, cxd4, Nxd4, Nf6, Nc3, g6, Be3, Bg7, f3, Nc6, Qd2, castle1, Bc4, Bd7, h4];
     this.sankey = this.sankeyData
   },
   updated(){
@@ -227,7 +259,7 @@ export default {
           return "red"}
           if (d.name === "f3" && d.node == 0){  
           return "red"}
-          if (d.name === "Nc6" && d.node == 1){  
+          if (d.name === " Nc6" && d.node == 2){  
           return "red"}
           if (d.name === "Qd2" && d.node == 6){  
           return "red"}
@@ -253,11 +285,11 @@ export default {
           return "red"}
           if (d.name === "Bd7" && d.node == 1){  
           return "red"}
-          if (d.name === "h4" && d.node == 6){  
+          if (d.name === "h4" && d.node == 8){  
           return "red"}
           if (d.name === "Bd7" && d.node == 0){  
           return "red"}
-          if (d.name === "h4" && d.node == 1){  
+          if (d.name === "h4" && d.node == 3){  
           return "red"}
           if (d.name === "Rc8" && d.node == 6){  
           return "red"}
@@ -277,11 +309,11 @@ export default {
           return "red"}
           if (d.name === "Ne5" && d.node == 1){  
           return "red"}
-          if (d.name === "0-0-0" && d.node == 6){  
+          if (d.name === " 0-0-0" && d.node == 6){  
           return "red"}
           if (d.name === "Ne5" && d.node == 0){  
           return "red"}
-          if (d.name === "0-0-0" && d.node == 1){  
+          if (d.name === " 0-0-0" && d.node == 1){  
           return "red"}
           if (d.name === "Nc4" && d.node == 6){  
           return "red"}
@@ -461,128 +493,6 @@ export default {
           return "red"
         } else {return 'black'}});
     }
-    // sankeyLabels() {
-    //   const svg = d3.select("#sankey");
-    //   svg
-    //     // .append("g")
-    //     // .style("font", "14px 'Univers LT W04_59 Ult Cond'")
-    //     .selectAll("text")
-    //     .data(this.sankeyData.nodes)
-    //     // .join("text")
-    //     .attr("fill",function(d) {
-    //     if (d.name === "e4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "c5" && d.node == 1){  
-    //       return "red"}
-    //         if (d.name === "Nf3" && d.node == 6){  
-    //       return "red"}
-    //     if (d.name === "c5" && d.node == 0){  
-    //       return "red"}
-    //     if (d.name === "Nf3" && d.node == 0){  
-    //       return "red"}
-    //     if (d.name === "d6" && d.node == 0){  
-    //       return "red"}
-    //     if (d.name === "cxd4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nxd4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nf6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nc3" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "g6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Be3" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bg7" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "f3" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nc6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Qd2" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "0-0" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bc4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bd7" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "h4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rc8" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bb3" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Ne5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "0-0-0" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nc4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bxc4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rxc4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "h5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nxh5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "g4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nf6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nde2" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Qa5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bh6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bxh6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Qxh6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rfc8" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rd3" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "R4c5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "g5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rxg5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rd5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Rxd5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nxd5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Re8" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Nef4" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bc6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "e5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Bxd5" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "exf6" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Qxh7+" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Kf8" && d.node == 0){  
-    //       return "red"}
-    //       if (d.name === "Qh8+" && d.node == 0){  
-    //       return "red"
-    //     } else {return 'black'}})
-    //     // .attr("x", (d) => (d.x0 < this.width / 2 ? d.x1 + 6 : d.x0 - 6))
-    //     // .attr("y", (d) => (d.y1 + d.y0) / 2)
-    //     // .attr("dy", "0.35em")
-    //     // .attr("text-anchor", (d) => (d.x0 < this.width / 2 ? "start" : "end"))
-    //     // .text((d) => d.name);
-    // }
   },
 };
 </script>

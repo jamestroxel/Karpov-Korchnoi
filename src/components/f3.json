@@ -1,8 +1,8 @@
 {
   "nodes": [
     { "node": 0, "name": "f3" },
-    { "node": 1, "name": "0-0" },
-    { "node": 2, "name": "Nc6" },
+    { "node": 1, "name": " 0-0" },
+    { "node": 2, "name": " Nc6" },
     { "node": 3, "name": "a6" },
     { "node": 4, "name": "h5" },
     { "node": 5, "name": "Nbd7" },

@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    { "node": 0, "name": "Qd2" },
+    { "node": 1, "name": "0-0" },
+    { "node": 2, "name": "Bd7" },
+    { "node": 3, "name": "h5" },
+    { "node": 4, "name": "a6" },
+    { "node": 5, "name": "Nxd4" },
+    { "node": 6, "name": "Bc4" },
+    { "node": 7, "name": "0-0-0" },
+    { "node": 8, "name": "g4" },
+    { "node": 9, "name": "Be2" },
+    { "node": 10, "name": "Nb3" },
+    { "node": 11, "name": "h4" },
+    { "node": 12, "name": "Bd3" },
+    { "node": 13, "name": "a3" },
+    { "node": 14, "name": "Bxd4" }
+    ],
+  "links": [
+    { "source": 0, "target": 1, "value": 8552 },
+    { "source": 0, "target": 2, "value": 348},
+    { "source": 0, "target": 3, "value": 77 },
+    { "source": 0, "target": 4, "value": 14 },
+    { "source": 0, "target": 5, "value": 10 },
+    { "source": 1, "target": 6, "value": 4460 },
+    { "source": 1, "target": 7, "value": 3789 },
+    { "source": 1, "target": 8, "value": 935 },
+    { "source": 1, "target": 9, "value": 21 },
+    { "source": 1, "target": 10, "value": 8 },
+    { "source": 2, "target": 7, "value": 236 },
+    { "source": 2, "target": 6, "value": 156 },
+    { "source": 2, "target": 8, "value": 63 },
+    { "source": 2, "target": 9, "value": 4 },
+    { "source": 2, "target": 11, "value": 1 },
+    { "source": 3, "target": 7, "value": 60 },
+    { "source": 3, "target": 6, "value": 17 },
+    { "source": 3, "target": 9, "value": 2 },
+    { "source": 3, "target": 11, "value": 1 },
+    { "source": 4, "target": 12, "value": 25 },
+    { "source": 4, "target": 7, "value": 12 },
+    { "source": 4, "target": 9, "value": 8 },
+    { "source": 4, "target": 6, "value": 5 },
+    { "source": 4, "target": 13, "value": 4 },
+    { "source": 5, "target": 14, "value": 10 }
+
+  ]
+}
