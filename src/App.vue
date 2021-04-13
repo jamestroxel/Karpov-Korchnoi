@@ -1,6 +1,6 @@
 <template>
   <div class="titleContainer">
-    <p class="title">Visualizing Chess, Patterns and Paranoia</p>
+    <p class="title">James Troxel, 2021</p>
   </div>
   <div class="navContainer">
     <div class="nav1"></div>
@@ -602,6 +602,7 @@ body {
 
 .titleContainer {
   padding: 0px;
+  margin:0px;
   position: fixed;
   display: flex;
   height: 100%;
@@ -614,8 +615,9 @@ body {
 .title {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1em;
+  text-align: center;
   margin-left: 12.5px;
-  margin-bottom: -275px;
+  margin-bottom: -150px;
   /* margin-bottom: -50px; */
   padding: 0px;
   transform: rotate(-90deg);
@@ -829,6 +831,16 @@ h2 {
   grid-row: 2;
   overflow: hidden;
 }
+.kvk-imageContainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  grid-column: 9 / 12;
+  grid-row: 2;
+  margin-top: 27px;
+  overflow: hidden;
+}
 .right-titleImageContainer {
   width: 100%;
   height: 100vh;
@@ -867,6 +879,13 @@ h2 {
 .right-image {
   width: 100%;
   /* height: 100vh; */
+  grid-column: 9 / 12;
+  grid-row: 2;
+}
+.kvk-image {
+  /* width: 100%; */
+  margin-top: -350px;
+  height: 1500px;
   grid-column: 9 / 12;
   grid-row: 2;
 }

@@ -8,16 +8,11 @@
     >
     
       <g stroke="black" fill="none">
-        <path
-          class="lines"
-          :key="path.key"
-          v-for="path in paths"
-          :x="path[0]"
-          :y="path.StandardBlitz"
-          :d="line(path.cors)"
-          :stroke-width=2
-        ></path>
+        <path id="GM" 
+        :d="gm(cors)"></path>
       </g>
+      <g class="axis x-axis" :transform="`translate(0, ${height - margin})`"></g>
+      <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
     </svg>
   </div>
 </template>
@@ -36,17 +31,41 @@ export default {
       d3: d3,
       width: 400,
       height: 400,
-      line: line,
-      cors: cors
+      margin: 0
     };
   },
-  computed: {},
+  computed: {
+    
+  },
   mounted: function() {
     this.cors = cors;
+
     // this.line = line();
   },
   methods: {
-    
+     line(){
+      return d3.line()
+        .x(d => this.xScale(d.cors.format))
+        .y(d => this.yScale(d.cors.value))
+    },
+    xScale(){
+      return d3.scaleOrdinal()
+        .domain(["Standard & Blitz", "Blitz & Bullet", "1 & 5 Minute"])
+        .range([this.margin, this.width - this.margin])
+    },
+    yScale(){
+      return d3.scaleLinear()
+        .domain([-1, 9])
+        .range([this.height - this.margin, this.margin])
+    },
+    gm(d){
+    return d3.select('#GM')
+      .attr("stroke", "black")
+      .attr("stroke-width", 2)
+      .attr('d', () => {
+        return this.line()(d.value)
+      })   
+    }  
   },
 };
 </script>

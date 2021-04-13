@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@chrisoakman/chessboardjs": "^1.0.0",
+    "@mliebelt/pgn-parser": "^1.2.5",
+    "bower": "^1.8.12",
     "chess.js": "^0.11.0",
     "chessboardjs-vue": "^1.0.9",
     "core-js": "^3.6.5",

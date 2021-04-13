@@ -1,11 +1,9 @@
 <template>
   <div class="container">
-    <!-- <div id="pgn" class="moves"></div> -->
     <div class="item-a-kvk">
+      <div style="height:100%;">
       <Story :moveIndex="moveIndex"></Story>
-    </div>
-    <div class="item-b-kvk">
-      <div id="board" style="width: 400px"></div>
+      </div>
       <div class="block" style="width: 400px">
         <button @click="previousMove" id="previous" type="button">
           &#60;
@@ -15,11 +13,11 @@
         </button>
       </div>
     </div>
+    <div class="item-b-kvk">
+      <div id="board" style="width: 400px"></div>
+    </div>
     <LowerThird :moveIndex="moveIndex"></LowerThird>
-    <!-- <ChessBoard></ChessBoard> -->
     <Sankey :moveIndex="moveIndex"></Sankey>
-  
-    <!-- <Cors></Cors> -->
     <div class="bottom"></div>
   </div>
 </template>
@@ -49,7 +47,6 @@ export default {
   },
   mounted: function() {
     this.moves = moves;
-    // this.moveIndex = moveIndex,
     this.cb = ChessBoard("board", "start");
   },
   computed: {

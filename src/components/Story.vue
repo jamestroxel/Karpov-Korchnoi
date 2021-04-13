@@ -6,7 +6,7 @@
     <p class="heading2">
         {{copy[this.moveIndex].heading}}
     </p>
-        <p class="subHead">
+    <p class="subHead">
         {{copy[this.moveIndex].subHeading}}
     </p>
     <p class="story">
