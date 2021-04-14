@@ -12,7 +12,7 @@
     <p class="player">
       Karpov
     </p>
-    <p class="white">{{ this.white[this.moveIndex] }}</p>
+    <p  v-if="moveIndex % 2 !== 0 && moveIndex > 4" class="white">{{ this.white[this.moveIndex] }}</p>
   </div>
   <div class="scoreR">
     <svg>
@@ -25,8 +25,10 @@
     </svg>
   </div>
   <div class="notationR">
-    <p class="black">{{ this.black[this.moveIndex] }}</p>
-    <p class="player">
+    <p 
+    v-if="moveIndex % 2 == 0 && moveIndex > 4"
+    class="black">{{ this.black[this.moveIndex] }}</p>
+    <p class="playerR">
       Korchnoi
     </p>
   </div>
@@ -170,7 +172,7 @@ export default {
   methods:{
     getIndex(){
       return 
-    }
+    },
   }
 };
 </script>

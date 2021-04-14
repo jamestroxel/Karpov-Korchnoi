@@ -1,5 +1,6 @@
 <template>
   <div class="item-c-kvk">
+    <p>{{moveIndex}}</p>
     <svg
       id="viz"
       :width="width"
@@ -7,10 +8,7 @@
       preserveAspectRatio="xMinYMin meet"
     >
     
-      <g stroke="black" fill="none">
-        <path id="GM" 
-        :d="gm(cors)"></path>
-      </g>
+      <g class="line" stroke="black" fill="none"></g>
       <g class="axis x-axis" :transform="`translate(0, ${height - margin})`"></g>
       <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
     </svg>
@@ -19,7 +17,7 @@
 
 <script>
 import * as d3 from "d3";
-import cors from "./correlations.json";
+import data from "./correlations.json";
 
 export default {
   name: "Correlations",
@@ -34,19 +32,20 @@ export default {
       margin: 0
     };
   },
-  computed: {
-    
+  updated(){
+    if (this.moveIndex > 24){
+      return this.gm();
+    }
   },
   mounted: function() {
-    this.cors = cors;
-
-    // this.line = line();
+    this.data = data;
   },
+
   methods: {
-     line(){
+    gmLine(){
       return d3.line()
-        .x(d => this.xScale(d.cors.format))
-        .y(d => this.yScale(d.cors.value))
+        .x(d => this.xScale(d.format))
+        .y(d => this.yScale(d.value))
     },
     xScale(){
       return d3.scaleOrdinal()
@@ -55,15 +54,21 @@ export default {
     },
     yScale(){
       return d3.scaleLinear()
-        .domain([-1, 9])
+        .domain([-1, 1])
         .range([this.height - this.margin, this.margin])
     },
-    gm(d){
-    return d3.select('#GM')
+    gm(){
+    const svg = d3.select("#viz");
+    var ref = this;
+      svg
+      .select('.line')
+      .selectAll('path')
+      .data(this.data)
+      .join('path')
       .attr("stroke", "black")
       .attr("stroke-width", 2)
-      .attr('d', () => {
-        return this.line()(d.value)
+      .attr('d', function(d) {
+        return ref.gmLine()(d.cors)
       })   
     }  
   },

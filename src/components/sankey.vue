@@ -91,7 +91,7 @@
     </div>
   </div>
   <div v-if="moveIndex > 23" class="item-c-kvk">
-    <Cors></Cors>
+    <Cors :moveIndex="moveIndex"></Cors>
     <div>
       <p class="chartTitle">Correlations</p>
       <p class="chartSubTitle">

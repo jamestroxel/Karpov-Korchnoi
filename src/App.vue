@@ -594,9 +594,6 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
-
-  /* min-height: 0; */
-  /* bottom: 150px; */
   height: 100%;
 }
 
@@ -618,7 +615,6 @@ body {
   text-align: center;
   margin-left: 12.5px;
   margin-bottom: -150px;
-  /* margin-bottom: -50px; */
   padding: 0px;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -637,34 +633,14 @@ body {
   z-index: 400000;
   grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
 }
-/* .navContainer {
-  margin: 0px;
 
-  padding: 0px;
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-  display: grid;
-  grid-template-columns:  1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr ;
-  background-color: white;
-  z-index: 400000;
-} */
 .nav1 {
-  /* position: fixed; */
   grid-column-start: 2;
   grid-column-end: 12;
   grid-row: 1;
   width: 100%;
-  /* background: white;
-    position: absolute;
-    left:50px;
-    right: 50px; */
   top: 0;
   padding: 0px;
-  /* margin: 0px; */
-  /* margin-left:50px;
-  margin-right:50px; */
   height: 50px;
   max-height: 50px;
   border-top: 0px;
@@ -673,28 +649,13 @@ body {
   border-right: 0px;
   border-color: black;
   border-style: solid;
-  /* overflow-y: hidden; */
 }
-/* .nav1 {
-  grid-column: 2 / span 8;
-  grid-row: 1;
-  background: white;
-  margin: 0px;
-  height: 50px;
-  border-top: 0px;
-  border-bottom: 1px;
-  border-left: 0px;
-  border-right: 0px;
-  border-color: black;
-  border-style: solid;
-} */
+
 .nav2 {
   grid-column: 5 / span 5;
   grid-row: 1;
   width: 100%;
   background: white;
-  /* position: fixed;
-  top:0; */
   margin: 0px;
   height: 50px;
   border-top: 0px;
@@ -710,8 +671,7 @@ body {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 1;
-  width: 100%;
-  /* padding-right: 10px; */
+  width: auto;
   padding-top: 0px;
   margin-top: 15px;
   text-decoration: none;
@@ -724,10 +684,10 @@ a:active {color:red;}  /* Selected link   */
   font-family: "Univers LT W04_59 Ult Cond";
   color: black;
   grid-column-start: 6;
-  grid-column-end: 6;
+  grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 1;
-  width: 100%;
+  width: auto;
   /* padding-right: 10px; */
   padding-top: 0px;
   margin-top: 15px;
@@ -738,7 +698,6 @@ a:active {color:red;}  /* Selected link   */
   /* align-content: flex-end; */
   vertical-align: bottom;
   align-items: flex-end;
-  /* text-align: end; */
   width: 75px;
   height: 20px;
   font-family: "Univers LT W04_59 Ult Cond";
@@ -748,7 +707,6 @@ a:active {color:red;}  /* Selected link   */
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 2;
-  /* width: 400px; */
   padding-right: 50px;
   margin-top: 40px;
   margin-right: 50px;
@@ -761,7 +719,6 @@ a:active {color:red;}  /* Selected link   */
   grid-row-start: 1;
   grid-row-end: 1;
   width: 100%;
-  /* padding-right: 10px; */
   padding-top: 0px;
   margin-top: 15px;
    text-decoration: none;
@@ -826,7 +783,6 @@ h2 {
 }
 .right-imageContainer {
   width: 100%;
-  /* height: 100%; */
   grid-column: 9 / 12;
   grid-row: 2;
   overflow: hidden;
@@ -1143,13 +1099,14 @@ h2 {
 }
 .notationR {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   /* align-items: center; */
   grid-column: 7;
   grid-row: 4;
   width: 200px;
-  background: white;
+  background: none;
   /* position: absolute; */
   /* left:50px;
     right: 50px; */
@@ -1193,8 +1150,18 @@ h2 {
   border-style: solid;
 }
 .player {
+  /* position: absolute; */
+  /* right:0; */
   font-family: "Univers LT W04_59 Ult Cond";
-  font-size: 3em;
+  font-size: 2.75em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.playerR {
+  position: absolute;
+  right:0;
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 2.75em;
   text-transform: uppercase;
   margin-top: 5px;
 }
@@ -1281,23 +1248,40 @@ h2 {
 .white {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
+  text-align: center;
+  height: 30px;
+  width: 55px;
+  border-radius: 50px 0px 0px 50px;
+  justify-content: center;
   color: red;
-  margin-top: 34px;
-  margin-right: 20px;
+  padding-top:2.5px;
+  margin-top: 20;
+  margin-right: 0px;
   transition: all;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+    -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red;
 }
 .black {
+  /* display:flex; */
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
-  height: 100%;
-  margin-top: 34px;
-  margin-left: 20px;
+  text-align: center;
+  height: 30px;
+  width: 55px;
+  border-radius: 0px 50px 50px 0px;
+  padding-top:2.5px;
+  margin-top: 20px;
+  margin-left: 0px;
   color: red;
   transition: all;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+    -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red;
 }
 
 button {
