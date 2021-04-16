@@ -100,7 +100,7 @@
       <p class="chartSource">Source: Chessbase</p>
     </div>
   </div>
-  <div v-if="moveIndex <= 4" class="item-c-kvk">
+  <div v-if="moveIndex < 4" class="item-c-kvk">
     <div class="kvk-imageContainer">
       <img class="kvk-image" src="../assets/GettyImages-535003872.png" />
     </div>

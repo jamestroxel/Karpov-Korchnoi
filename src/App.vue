@@ -813,9 +813,10 @@ h2 {
   overflow: hidden;
 }
 .right-svg {
-  width: 100vw;
-  height: 110vh;
-  grid-column: 9 / 12;
+  height: 100%;
+  /* height: 110vh; */
+  grid-column-start: 9;
+  grid-column-end: 9;
   grid-row: 2;
 }
 .right-turk {
@@ -1253,7 +1254,7 @@ h2 {
   width: 55px;
   border-radius: 50px 0px 0px 50px;
   justify-content: center;
-  color: red;
+  color: black;
   padding-top:2.5px;
   margin-top: 20;
   margin-right: 0px;
@@ -1275,7 +1276,7 @@ h2 {
   padding-top:2.5px;
   margin-top: 20px;
   margin-left: 0px;
-  color: red;
+  color: black;
   transition: all;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
