@@ -791,10 +791,12 @@ h2 {
   width: 100%;
   height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   grid-column: 9 / 12;
   grid-row: 2;
   margin-top: 27px;
+  background-color: 	#F5F5F5;
   overflow: hidden;
 }
 .right-titleImageContainer {
@@ -845,6 +847,16 @@ h2 {
   height: 1500px;
   grid-column: 9 / 12;
   grid-row: 2;
+}
+.standBy{
+  color: red;
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 0;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  text-transform: uppercase;
 }
 .right-image-landscape {
   width: 100%;
@@ -1228,6 +1240,9 @@ h2 {
 #sankey {
   margin-top: 25px;
 }
+#viz{
+  margin-top: 25px;
+}
 .links {
   opacity: 0.1;
   mix-blend-mode: multiply;
@@ -1258,8 +1273,8 @@ h2 {
   padding-top:2.5px;
   margin-top: 20;
   margin-right: 0px;
-  transition: all;
-  transition-duration: 0.25s;
+  transition:ease-in-out;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
     -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
@@ -1277,8 +1292,8 @@ h2 {
   margin-top: 20px;
   margin-left: 0px;
   color: black;
-  transition: all;
-  transition-duration: 0.25s;
+  transition:ease-in-out;
+  transition-duration: 1s;
   transition-timing-function: ease-in-out;
     -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;

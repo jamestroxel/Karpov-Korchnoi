@@ -1,5 +1,5 @@
 <template>
-  <div v-if="moveIndex > 4 && moveIndex < 24" class="item-c-kvk">
+  <div v-if="moveIndex > 4 && moveIndex < 23" class="item-c-kvk">
     <div class="item-c-kvk">
       <svg
         id="sankey"
@@ -90,19 +90,14 @@
       <p class="chartSource">Source: Chessbase</p>
     </div>
   </div>
-  <div v-if="moveIndex > 23" class="item-c-kvk">
-    <Cors :moveIndex="moveIndex"></Cors>
-    <div>
-      <p class="chartTitle">Correlations</p>
-      <p class="chartSubTitle">
-        Correlations between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
+  <div v-if="moveIndex > 22" class="item-c-kvk">
+    <Cors v-if="moveIndex > 22" :moveIndex="moveIndex"></Cors>
+    <div v-if="moveIndex > 23">
+      <p v-if="moveIndex > 23" class="chartTitle">Correlations</p>
+      <p v-if="moveIndex > 23" class="chartSubTitle">
+        Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
       </p>
-      <p class="chartSource">Source: Chessbase</p>
-    </div>
-  </div>
-  <div v-if="moveIndex < 4" class="item-c-kvk">
-    <div class="kvk-imageContainer">
-      <img class="kvk-image" src="../assets/GettyImages-535003872.png" />
+      <p v-if="moveIndex > 23" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
     </div>
   </div>
 </template>

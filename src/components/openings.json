@@ -1,0 +1,44 @@
+[
+  { 
+    "position":1,
+    "move": "Ruy Lopez",
+    "fen":"r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
+    "color": "white"
+  },
+  { 
+    "position":2,
+    "move": "The Queen's Gambit",
+    "fen":"rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":3,
+    "move": "Bird's Opening",
+    "fen":"rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":4,
+    "move": "The King's Pawn Opening",
+    "fen":"rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":5,
+    "move": "The Sicilian",
+    "fen":"rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR",
+    "color": "white"
+  },
+  { 
+    "position":6,
+    "move": "The Pirc Defence",
+    "fen":"rnbqkb1r/pp2pppp/3p1n2/2p5/2PP4/2N5/PP2PPPP/R1BQKBNR",
+    "color": "white"
+  },
+  {
+    "position":7,
+    "move": "The Scotch Game",
+    "fen":"r1bqkbnr/pppp2pp/2n2p2/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R",
+    "color": "black"
+  }
+]

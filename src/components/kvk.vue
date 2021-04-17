@@ -18,6 +18,19 @@
     </div>
     <LowerThird :moveIndex="moveIndex"></LowerThird>
     <Sankey :moveIndex="moveIndex"></Sankey>
+    <div v-if=" moveIndex > 0 && moveIndex < 4" class="item-c-kvk" style="width: 400px">
+      <div style="padding-top: 18px;">
+        <h1 class="standBy">{{openings[positionIndex].move}}</h1>
+        <div class="block" style="width: 400px">
+          <button @click="previousPos" id="previousPos" type="button">
+            &#60;
+          </button>
+          <button @click="nextPos" id="nextPos" type="button">
+            &#62;
+          </button>
+        </div>
+        </div>
+    </div>
     <div class="bottom"></div>
   </div>
 </template>
@@ -29,6 +42,7 @@ import Sankey from "./Sankey.vue";
 // import Cors from "./Correlations.vue";
 import Story from "./Story.vue";
 import moves from "./moves.json";
+import openings from "./openings.json";
 
 export default {
   name: "KvK",
@@ -41,17 +55,23 @@ export default {
   },
   data() {
     return {
+      positionIndex: 0,
       moveIndex: 0,
       moves: moves,
+      openings: openings
     };
   },
   mounted: function() {
     this.moves = moves;
+    this.opening = openings;
     this.cb = ChessBoard("board", "start");
   },
   computed: {
     getMove() {
       return this.moveIndex;
+    },
+    getPos() {
+      return this.positionIndex;
     },
   },
   methods: {
@@ -75,6 +95,25 @@ export default {
     },
     makeMove() {
       this.cb.position(this.moves[this.getMove].fen);
+    },
+    nextPos() {
+      if (this.positionIndex == 6) {
+        return;
+      } else {
+        this.positionIndex = this.positionIndex + 1;
+        this.makePos();
+      }
+    },
+    previousPos() {
+      if (this.positionIndex == 0) {
+        return;
+      } else {
+        this.positionIndex = this.positionIndex - 1;
+        this.makePos();
+      }
+    },
+    makePos() {
+      this.cb.position(this.opening[this.getPos].fen);
     },
   },
 };
