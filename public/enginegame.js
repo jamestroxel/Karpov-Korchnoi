@@ -61,9 +61,7 @@ function engineGame(options) {
             }
         }
         $('#engineStatus').html(status);
-        
     }
-
 
     function displayClock(color, t) {
         var isRunning = false;
@@ -231,33 +229,6 @@ function engineGame(options) {
             }
         }
         displayStatus();
-        var float = parseFloat(engineStatus.score);
-        // var bar = (float/200)*1000
-        console.log(parseFloat(engineStatus.score))
-        // console.log(JSON.stringify(engineStatus.score))
-        var scale = d3.scaleLinear()
-            .domain([0, float/2])
-            .range([0, 200]);
-        d3.select('#barL')
-        .transition()
-        .duration(400)
-        .ease(d3.easeBackInOut)
-        .attr('fill', 'black')
-        .attr('height', 12.5)
-        // .attr('width', float*100)
-        .attr('width', function(){if (float < 0) {return 100+float}if (float > 0){return 100-float}})
-        // .attr('width', function(){if (float < 0) {return float*scale}if (float > 0){return float*scale}})
-        
-        d3.select('#barR')
-        .transition()
-        .duration(400)
-        .ease(d3.easeBackInOut)
-        .attr('fill', 'black')
-        .attr('height', 12.5)
-        // .attr('width', 100+float)
-        .attr('width',function(){if (float < 0) {return 100-float}if (float > 0){return 100+float}})
-        // .attr('width', function(){if (float < 0) {return (100-float)*scale}if (float > 0){return (100+float)*scale}})
-
     };
 
     var onDrop = function(source, target) {

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="moveIndex > 4 && moveIndex < 23" class="item-c-kvk">
+  <div v-if="moveIndex > 4 && moveIndex < 24" class="item-c-kvk">
     <div class="item-c-kvk">
       <svg
         id="sankey"
@@ -90,14 +90,14 @@
       <p class="chartSource">Source: Chessbase</p>
     </div>
   </div>
-  <div v-if="moveIndex > 22" class="item-c-kvk">
-    <Cors v-if="moveIndex > 22" :moveIndex="moveIndex"></Cors>
-    <div v-if="moveIndex > 23">
-      <p v-if="moveIndex > 23" class="chartTitle">Correlations</p>
-      <p v-if="moveIndex > 23" class="chartSubTitle">
+  <div v-if="moveIndex > 41 && moveIndex < 44" class="item-c-kvk">
+    <Cors v-if="moveIndex > 41 && moveIndex < 44" :moveIndex="moveIndex"></Cors>
+    <div v-if="moveIndex > 42 && moveIndex < 44">
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartTitle">Correlations</p>
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSubTitle">
         Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
       </p>
-      <p v-if="moveIndex > 23" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
     </div>
   </div>
 </template>
@@ -126,6 +126,7 @@ import castle1 from "./0-0.json";
 import Bc4 from "./Bc4.json";
 import Bd7 from "./Bd7.json";
 import h4 from "./h4.json";
+
 
 export default {
   name: "Sankey",

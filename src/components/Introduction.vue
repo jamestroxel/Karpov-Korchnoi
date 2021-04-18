@@ -8,28 +8,6 @@
 </p>
  <p class="teaserAttribute">Anatoly Karpov stares down Korchnoi<br>
 </p>
- <!-- <p :class="text.headingStyle">
-        {{text[1].heading}}
-    </p>
-        <p :class="text.subHeadingStyle">
-        {{text[1].subHeading}}
-    </p> -->
-<!-- <p v-for="item in copy" :key="item.key" :class="item.style">
-    {{ item.text }}
-</p> -->
-    <!-- <el-carousel interval=0 height="465px">
-        <el-carousel-item v-for="text in copy" :key="text.key">
-            <p :class="text.headingStyle">
-                {{text.heading}}
-            </p>
-             <p :class="text.subHeadingStyle">
-                {{text.subHeading}}
-            </p>
-            <p :class="text.style">
-                {{ text.text }}
-            </p>
-        </el-carousel-item>
-    </el-carousel> -->
 </template>
 <script>
     import intro from './introduction.json';

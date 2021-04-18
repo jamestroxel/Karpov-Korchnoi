@@ -1,11 +1,11 @@
 const parser = require('@mliebelt/pgn-parser');
 const fs = require('fs');
-let gameTwo = '../data/game2.pgn';
+let gameTwo = '../data/ficsgamesdb_202101_chess2000_movetimes_193477.pgn';
 let parsedTwo = [];
-let game = parser.parse('1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. Be3 Bg7 7. f3 Nc6 8. Qd2  O-O 9. Bc4 Bd7 10. h4 Rc8 11. Bb3 Ne5 12. O-O-O Nc4 13. Bxc4 Rxc4 14. h5 Nxh5  15. g4 Nf6 16. Nde2 Qa5 17. Bh6 Bxh6 18. Qxh6 Rfc8 19. Rd3 R4c5 20. g5 Rxg5 21.  Rd5 Rxd5 22. Nxd5 Re8 23. Nef4 Bc6 24. e5 Bxd5 25. exf6 exf6 26. Qxh7+ Kf8 27.  Qh8+', {startRule: "game"})
+let game = parser.parse('1. e4 {[%emt 0.0]} c5 {[%emt 0.0]} 2. Nf3 {[%emt 3.173]} d6 {[%emt 0.1]} 3. g3 {[%emt 1.231]} e5 {[%emt 12.776]} 4. Bg2 {[%emt 6.65]} Nc6 {[%emt 1.976]} 5. O-O {[%emt 2.683]} Nf6 {[%emt 0.685]} 6. Nc3 {[%emt 2.001]} Be7 {[%emt 1.654]} 7. d3 {[%emt 2.404]} O-O {[%emt 0.665]} 8. b3 {[%emt 1.626]} Be6 {[%emt 12.195]} 9. h3 {[%emt 2.104]} d5 {[%emt 4.049]} 10. Bb2 {[%emt 1.656]} d4 {[%emt 1.172]} 11. Nb1 {[%emt 3.109]} Bd6 {[%emt 11.795]} 12. Nbd2 {[%emt 2.765]} Re8 {[%emt 11.255]} 13. Nc4 {[%emt 3.142]} Bxc4 {[%emt 2.105]} 14. bxc4 {[%emt 1.876]} Qb6 {[%emt 0.339]} 15. Bc1 {[%emt 1.79]} Nd8 {[%emt 10.942]} 16. Nh2 {[%emt 3.192]} Ne6 {[%emt 1.822]} 17. f4 {[%emt 1.91]} Qc7 {[%emt 1.467]} 18. f5 {[%emt 1.534]} Nd8 {[%emt 4.751]} 19. g4 {[%emt 1.691]} Nc6 {[%emt 0.571]} 20. a3 {[%emt 2.973]} Rad8 {[%emt 10.178]} 21. g5 {[%emt 3.973]} Nd7 {[%emt 0.219]} 22. h4 {[%emt 1.314]} Qa5 {[%emt 2.191]} 23. Bh3 {[%emt 4.657]} b5 {[%emt 2.904]} 24. cxb5 {[%emt 3.072]} Qxb5 {[%emt 0.503]} 25. h5 {[%emt 8.216]} c4 {[%emt 2.46]} 26. g6 {[%emt 5.675]} fxg6 {[%emt 9.573]} 27. fxg6 {[%emt 2.162]} cxd3 {[%emt 1.595]} 28. cxd3 {[%emt 2.695]} Nc5 {[%emt 1.615]} 29. gxh7+ {[%emt 14.141]} Kxh7 {[%emt 0.848]} 30. Bf5+ {[%emt 4.707]} Kg8 {[%emt 7.527]} 31. Qg4 {[%emt 6.506]} Ne7 {[%emt 8.897]} 32. h6 {[%emt 3.441]} Nxf5 {[%emt 0.722]} 33. Rxf5 {[%emt 9.16]} Rd7 {[%emt 1.762]} 34. Bg5 {[%emt 69.199]} Qxd3 {[%emt 8.524]} 35. Raf1 {[%emt 12.583]} Re6 {[%emt 8.244]} 36. h7+ {[%emt 37.8]} Kxh7 {[%emt 0.883]} 37. Qh5+ {[%emt 8.34]} Kg8 {[%emt 0.315]} 38. Ng4 {[%emt 23.235]} Nxe4 {[%emt 7.944]} 39. Nf6+ {[%emt 6.554]} Nxf6 {[%emt 0.6]} 40. Bxf6 {[%emt 2.872]} gxf6 {[%emt 3.346]} 41. R1f2 {[%emt 17.112]} Rg7+ {[%emt 6.208]} 42. Rg2 {[%emt 1.098]} Qe3+ {[%emt 0.1]} 43. Kh2 {[%emt 1.465]} e4+ {[%emt 0.288]} {White forfeits on time}', {startRule: "game"})
 parsedTwo.push(JSON.stringify(game));
-fs.writeFileSync('../data/game2.json', parsedTwo); 
+fs.writeFileSync('../data/gameTime.json', parsedTwo); 
 
-function rankFile(){
-    parsedTwo.reduce()
-}
+// function rankFile(){
+//     parsedTwo.reduce()
+// }

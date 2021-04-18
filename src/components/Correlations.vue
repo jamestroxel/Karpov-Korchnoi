@@ -9,7 +9,7 @@
       <g class="line" fill="none"></g>
       <g
         class="axis x-axis"
-        :transform="`translate(0, ${(height - 7) * 0.915})`"
+        :transform="`translate(0, ${(height - 8) * 0.915})`"
       ></g>
       <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
     </svg>
@@ -30,7 +30,7 @@ export default {
       d3: d3,
       width: 400,
       height: 400,
-      margin: 25,
+      margin: 27,
     };
   },
   updated() {
@@ -64,7 +64,7 @@ export default {
       return d3
         .scaleLinear()
         .domain([-0.1, 1])
-        .range([this.height - 5, 5]);
+        .range([this.height - 6, 6]);
     },
   },
   methods: {
@@ -170,24 +170,7 @@ export default {
           const line = ref.gmLine()(d.cors);
           return line;
         });
-      // svg
-      //   .select(".line")
-      //   .selectAll("circle")
-      //   .data(this.data)
-      //   .join("circle")
-      //   .attr("class", function(d) {
-      //     if (d.rank == "GM") {
-      //       return "gm";
-      //     }
-      //     if (d.rank == "IM") {
-      //       return "im";
-      //     }
-      //     if (d.rank == "FM") {
-      //       return "fm";
-      //     } else {
-      //       return "none";
-      //     }
-      //   });
+    
       const redDotFill = svg
         .append("defs")
         .append("marker")
@@ -196,7 +179,7 @@ export default {
         .attr("id", "redDotFill")
         .attr("viewBox", "0 0 18 18")
         .attr("refX", 5)
-        .attr("refY", 10)
+        .attr("refY", 9)
         .attr("fill", "red")
         .attr("markerWidth", 9)
         .attr("markerHeight", 9)
@@ -211,7 +194,7 @@ export default {
         .attr("id", "redDotStroke")
         .attr("viewBox", "0 0 18 18")
         .attr("refX", 5)
-        .attr("refY", 10)
+        .attr("refY", 9)
         .attr("stroke", "red")
         .attr("stroke-width", 3)
         .attr("fill", "white")
@@ -228,7 +211,7 @@ export default {
         .attr("id", "blackDotFill")
         .attr("viewBox", "0 0 18 18")
         .attr("refX", 5)
-        .attr("refY", 10)
+        .attr("refY", 9)
         .attr("fill", "black")
         .attr("markerWidth", 9)
         .attr("markerHeight", 9)
@@ -243,7 +226,7 @@ export default {
         .attr("id", "blackDotStroke")
         .attr("viewBox", "0 0 18 18")
         .attr("refX", 5)
-        .attr("refY", 10)
+        .attr("refY", 9)
         .attr("stroke", "black")
         .attr("stroke-width", 3)
         .attr("fill", "white")
