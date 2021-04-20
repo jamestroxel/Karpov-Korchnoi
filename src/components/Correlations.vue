@@ -88,16 +88,6 @@ export default {
       const svg = d3.select("#viz");
       var ref = this;
 
-      // svg
-      //   .append("defs")
-      //   .append("marker")
-      //   .attr("id", "arrow")
-      //   .attr("viewBox", "0 0 10 10")
-      //   .attr("refX", 1)
-      //   .attr("refY", 5)
-      //   .attr("markerWidth", 6)
-      //   .attr("markerHeight", 6)
-      //   .attr("orient", "auto");
       svg
         .select(".line")
         .selectAll("path")
@@ -170,7 +160,64 @@ export default {
           const line = ref.gmLine()(d.cors);
           return line;
         });
-    
+      svg
+        .append("circle")
+        .attr("r", 3.5)
+        .attr("cx", 370)
+        .attr("cy", this.height*0.833)
+        .attr("fill", "red")
+        .attr("stroke", "none");
+        svg.append("text")
+        .text("GM")
+        .attr("class", "axis")
+        .attr("x", 380)
+        .attr("y", (this.height*0.833)+5)
+
+      svg
+        .append("circle")
+        .attr("r", 3.5)
+        .attr("cx", 370)
+        .attr("cy", (this.height*0.833)-20)
+        .attr("fill", "white")
+        .attr("stroke", "red")
+        .attr("stroke-weight", 3)
+        .attr("viewBox", "0 0 18 18");
+        svg.append("text")
+        .text("IM")
+        .attr("class", "axis")
+        .attr("x", 380)
+        .attr("y", (this.height*0.833)-15)
+
+      svg
+        .append("circle")
+        .attr("r", 3.5)
+        .attr("cx", 370)
+        .attr("cy", (this.height*0.833)-40)
+        .attr("fill", "black")
+        .attr("stroke", "none")
+        .attr("stroke-weight", 3)
+        .attr("viewBox", "0 0 18 18");
+        svg.append("text")
+        .text("FM")
+        .attr("class", "axis")
+        .attr("x", 380)
+        .attr("y", (this.height*0.833)-35)
+
+      svg
+        .append("circle")
+        .attr("r", 3.5)
+        .attr("cx", 370)
+        .attr("cy", (this.height*0.833)-60)
+        .attr("fill", "white")
+        .attr("stroke", "black")
+        .attr("stroke-weight", 3)
+        .attr("viewBox", "0 0 18 18");
+      svg.append("text")
+        .text("None")
+        .attr("class", "axis")
+        .attr("x", 380)
+        .attr("y", (this.height*0.833)-55)
+
       const redDotFill = svg
         .append("defs")
         .append("marker")

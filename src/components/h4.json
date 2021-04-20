@@ -2,7 +2,7 @@
   "nodes": [
     { "node": 0, "name": "h4" },
     { "node": 1, "name": "Rc8" },
-    { "node": 2, "name": "Ne5" },
+    { "node": 2, "name": " Ne5" },
     { "node": 3, "name": "h5" },
     { "node": 4, "name": "Qa5" },
     { "node": 5, "name": "Qc7" },

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="moveIndex > 4 && moveIndex < 24" class="item-c-kvk">
+  <div v-if="moveIndex > 4 && moveIndex < 26" class="item-c-kvk">
     <div class="item-c-kvk">
       <svg
         id="sankey"
@@ -126,6 +126,8 @@ import castle1 from "./0-0.json";
 import Bc4 from "./Bc4.json";
 import Bd7 from "./Bd7.json";
 import h4 from "./h4.json";
+import Rc8 from "./Rc8.json";
+import Bb3 from "./Bb3.json";
 
 
 export default {
@@ -209,6 +211,8 @@ export default {
       Bc4,
       Bd7,
       h4,
+      Rc8,
+      Bb3
     ];
     this.sankey = this.sankeyData;
   },
@@ -421,16 +425,16 @@ export default {
           if (d.name === "Bb3" && d.node == 1) {
             return "red";
           }
-          if (d.name === "Ne5" && d.node == 6) {
+          if (d.name === "Ne5" && d.node == 5) {
             return "red";
           }
           if (d.name === "Bb3" && d.node == 0) {
             return "red";
           }
-          if (d.name === "Ne5" && d.node == 1) {
+          if (d.name === "Ne5" && d.node == 2) {
             return "red";
           }
-          if (d.name === " 0-0-0" && d.node == 6) {
+          if (d.name === "0-0-0" && d.node == 6) {
             return "red";
           }
           if (d.name === "Ne5" && d.node == 0) {

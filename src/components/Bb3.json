@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    { "node": 0, "name": "Bb3" },
+    { "node": 1, "name": " h5" },
+    { "node": 2, "name": "Ne5" },
+    { "node": 3, "name": "Na5" },
+    { "node": 4, "name": "Qa5" },
+    { "node": 5, "name": "Nxd4" },
+    { "node": 6, "name": "0-0-0" },
+    { "node": 7, "name": "Nxc6" },
+    { "node": 8, "name": "g4" },
+    { "node": 9, "name": "Nde2" },
+    { "node": 10, "name": "Nd5" },
+    { "node": 11, "name": "h5" },   
+    { "node": 12, "name": "Bh6" },  
+    { "node": 13, "name": "Bxd4" } 
+    ],
+  "links": [
+    { "source": 0, "target": 1, "value": 381 },
+    { "source": 0, "target": 2, "value": 250 },
+    { "source": 0, "target": 3, "value": 17 },
+    { "source": 0, "target": 4, "value": 5 },
+    { "source": 0, "target": 5, "value": 3 },
+    { "source": 1, "target": 6, "value": 443 },
+    { "source": 1, "target": 7, "value": 8 },
+    { "source": 1, "target": 8, "value": 2 },
+    { "source": 1, "target": 9, "value": 2 },
+    { "source": 1, "target": 10, "value": 1 },
+    { "source": 2, "target": 6, "value": 930 },
+    { "source": 2, "target": 11, "value": 55 },
+    { "source": 2, "target": 12, "value": 6 },
+    { "source": 2, "target": 8, "value": 5 },
+    { "source": 3, "target": 11, "value": 15 },
+    { "source": 3, "target": 6, "value": 13 },
+    { "source": 3, "target": 12, "value": 2 },
+    { "source": 3, "target": 8, "value": 1 },
+    { "source": 4, "target": 6, "value": 5 },
+    { "source": 4, "target": 8, "value": 1 },
+    { "source": 5, "target": 8, "value": 4 }
+  ]
+}
