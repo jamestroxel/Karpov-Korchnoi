@@ -10,13 +10,23 @@
     "style": "callout"
   },
   { 
-    "move": "22. Re8",
+    "move": "22. Nxd5",
     "text": "Here the aforementioned 22... Qd8 does not work: 23 Nef4 Qf8 24 Nxf6+ and 25 Qxh7 mate.", 
     "style": "callout"
   },
   { 
-    "move": "22. Re8",
+    "move": "22. Nxd5",
     "text": "Here the aforementioned 22... Qd8 does not work: 23 Nef4 Qf8 24 Nxf6+ and 25 Qxh7 mate.", 
+    "style": "callout"
+  },
+  { 
+    "move": "23. Nef4",
+    "text": "Black must keep watch over d5, otherwise Nxf6+ and Nd5 follow, mating.", 
+    "style": "callout"
+  },
+  { 
+    "move": "23. Nef4",
+    "text": "Black must keep watch over d5, otherwise Nxf6+ and Nd5 follow, mating.", 
     "style": "callout"
   },
   { 
@@ -37,6 +47,21 @@
   { 
     "move": "25. exf6",
     "text": "As one of my friends said, in such positions you must “sit on your hands”; i.e., not rush to make pretty moves.", 
+    "style": "callout"
+  },
+  { 
+    "move": "26. Qxh7+",
+    "text": "The game was pretty and effective, but from my point of view it merely earned one point, and, at that, only because of the wrong choice of opening variation.", 
+    "style": "callout"
+  },
+  { 
+    "move": "26. Qxh7+",
+    "text": "The game was pretty and effective, but from my point of view it merely earned one point, and, at that, only because of the wrong choice of opening variation.", 
+    "style": "callout"
+  },
+  { 
+    "move": "26. Qxh7+",
+    "text": "The game was pretty and effective, but from my point of view it merely earned one point, and, at that, only because of the wrong choice of opening variation.", 
     "style": "callout"
   },
   { 

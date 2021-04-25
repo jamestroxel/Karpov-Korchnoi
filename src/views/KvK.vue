@@ -14,7 +14,16 @@
       </div>
     </div>
     <div class="item-b-kvk">
-      <div id="board" style="width: 400px"></div>
+      <div id="board"></div>
+    </div>
+    <div v-if="moveIndex == 3" class="item-c">
+      <div style="height:100%">
+        <img class="kvk-image" src="../assets/kotovTree.png"/>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">Alexander Kotov's opening tree.</span
+        ><br />Kotov, A. Think Like a Grandmaster. London: Batsford, 1995. 
+      </p>
     </div>
     <LowerThird :moveIndex="moveIndex"></LowerThird>
     <Sankey :moveIndex="moveIndex"></Sankey>
@@ -37,7 +46,7 @@
         <p class="annotation">{{annotation[moveIndex-35].text}}</p>
       </div>
     </div>
-    <div v-if=" moveIndex > 44 && moveIndex < 57" class="item-c-kvk" style="width: 400px">
+    <div v-if=" moveIndex > 44 && moveIndex < 61" class="item-c-kvk" style="width: 400px">
       <div style="padding-top: 18px;">
         <p class="annotationMove">{{annotationPartTwo[moveIndex-45].move}}</p>
         <p class="annotation">{{annotationPartTwo[moveIndex-45].text}}</p>
@@ -78,6 +87,12 @@ export default {
       annotationPartTwo: annotationPartTwo
     };
   },
+  created() {
+  window.addEventListener("resize", this.myEventHandler);
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.myEventHandler);
+  },
   mounted: function() {
     this.moves = moves;
     this.opening = openings;
@@ -98,7 +113,7 @@ export default {
   },
   methods: {
     nextMove() {
-      if (this.moveIndex == 57) {
+      if (this.moveIndex == 62) {
         return;
       } else {
         this.moveIndex = this.moveIndex + 1;
@@ -119,7 +134,7 @@ export default {
       this.cb.position(this.moves[this.getMove].fen);
     },
     nextPos() {
-      if (this.positionIndex == 12) {
+      if (this.positionIndex == 10) {
         return;
       } else {
         this.positionIndex = this.positionIndex + 1;
@@ -137,6 +152,9 @@ export default {
     makePos() {
       this.cb.position(this.opening[this.getPos].fen);
     },
+    myEventHandler() {
+    this.cb.resize()
+  }
   },
 };
 </script>

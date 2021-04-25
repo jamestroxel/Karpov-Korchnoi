@@ -2,12 +2,12 @@
   <div class="titleContainer">
     <p class="title">James Troxel, 2021</p>
   </div>
-  <div class="navContainer">
+  <nav class="navContainer">
     <div class="nav1"></div>
     <router-link to="/prologue" class="prologue">Prologue</router-link>
     <router-link to="/kvk" class="KvK">Karpov vs. Korchnoi</router-link>
-    <router-link to="/play" class="play">Play</router-link>
-  </div>
+    <router-link to="/bibliography" class="play">Bibliography</router-link>
+  </nav>
   <router-view/>
 </template>
 
@@ -150,6 +150,7 @@ body {
   grid-row-end: 3;
   width: 100%;
   height: 100%;
+  margin-top: -40px;
 }
 
 .titleContainer {
@@ -169,7 +170,7 @@ body {
   font-size: 1em;
   text-align: center;
   margin-left: 12.5px;
-  margin-bottom: -150px;
+  margin-bottom: -110px;
   padding: 0px;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -186,7 +187,7 @@ body {
   display: grid;
   background-color: white;
   z-index: 400000;
-  grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-columns: 50px 1fr 50px minmax(350px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
 }
 
 .nav1 {
@@ -231,12 +232,55 @@ body {
   margin-top: 15px;
   text-decoration: none;
 }
+.prologue.router-link-active{
+  color: red;
+}
 a {color:black;}         /* Unvisited link  */
 a:visited {color:black;} /* Visited link    */
 a:hover {color:red;}   /* Mouse over link */
 a:active {color:red;}  /* Selected link   */
 .KvK {
   font-family: "Univers LT W04_59 Ult Cond";
+  color: black;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: auto;
+  /* padding-right: 10px; */
+  padding-top: 0px;
+  margin-top: 15px;
+   text-decoration: none;
+}
+.KvKbody {
+  font-family: "Univers LT W04_59 Ult Cond";
+  color: black;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: auto;
+  /* padding-right: 10px; */
+  padding-top: 0px;
+  margin-top: 10px;
+ padding-bottom: 15px;
+   text-decoration: none;
+   border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+}
+.KvK.router-link-active{
+  color: red;
+}
+.KvKbody.router-link-active{
+  color: red;
+}
+.KvK-button {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 2em;
   color: black;
   grid-column-start: 6;
   grid-column-end: 7;
@@ -278,6 +322,9 @@ a:active {color:red;}  /* Selected link   */
   margin-top: 15px;
    text-decoration: none;
 }
+.play.router-link-active{
+  color: red;
+}
 h1 {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 3.5em;
@@ -309,8 +356,8 @@ h1 {
 }
 .heading1 {
   font-family: "Univers LT W04_59 Ult Cond";
-  font-size: 3.5em;
-  margin-top: -10px;
+  font-size: 3.45em;
+  margin-top: 0px;
   margin-bottom: 50px;
   text-transform: uppercase;
   column-span: all;
@@ -334,6 +381,12 @@ h2 {
 .left-image {
   width: 100%;
   grid-column: 2 / 8;
+  grid-row: 2;
+}
+.item-a-image {
+  width: 100%;
+  margin-bottom: 25px;
+  grid-column: 4 / 4;
   grid-row: 2;
 }
 .right-imageContainer {
@@ -385,7 +438,7 @@ h2 {
 }
 .right-imageContainer-landscape {
   width: 100%;
-  height: 90vh;
+  /* height: 90vh; */
   grid-column: 6 / 12;
   grid-row: 2;
   overflow: hidden;
@@ -398,8 +451,8 @@ h2 {
 }
 .kvk-image {
   /* width: 100%; */
-  margin-top: -350px;
-  height: 1500px;
+  margin-top: 20px;
+  width: 100%;
   grid-column: 9 / 12;
   grid-row: 2;
 }
@@ -456,19 +509,20 @@ h2 {
   /* min-height: 0; */
   /* height: auto; */
   /* height: 100%; */
-  /* margin-bottom: 100%; */
+  margin-top: 0px;
   overflow-y: scroll;
 }
-.teaser {
+.teaser{
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5;
   text-align: start;
   /* min-height: 0; */
   /* height: auto; */
-  height: 100%;
+  /* height: 100%; */
   margin-top: 0px;
 }
+
 .teaserAttribute {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
@@ -483,7 +537,7 @@ h2 {
 }
 .teaserHead {
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5;
   text-align: start;
   /* min-height: 0; */
@@ -500,12 +554,17 @@ h2 {
   position: absolute;
   margin-left: -0.75em;
 }
-/* .teaser:after {
-   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 2em;
+.bibStory {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
   line-height: 1.5;
-    content: '”';
-} */
+  text-align: start;
+  /* min-height: 0; */
+  /* height: auto; */
+  /* height: 100%; */
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1.25em;
@@ -528,11 +587,41 @@ h2 {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 50px 1fr 50px 400px 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-columns: 50px 1fr 50px minmax(350px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
   overflow:hidden;
 }
+.bibContainer {
+ width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px minmax(350px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-rows: 50px repeat(3, 1fr)50px;
+  overflow-y:scroll;
+}
 .item-a {
+  display: flex;
+  flex-direction: column;
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  /* min-height: 0; */
+  /* padding-right: 10px; */
+  /* padding-top: 25px; */
+  /* overflow-y: scroll; */
+  /* bottom: 150px; */
+  height: 100%;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+}
+.item-a-noRule {
   display: flex;
   flex-direction: column;
   font-family: "Univers LT W01_55 Roman1475956";
@@ -547,12 +636,12 @@ h2 {
   /* overflow-y: scroll; */
   /* bottom: 150px; */
   height: 100%;
-  border-top: 0px;
+  /* border-top: 0px;
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
   border-color: black;
-  border-style: solid;
+  border-style: solid; */
 }
 .item-a-span {
   display: flex;
@@ -578,6 +667,68 @@ h2 {
   border-color: black;
   border-style: solid;
 }
+.data {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  padding-right: 10px;
+  padding-top: 25px;
+  max-width: 350px;
+
+}
+.data.text {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  padding-right: 10px;
+  padding-top: 25px;
+  width:100%;
+
+}
+.references {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  padding-right: 10px;
+  padding-top: 25px;
+ max-width: 350px;
+}
+.referencesText {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start:6;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  padding-right: 10px;
+  padding-top: 25px;
+  width:100%;
+}
+.code {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  padding-right: 10px;
+  padding-top: 25px;
+ max-width: 350px;
+}
+.code.text {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  padding-right: 10px;
+  padding-top: 25px;
+  width:100%;
+}
 .item-a-kvk {
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
@@ -595,23 +746,45 @@ h2 {
 }
 .item-b {
   grid-column-start: 6;
-  grid-column-end: 6;
+  grid-column-end: 8;
   grid-row-start: 2;
-  grid-row-end: 2;
-  width: 400px;
+  grid-row-end: 3;
+  width: 100%;
   /* padding-top:168px; */
   padding-right: 0px;
   margin: 0px;
+   height: 100%;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
 }
 .item-b-kvk {
+     -moz-box-sizing: content-box;
+  box-sizing: content-box;
   grid-column-start: 6;
-  grid-column-end: 6;
+  grid-column-end: 8;
   grid-row-start: 2;
   grid-row-end: 2;
-  width: 400px;
+  width: 100%;
   padding-top: 25px;
   padding-right: 0px;
   margin: 0px;
+}
+.item-b-bib-span {
+  grid-column-start: 3;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 100%;
+  padding-top: 25px;
+  padding-right: 0px;
+  margin: 0px;
+}
+.item-b-kvk-span:last-child{
+  height:100%;
 }
 .item-c {
   display: flex;
@@ -738,14 +911,15 @@ h2 {
   border-right: 0px;
   border-color: black;
   border-style: solid;
+  /* background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: black; */
 }
 .player {
-  /* position: absolute; */
-  /* right:0; */
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 2.75em;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 .playerR {
   position: absolute;
@@ -753,7 +927,7 @@ h2 {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 2.75em;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 .form-horizontal {
   height: 0px;
@@ -826,6 +1000,19 @@ h2 {
   /* font-weight: 700; */
   font-size: 14px;
 }
+.spaceAxis {
+  cursor: default;
+  font-family: "Univers LT W04_59 Ult Cond";
+  text-align:center;
+  font-size: 14px;
+  padding-bottom: 14px;
+     border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+}
 .links {
   opacity: 0.1;
   mix-blend-mode: multiply;
@@ -838,6 +1025,124 @@ h2 {
   transition: all;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+}
+.B{
+  height:25px;
+  float:right;
+  position:absolute;
+  right:0px;
+}
+.W{
+  height:25px;
+  float:right;
+  position:absolute;
+  left:0px;
+}
+.moveCount{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 30px;
+  height:10px;
+  /* border-radius: 200px 200px 0px 0px;
+      -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red; */
+  width: 400px;
+  justify-content: center;
+  color: black;
+  grid-column: 6;
+  grid-row: 3;
+  padding-top: 0px;
+     border-top: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+  transition:ease-in-out;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.bulbContainer{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 65px;
+  height:25px;
+  width: 400px;
+  justify-content: center;
+  color: black;
+  grid-column: 6;
+  grid-row: 3;
+  padding-top: 0px;
+}
+
+.bulb{
+  height:20px;
+  /* width:5px; */
+  padding-left:17.5px;
+  padding-right:17.5px;
+  margin:0px;
+  background: white;
+   border-radius: 20px 20px 0px 0px;
+       -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+}
+.gameStats{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 51px;
+  height:21px;
+      background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: black;
+  width: 400px;
+  justify-content: center;
+  color: black;
+  grid-column: 6;
+  grid-row: 3;
+  padding-top: 0px;
+       border-top: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+  transition:ease-in-out;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+.statsLabel{
+ font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.25em;
+  line-height:1;
+  text-align: center;
+  height:20px;
+  padding-left:17.5px;
+  padding-right:17.5px;
+  margin:0px;
+  margin-top:-1px;
+  background: white;
+  text-transform: uppercase;
+  border: 1px;
+   border-color: black;
+  border-style: solid;
+   border-radius: 40px 40px 40px 40px;
+}
+
+.count{
+ font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.25em;
+  text-align: center;
+  height:15px;
+  padding-bottom: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:0px;
+  background: white;
 }
 .name {
   transition: all;
@@ -884,25 +1189,38 @@ h2 {
 }
 
 button {
-  display: inline-block;
+
+  /* display: inline-block; */
   border: none;
+    background: black;
+    border-radius: 2px;
   /* padding: 1rem 2rem; */
-  margin: 0;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
   text-decoration: none;
-  background: none;
-  color: black;
+  height: 25px;
+  overflow: hidden;
+  width: 25px;
+  color: white;
   font-family: sans-serif;
-  font-size: 2em;
-  line-height: 1;
+  font-size: 1em;
+  line-height: 0.75;
   cursor: pointer;
   text-align: center;
-  transition: background 250ms ease-in-out, transform 150ms ease;
+  text-anchor: middle;
+  /* transition: background 250ms ease-in-out, transform 150ms ease; */
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
 button:hover {
-  color: red;
+  color: black;
+    background: white;
+      -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red;
+  
 }
 /* button:focus {
     background: none;
@@ -912,11 +1230,17 @@ button:hover {
 button:focus {
   outline: 0px solid white;
   outline-offset: -4px;
+
 }
 
 button:active {
   transform: scale(0.99);
-  color: black;
+  color:red;
+     background: white;
+      -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+  
 }
 
 #floorPlan {
@@ -957,7 +1281,7 @@ button:active {
 .chartTitle {
   font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
-  line-height: 2;
+  line-height: 2.5;
   color: red;
   margin-top: 20px;
   border-top: 1px;
@@ -979,5 +1303,259 @@ button:active {
   color: black;
   margin-top: 0px;
 }
+.space{
+  width:400px;
+  height:400px;
+  position: relative;
+     background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: black;
+      -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+}
+
+.rowLeft{
+   -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  float: left;
+  position: absolute;
+  top:0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0px;
+  height: 50px;
+  width: 200px;
+  background-color:white;
+    -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+}
+.rowLeft.one{
+  position: absolute;
+  top:50px;
+}
+.rowLeft.two{
+  position: absolute;
+  top:100px;
+}
+.rowLeft.three{
+  position: absolute;
+  top:150px;
+}
+.rowLeft.four{
+  position: absolute;
+  top:300px;
+  left: 200px;
+}
+.rowLeft.five{
+  position: absolute;
+  top:250px;
+}
+.rowLeft.six{
+  position: absolute;
+  top:300px;
+}
+.rowLeft.seven{
+  position: absolute;
+  top:350px;
+}
+.rowLeft.eight{
+  position: absolute;
+  top:150px;
+}
+.rowLeft.nine{
+  position: absolute;
+  top:150px;
+  left: 200px;
+}
+.rowLeft.ten{
+  position: absolute;
+  top:100px;
+  left: 200px;
+}
+.rowLeft.eleven{
+  position: absolute;
+  top:100px;
+  left: 200px;
+}
+.rowLeft.twelve{
+  position: absolute;
+  top:50px;
+}
+.rowLeft.twelveB{
+  position: absolute;
+  top:200px;
+}
+.rowLeft.thirteen{
+  position: absolute;
+  top:100px;
+}
+.rowLeft.fourteen{
+  position: absolute;
+  top:200px;
+}
+.rowLeft.fourteenB{
+  position: absolute;
+  top:50px;
+}
+.rowLeft.fifteen{
+  position: absolute;
+  top:200px;
+}
+.rowLeft.fifteenB{
+  position: absolute;
+  top:50px;
+}
+.rowLeft.fifteen{
+  position: absolute;
+  top:150px;
+}
+.rowLeft.sixteen{
+  position: absolute;
+  top:200px;
+}
+.rowLeft.seventeen{
+  position: absolute;
+  top:50px;
+}
+.rowLeft.eighteen{
+  position: absolute;
+  top:0px;
+}
+.zoukhar{
+  color: none;
+  /* z-index: 400000; */
+      /* -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red; */
+
+}
+.spaceLabels{
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.25em;
+  text-align: left;
+  margin-top: 20px;
+
+}
+.legend{
+  display: flex;
+  flex-direction:row;
+  float: right;
+
+}
+.legend.sankey{
+  margin-top:20px;
+  display: flex;
+  flex-direction:row;
+  float: right;
+
+}
+.legendItem{
+   -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: flex-start;
+  margin-top:-5px;
+  margin-left: 25px;
+  margin-right: -20px;
+  height: 50px;
+  width:100px;
+}
+.sankeyLegendItem{
+   -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: flex-start;
+  margin-top:-5px;
+  margin-left: 25px;
+  margin-right: -35px;
+  height: 25px;
+  width:100px;
+}
+.slidecontainer {
+  margin-top:20px;
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 25%; /* Full-width */
+  height: 2px; /* Specified height */
+  background: black; /* Grey background */
+  outline: none; /* Remove outline */
+  border-radius: 12.5;
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: red; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  background: red; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+.in{
+  display:inline;
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1em;
+  width:auto;
+  color: black;
+  background: white;
+    border-radius: 2px;
+  text-align: left;
+    padding-left:7px;
+  padding-right:7px;
+  padding-top:2px;
+  padding-bottom:4px;
+  /* margin-left: 5px; */
+  margin-top: 20px;
+  text-transform: uppercase;
+        -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+}
+.depth{
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1em;
+  /* color: white;
+  background: black; */
+  text-align: left;
+  margin-top: 20px;
+  text-transform: uppercase;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:2px;
+  padding-bottom:4px;
+  /* margin-left: 2px;  */
+  /* border-radius: 2px; */
+}
+
 /* Button styles end */
 </style>

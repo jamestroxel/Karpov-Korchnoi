@@ -1,18 +1,25 @@
 <template>
   <div class="item-c-kvk">
-    <svg
-      id="viz"
-      :width="width"
-      :height="height"
-      preserveAspectRatio="xMinYMin meet"
-    >
-      <g class="line" fill="none"></g>
-      <g
-        class="axis x-axis"
-        :transform="`translate(0, ${(height - 8) * 0.915})`"
-      ></g>
-      <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
-    </svg>
+      <svg
+        id="viz"
+        :width="width"
+        :height="height"
+        preserveAspectRatio="xMinYMin meet"
+      >
+        <g class="line" fill="none"></g>
+        <g
+          class="axis x-axis"
+          :transform="`translate(0, ${(height - 8) * 0.915})`"
+        ></g>
+        <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
+      </svg>
+      <div v-if="moveIndex > 42 && moveIndex < 44">
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartTitle">Correlations</p>
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSubTitle">
+        Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
+      </p>
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
+    </div>
   </div>
 </template>
 
@@ -160,6 +167,7 @@ export default {
           const line = ref.gmLine()(d.cors);
           return line;
         });
+       
       svg
         .append("circle")
         .attr("r", 3.5)

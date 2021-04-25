@@ -1,12 +1,12 @@
 <template>
 <div>
-    <h1 class="heading1">
+    <h1 v-if="this.moveIndex < 4 || this.moveIndex > 54" class="heading1">
         {{copy[this.moveIndex].title}}
     </h1>
-    <p class="heading2">
+    <p v-if="this.moveIndex == 0 || this.moveIndex == 1 || this.moveIndex == 49 || this.moveIndex == 52" class="heading2">
         {{copy[this.moveIndex].heading}}
     </p>
-    <p class="subHead">
+    <p v-if="this.moveIndex == 17 || this.moveIndex == 40" class="subHead">
         {{copy[this.moveIndex].subHeading}}
     </p>
     <p class="story">

@@ -2,9 +2,9 @@
   {
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "heading": "Moscow 1974",
+    "heading": "Moscow, 1974",
     "headingStyle": "heading2",
-    "text": "We have seen the ways in which various behavioral patterns were interpreted in 1978, either to the benefit or apparent detriment of those perceiving them. We now look at another example that further illustrates the role of pattern recognition within grandmaster-level chess, but in a much more controlled environment that allows us, in addition to the players themselves, to analyze the  statistical patterns on the chessboard more carefully.",
+    "text": "The 1978 match showed us some unusual ways in which behavioral patterns can be interpreted or misinterpreted. We now look at another example that further illustrates the role of pattern recognition within grandmaster-level chess, but in a much more controlled environment that allows us to analyze the  statistical patterns on the chessboard more carefully.",
     "style": "story"
   },
   { 
@@ -12,7 +12,7 @@
     "titleStyle": "heading1",
     "heading": "The Opening",
     "headingStyle": "heading2",
-    "text": "“The English Opening”, “the Ruy Lopez”, “the Pirc”, “the Slav” and “the Grunfeld” are examples of the many openings with which all grandmasters are intimately familiar. “The successful choice of opening is a great skill (not only in the chess sense, but also psychologically)”, says Karpov. Click through the selection of opening positions to the right to get a sense of the variety of opening strategies.",
+    "text": "“The successful choice of opening is a great skill (not only in the chess sense, but also psychologically)”, says Karpov. Click through the selection of opening positions to the right to get a sense of the variety of opening strategies.",
     "style": "story"
   },
   { 
@@ -36,7 +36,7 @@
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "In game two of the 1974 Candidates Final, Karpov opened with e4, the King’s Pawn Opening. This is by far the most common first move for White due in part to the way it controls the center squares, a key objective in the opening phase. Korchnoi responded with c5, which signifies the start of the Sicilian Defense, another common opening classified as a flank defense by its method of controlling the center from the flanks.",
+    "text": "In game two of the 1974 Candidates Final, Karpov opened with e4, the King’s Pawn Opening. This is by far the most common first move for White due in part to the way it controls the center squares, a key objective in the opening phase. Korchnoi responded with c5, which initiates the Sicilian Defense, another common opening.",
     "style": "story"
   },
   { 
@@ -128,91 +128,91 @@
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "The author then turns his study to Fischer himself by searching for similar runs in Fischer’s 827 games found on Chessbase’s Big 2000 database. After running the same test and applying the same criteria as before, Segal found that a 13-move sequence in Fischer vs. Reshevsky from 1957 returned a p-value of 0.0023. Still a relatively weak argument, it would amount to the strongest evidence yet to indicate any irregularity in this type of underlying pattern. The data shows yet another example of a grandmaster-level chess player distracted by patterns that aren’t there.",
+    "text": "The author then turns his study to Fischer himself by searching for similar runs in Fischer’s 827 games found on Chessbase’s Big 2000 database.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "The author then turns his study to Fischer himself by searching for similar runs in Fischer’s 827 games found on Chessbase’s Big 2000 database. After running the same test and applying the same criteria as before, Segal found that a 13-move sequence in Fischer vs. Reshevsky from 1957 returned a p-value of 0.0023. Still a relatively weak argument, it would amount to the strongest evidence yet to indicate any irregularity in this type of underlying pattern. The data shows yet another example of a grandmaster-level chess player distracted by patterns that aren’t there.",
+    "text": "After running the same test and applying the same criteria as before, Segal found that a 13-move sequence in Fischer vs. Reshevsky from 1957 returned a p-value of 0.0023. Still a relatively weak argument, it would amount to the strongest evidence yet to indicate any irregularity in this type of underlying pattern. The data shows yet another example of a grandmaster-level chess player distracted by patterns that aren’t there.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "As we follow the game from its root to outer-most branch, the amount of game data distributed accross the narrowing list of viable moves becomes less and less. The weakening precedent makes this type of visualization more helpful in the opening stage of the game than in the middle game.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "As we follow the game from its root to outer-most branch, the amount of game data distributed accross the narrowing list of viable moves becomes less and less. The weakening precedent makes this type of visualization more helpful in the opening stage of the game than in the middle game.",
+    "style": "story"
+  },
+  { 
+      "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
+    "style": "story"
+  },
+  { 
+      "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
+    "style": "story"
+  },
+  { 
+      "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
+    "style": "story"
+  },
+  { 
+      "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
-    "title": "Slaying the Dragon",
+      "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
-    "title": "Slaying the Dragon",
+      "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
-    "title": "Slaying the Dragon",
+      "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
-    "title": "Slaying the Dragon",
+      "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
-    "title": "Slaying the Dragon",
+      "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
-    "title": "Slaying the Dragon",
+      "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
-    "style": "story"
-  },
-  { 
-    "title": "Slaying the Dragon",
-    "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
-    "style": "story"
-  },
-  { 
-    "title": "Slaying the Dragon",
-    "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
-    "style": "story"
-  },
-  { 
-    "title": "Slaying the Dragon",
-    "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
-    "style": "story"
-  },
-  { 
-    "title": "Slaying the Dragon",
-    "titleStyle": "heading1",
-    "text": "As we have already seen, the opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move. That is, until move 16.",
+    "text": "The opening development is commonly based on predefined patterns that can, at times, resemble a game of Rock, Paper, Scissors. So it is unsurprising to find that Karpov's own annotation of this game has very little to say about any specific move until about move 16.",
     "style": "story"
   },
   { 
@@ -262,19 +262,31 @@
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "The Effects of Time Pressure on Chess Skill is one of many studies that evaluate this relationship. The authors examined the correlations between chess rankings and time controls using two similar-but-different methods. They start by identifying the two main thought processes at play; pattern recognition and deep search. When pattern recognition and the ability to think ten moves ahead are understood respectively as “fast” and “slow” processes, evaluating this temporality can reveal insights into the more precise roles that these abilities play.",
+    "text": "The Effects of Time Pressure on Chess Skill is one of many studies that evaluate this relationship. The authors examined the correlations between chess rankings and time controls using two similar-but-different methods. They start by identifying the two main thought processes at play; pattern recognition and deep search.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "Their research does, in fact, show that as time pressure increases, its relationship with player strength increases. This would indicate that sensitivity to pattern recognition is highest under time pressure. While the authors highlight the fact that this positive trend is weaker for grandmasters than for less skilled players, I argue that not only does the positive trend remain, but that this can be accounted for by the fact that grandmasters generally make less mistakes than novices. Grouping the data in Fig. 1 by game format, rather than title shows this pattern more clearly.",
+    "text": "When pattern recognition and the ability to think ten moves ahead are understood respectively as “fast” and “slow” processes, evaluating this temporality can reveal insights into the more precise roles that these abilities play.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "Even more conclusive is the exhaustive study conducted in Response Time Distributions in Rapid Chess, where researchers acquired rapid-chess game data from Free Internet Chess Server in order to conduct a series of experiments that focus primarily on the time recorded between each move. They found that, “time pressure provokes a selective enhancement of rapid object recognition, favoring the best players, but also increases the likelihood of errors and blunders, which in turn tends to equalize the game.”",
+    "text": "Their research does, in fact, show that as time pressure increases, its relationship with player strength increases. This would indicate that sensitivity to pattern recognition is highest under time pressure.",
+    "style": "story"
+  },
+  { 
+    "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "While the authors highlight the fact that this positive trend is weaker for grandmasters than for less skilled players, I argue that not only does the positive trend remain, but that this can be accounted for by the fact that grandmasters generally make less mistakes than novices. Grouping the data in Fig. 1 by game format, rather than title shows this pattern more clearly.",
+    "style": "story"
+  },
+  { 
+    "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "Even more conclusive is the exhaustive study conducted in Response Time Distributions in Rapid Chess, where researchers acquired rapid-chess game data from Free Internet Chess Server in order to conduct a series of experiments that focus primarily on the time recorded between each move. They found that, “time pressure provokes a selective enhancement of rapid object recognition, favoring the best players.”",
     "style": "story"
   },
   { 
@@ -292,21 +304,15 @@
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "And so Korchnoi takes his time. Karpov clocks him at 36 minutes before he responds with R4c5?, the only recorded mistake of the entire game.",
-    "style": "story"
-  },
-  { 
-    "title": "Slaying the Dragon",
-    "titleStyle": "heading1",
     "heading": "The Middle Game",
     "headingStyle": "heading2",
-    "text": "At this point in Karpov’s annotation of the game, we follow him as he entertains a number of possible responses to R4c5? while pointing out the themes on the board that make these good or bad decisions.  Board awareness and the ability to recognize the shape of the game inform each player on what strategy to take.",
+    "text": "At this point in Karpov’s annotation of the game, we follow him as he entertains a number of possible responses to various moves while pointing out the themes on the board that make these either good or bad decisions.  Board awareness and the ability to recognize the shape of the game inform each player on what strategy to take.",
     "style": "story"
   },
   { 
     "title": "Slaying the Dragon",
     "titleStyle": "heading1",
-    "text": "The two main openings in this game were the Open Sicilian Defense and eventually the Yugoslav Attack. Both of these openings have flank positions that helped to determine the asymmetrical shape of this position. Rahim Rajahi, a well known figure in the West Village chess community, believes that the Open Sicilian gives you “less space but more time.”",
+    "text": "The two main openings in this game were the Open Sicilian Defense and eventually the Yugoslav Attack. Both of these openings use flank strategies that helped to determine the asymmetrical shape of this position. Rahim Rajahi, a well known figure in the West Village chess community, believes that the Open Sicilian gives you “less space but more time.”",
     "style": "story"
   },
   { 
@@ -320,7 +326,13 @@
     "titleStyle": "heading1",
     "heading": "The End Game",
     "headingStyle": "heading2",
-    "text": "Korchnoi resigns after briefly giving chase to the long-awaited 26. Qxh7+. Rajahi observes that “grandmasters don’t play the books or the lines, they play each other.” Karpov was prepared for Korchnoi by studying his behavioral patterns far beyond this single game. He attributes his win merely to “the wrong choice of opening variation.”  This is, of course, an over simplification. The reason it was the wrong opening variation is because Karpov was prepared for it in granular detail.",
+    "text": "Korchnoi resigns after briefly giving chase to the long-awaited 26. Qxh7+. Rajahi observes that “grandmasters don’t play the books or the lines, they play each other.”",
+    "style": "story"
+  },
+  { 
+    "title": "Slaying the Dragon",
+    "titleStyle": "heading1",
+    "text": "Karpov was prepared for Korchnoi by studying his behavioral patterns far beyond this single game. He attributes his win merely to “the wrong choice of opening variation.”  This is, of course, an over simplification. The reason it was the wrong opening variation is because Karpov was prepared for it in granular detail.",
     "style": "story"
   },
   { 
@@ -332,43 +344,49 @@
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "If we are to use the research cited here as our guide, it would appear as if Viktor Korchnoi struggled to distinguish meaningful cues from meaningless information in 1974, and even more so in 1978. Korchnoi failed to anticipate Karpov’s strategy in game two of the 1974 match in spite of available data and plenty of personal experience with the man. We saw this again in 1978 when his awareness and accounting of external factors were much more apparent, however misguided, in viewing Karpov and his delegation as if some twisted version of the Mechanical Turk.",
+    "text": "If we are to use the research cited here as our guide, it would appear as if Viktor Korchnoi struggled to distinguish meaningful cues from meaningless information in 1974, and even more so in 1978. Korchnoi failed to anticipate Karpov’s strategy in game two of the 1974 match in spite of available data and plenty of personal experience with the man.",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "Karpov on the other hand, while demonstrating an acute sensitivity to all manner of plots and schemes, was able to discipline his own paranoia in order to exploit that of his opponent. As previously stated, Korchnoi’s attitudes towards parapsychology were well-known by 1978, and it would be naive to claim that Karpov was not aware of this when he invited his own parapsychologist to the Philippines. Are there parallels to be drawn between the pressures experienced by a grandmaster-level chess player and those of our own “disinformation” age?",
+    "text": "We saw this again in 1978 when his awareness and accounting of external factors were much more apparent, however misguided, in viewing Karpov and his delegation as if some twisted version of the Mechanical Turk.",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "Consider the state of mind of a person experiencing this drama unfold through an extended drip of imminent threats, plots, conspiracies and other developments. Today’s fragmented, 24-hour news cycle conditions us to consume vast amounts of complex information in microseconds, and from a screen the size of a credit card. Whether the information we are receiving comes from polling data, marinated quail’s eggs, or YouTube Q-Anon videos, we are often required to digest this stimuli under similar stresses.",
+    "text": "Karpov on the other hand, while demonstrating an acute sensitivity to all manner of plots and schemes, was able to discipline his own paranoia in order to exploit that of his opponent. As previously stated, Korchnoi’s attitudes towards parapsychology were well-known by 1978, and it would be naive to claim that Karpov was not aware of this when he invited his own parapsychologist to the Philippines.",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that it has less to do with my gifts as a storyteller, and more to do with certain similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
+    "text": "Are there parallels to be drawn between the pressures experienced by a grandmaster-level chess player and those of our own “disinformation” age?",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that it has less to do with my gifts as a storyteller, and more to do with certain similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
+    "text": "Consider the state of mind of a person experiencing this drama unfold through an extended drip of imminent threats, plots, conspiracies and other developments. Today’s fragmented, 24-hour news cycle conditions us to consume vast amounts of complex information in microseconds, and from a screen the size of a credit card.",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that it has less to do with my gifts as a storyteller, and more to do with certain similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
+    "text": "Whether the information we are receiving comes from polling data, marinated quail’s eggs, or YouTube Q-Anon videos, we are often required to digest this stimuli under similar stresses.",
     "style": "story"
   },
   {
     "title": "Conclusion",
     "titleStyle": "heading1",
-    "text": "If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that it has less to do with my gifts as a storyteller, and more to do with certain similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
+    "text": "If this saga from 1978 strikes anyone as somehow “binge-worthy”, I would argue that this has less to do with my gifts as a storyteller, and more to do with similarities between the way time is experienced in a bizarre, grandmaster-level chess tournament, and the way we experience time today.",
+    "style": "story"
+  },
+  {
+    "title": "Conclusion",
+    "titleStyle": "heading1",
+    "text": "We have seen plenty of evidence that shows the increasing difficulty of connecting the dots in a high pressure environment. Gary Kasaprov once described chess as a “laboratory of cognition.” I argue that today, we find oursleves the guinea pigs in a grand experiment of a similar nature, but with much higher stakes.",
     "style": "story"
   }
 ]

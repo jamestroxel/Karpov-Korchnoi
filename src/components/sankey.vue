@@ -1,6 +1,5 @@
 <template>
   <div v-if="moveIndex > 4 && moveIndex < 26" class="item-c-kvk">
-    <div class="item-c-kvk">
       <svg
         id="sankey"
         :width="width"
@@ -80,6 +79,14 @@
           </text>
         </g>
       </svg>
+    <div>
+      <div class="legend sankey">
+        <svg class="sankeyLegendItem">
+          <text style="font:14px 'Univers LT W04_59 Ult Cond'"
+             fill="black" x="10" y="12" height="15">Chosen moves</text>
+          <rect x="0" y="0" height="14" width="2" fill="red"></rect>
+        </svg>
+      </div>
     </div>
     <div>
       <p class="chartTitle">Decision flow, 3 moves deep</p>
@@ -92,13 +99,7 @@
   </div>
   <div v-if="moveIndex > 41 && moveIndex < 44" class="item-c-kvk">
     <Cors v-if="moveIndex > 41 && moveIndex < 44" :moveIndex="moveIndex"></Cors>
-    <div v-if="moveIndex > 42 && moveIndex < 44">
-      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartTitle">Correlations</p>
-      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSubTitle">
-        Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
-      </p>
-      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
-    </div>
+    
   </div>
 </template>
 

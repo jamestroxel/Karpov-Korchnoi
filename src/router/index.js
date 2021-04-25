@@ -1,8 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import playGame from '../views/playGame.vue'
+// import playGame from '../views/playGame.vue'
 import KvK from '../views/KvK.vue'
 import Prologue from '../views/Prologue.vue'
 import NotFound from '../views/NotFound.vue'
+import Bibliography from '../views/Bibliography.vue'
 
 const routes = [
   {
@@ -10,11 +11,17 @@ const routes = [
     redirect: '/prologue'
   },
   {
-    path: '/play',
-    name: 'Play',
-    component: playGame,
+    path: '/bibliography',
+    name: 'Bibliography',
+    component: Bibliography,
     // props: route => ({ speciesFilter: route.query.species })
   },
+  // {
+  //   path: '/play',
+  //   name: 'Play',
+  //   component: playGame,
+  //   // props: route => ({ speciesFilter: route.query.species })
+  // },
   {
     path: '/kvk',
     name: 'KvK',

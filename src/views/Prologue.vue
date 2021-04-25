@@ -190,25 +190,27 @@
   <!--  -->
   <div class="container" style="margin-top:50px;">
     <div class="item-a-span">
-      <p class="teaserHead">Dear colleagues!</p>
-      <p class="teaser">
-        World Champion Anatoly Karpov has asked me, as press attaché of the
-        Soviet delegation, to bring the following to the notice of the
-        representatives of the press. Over a number of years Korchnoi has made
-        insulting remarks about Karpov, other grandmasters, and well-known chess
-        officials. Nevertheless, following the principles of sportsmanship and
-        to meet the wishes of the esteemed organizers of such a significant
-        event as a match for the World Championship, the World Champion was
-        prepared to shake hands with his opponent before the start of each game.
-        And he did this even after, at his pre-match press conference in Manila,
-        Korchnoi once again took the liberty of insulting the World Champion and
-        a number of members of his delegation.
-      </p>
-      <p class="teaser">
-        Recent events have shown that the Challenger has no intention of
-        rejecting his course of aggravating the situation. Under such
-        circumstances Karpov does not wish to shake hands with Korchnoi.
-      </p>
+      <div style="height:100%;">
+        <p class="teaserHead">Dear colleagues!</p>
+        <p class="teaser">
+          World Champion Anatoly Karpov has asked me, as press attaché of the
+          Soviet delegation, to bring the following to the notice of the
+          representatives of the press. Over a number of years Korchnoi has made
+          insulting remarks about Karpov, other grandmasters, and well-known chess
+          officials. Nevertheless, following the principles of sportsmanship and
+          to meet the wishes of the esteemed organizers of such a significant
+          event as a match for the World Championship, the World Champion was
+          prepared to shake hands with his opponent before the start of each game.
+          And he did this even after, at his pre-match press conference in Manila,
+          Korchnoi once again took the liberty of insulting the World Champion and
+          a number of members of his delegation.
+        </p>
+        <p class="teaser">
+          Recent events have shown that the Challenger has no intention of
+          rejecting his course of aggravating the situation. Under such
+          circumstances Karpov does not wish to shake hands with Korchnoi.
+        </p>
+      </div>
       <p class="teaserAttribute">
         <span style="color:red">Aleksander Roshal</span><br />Baguio City,
         Philippines - 1978
@@ -239,8 +241,7 @@
       <p class="teaserAttribute">
         <span style="color:red;"
           >Anatoly Karpov stares down Viktor Korchnoi.</span
-        ><br />Edmondson, E. B., and Mikhail Tal.<br />Chess Scandals: the 1978
-        World Chess Championship. Oxford, UK: Pergamon Press, 1981.
+        ><br />Edmondson, E. B., and Mikhail Tal. 1981.
       </p>
     </div>
   </div>
@@ -249,7 +250,7 @@
       <img class="left-image" src="../assets/smile-small.png" />
     </div>
     <div class="item-a-span">
-      <div Style="height:100%;">
+      <div style="height:100%;">
         <h1 class="heading1Quote">Trifles, Which Cannot Be Ignored</h1>
         <h2 class="heading2">
           Baguio, 1978
@@ -257,16 +258,8 @@
         <p class="story">
           {{ this.trifles[this.triflesIndex].text }}
         </p>
-        <!-- <p class="story">
-          Typhoon Emang struck the Philippines on the first day of game five.
-          Karpov described the sound of the rain as sufficient to drown out the
-          noise of an already tempestuous affair inside the brand new Baguio
-          City Convention Center. Up until this point, the loudest protest came
-          from the precise meaning of the violet colored yogurt being delivered
-          to Karpov during each game.
-        </p> -->
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="triflesPrevious" id="previous" type="button">
           &#60;
         </button>
@@ -276,7 +269,7 @@
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">The insufferable glutton.</span><br />Karpov,
-        Anatoly. My Best Games. Great Neck, NY: R.H.M. Press, 1978.
+        Anatoly. 1978.
       </p>
     </div>
   </div>
@@ -286,30 +279,14 @@
     </div>
     <div class="item-a-span">
       <div style="height:100%">
+        <p class="subHead">
+          The Dark Bishop
+        </p>
         <p class="story">
           {{ this.triflesTwo[this.triflesTwoIndex].text }}
         </p>
-        <!-- <p class="story">
-          “It is clear that a cunningly arranged distribution of edible items to
-          one player during the game, emanating from one delegation or the other,
-          could convey a kind of coded message,” read the official complaint to
-          the Chief Arbiter. “Thus, a yogurt after move 20 could signify ‘we
-          instruct you to offer a draw’; or a sliced mango could mean ‘we order
-          you to decline a draw’. A dish of marinated quails’ eggs could mean
-          ‘play Ng4 at once’, and so on. The possibilities are limitless,” it
-          continued. But this had, by game five, become a tightly choreographed
-          ritual, and the colorful yogurt arrived by waiter at 7:15pm sharp,
-          without exception. There were of course, other squabbles over which flag
-          Korchnoi should be allowed to play under, for instance, or Karpov’s
-          endless suspicion towards the decisions of the event organizers on
-          everything from the location of the tournament, to the make and model of
-          the chess clocks. Additionally, Korchnoi’s predictable refusal to stand
-          for the Soviet National Anthem during the opening ceremony was rendered
-          moot when the orchestra mistakenly played the Internationale instead.
-          However, it wasn’t until game five that things took a dark turn.
-        </p> -->
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="triflesTwoPrevious" id="previous" type="button">
           &#60;
         </button>
@@ -319,14 +296,16 @@
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Dr. Vladimir Zoukhar.</span><br />Edmondson, E.
-        B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
-        Championship. Oxford, UK: Pergamon Press, 1981.
+        B., and Mikhail Tal. 1981.
       </p>
     </div>
   </div>
   <div class="container">
-    <img class="left-image" src="../assets/karpov-korchnoi-small-2.png" />
-    <div class="item-c">
+    <div class="right-imageContainer-landscape">
+      <img class="right-image-landscape" src="../assets/karpov-korchnoi-small-2.png" />
+    </div>
+    <!-- <img class="left-image" src="../assets/karpov-korchnoi-small-2.png" /> -->
+    <div class="item-a">
       <div style="height:100%">
         <p class="story">
           {{ this.triflesThree[this.triflesThreeIndex].text }}
@@ -343,7 +322,7 @@
           This was not a gift.
         </p> -->
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="triflesThreePrevious" id="previous" type="button">
           &#60;
         </button>
@@ -352,11 +331,34 @@
         </button>
       </div>
       <p class="teaserAttribute">
-        <span style="color:red;">Korchnoi's solar array</span><br />Edmondson,
-        E. B., and Mikhail Tal.<br />Chess Scandals: the 1978 World Chess
-        Championship. Oxford, UK: Pergamon Press, 1981.
+        <span style="color:red;">Korchnoi's solar array.</span><br />Edmondson,
+        E. B., and Mikhail Tal. 1981.
       </p>
     </div>
+  </div>
+  <div class="container">
+    <div class="item-a-span">
+      <div style="height:100%">
+      <p><span class="in">In</span><span class="depth">Depth</span></p>
+      <p class="heading2">The Baguio City<br>Convention Center</p>
+      </div>
+      <p class="teaserAttribute">
+        <span style="color:red;">Traditional Igorot hut.</span><br />Wikimedia
+        Commons.
+      </p>
+    </div>
+    <div class="item-b">
+        <img class="item-a-image" src="../assets/plate17.jpeg" />
+        <p class="story">
+          The 1978 World Chess Championship was the inaugeral event of the Baguio City Convention Center. Not
+          long before the championship, Baguio City was designated as
+          the country's official site for international, national and regional
+          conventions. The convention center was built with this in mind and
+          modeled after a traditional Igorot hut, but capable of hosting 1,000
+          spectators.
+        </p>
+    </div>
+    <Hypnotists></Hypnotists>
   </div>
   <div class="container">
     <div class="right-imageContainer-landscape">
@@ -371,7 +373,7 @@
           {{ this.analysis[this.analysisIndex].text }}
         </p>
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="analysisPrevious" id="previous" type="button">
           &#60;
         </button>
@@ -381,8 +383,7 @@
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Concentration techniques.</span
-        ><br />Edmondson, E. B., and Mikhail Tal.<br />Chess Scandals: the 1978
-        World Chess Championship. Oxford, UK: Pergamon Press, 1981.
+        ><br />Edmondson, E. B., and Mikhail Tal. 1981.
       </p>
     </div>
   </div>
@@ -412,30 +413,30 @@
     </div>
   </div>
   <div class="container">
-    <img class="left-image" src="../assets/jury-small.png" />
-    <div class="item-c">
+     <div class="right-imageContainer-landscape">
+      <img class="right-image-landscape" src="../assets/jury-small.png" />
+    </div>
+    <div class="item-a">
       <div style="height:100%">
         <h2 class="heading2">
           Discussion
         </h2>
-        <p class="story">
-          Though many factors and dynamics stand out about this match, time was
-          clearly the most important factor, first and foremost. Spanning almost
-          100 days, the individual games were often split into multi-day
-          sprints. Could the way each player experienced time be a factor in the
-          quality of their attention in Baguio? How exactly does time effect
-          what each player sees or doesn’t see? Neither player exhibited much
-          brilliance when given such an extended opportunity to demonstrate
-          their abilities. How did two exemplars of a game defined by supposedly
-          rational thinking become so consumed with fear and loathing in Baguio?
-          A look back four years to game two of their Candidates Final in Moscow
-          helps answer these questions.
+         <p class="story">
+          {{ this.discussion[this.discussionIndex].text }} 
         </p>
+        <router-link v-if="discussionIndex == 1" to="/kvk" class="KvKbody">Karpov vs. Korchnoi</router-link>
+      </div>
+      <div class="block" style="width: 400px">
+        <button @click="discussionPrevious" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="discussionNext" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">The jurors.</span><br />Edmondson, E. B., and
-        Mikhail Tal.<br />Chess Scandals: the 1978 World Chess Championship.
-        Oxford, UK: Pergamon Press, 1981.
+        Mikhail Tal. 1981.
       </p>
     </div>
   </div>
@@ -447,9 +448,14 @@ import PartTwo from "../components/1978PartTwo.json";
 import PartThree from "../components/1978PartThree.json";
 import Analysis from "../components/1978Analysis.json";
 import AnalysisTwo from "../components/1978AnalysisPartTwo.json";
+import Discussion from "../components/Discussion.json";
+import Hypnotists from "../components/Hypnotists.vue";
 
 export default {
   name: "App",
+  components: {
+    Hypnotists,
+  },
   data() {
     return {
       triflesIndex: 0,
@@ -457,11 +463,13 @@ export default {
       triflesThreeIndex: 0,
       analysisIndex: 0,
       analysisTwoIndex: 0,
+      discussionIndex: 0,
       trifles: baguio,
       triflesTwo: PartTwo,
       triflesThree: PartThree,
       analysis: Analysis,
       analysisTwo: AnalysisTwo,
+      discussion: Discussion
     };
   },
   methods: {
@@ -533,6 +541,20 @@ export default {
         return;
       } else {
         this.analysisTwoIndex = this.analysisTwoIndex - 1;
+      }
+    },
+       discussionNext() {
+      if (this.discussionIndex == 1) {
+        return;
+      } else {
+        this.discussionIndex = this.discussionIndex + 1;
+      }
+    },
+    discussionPrevious() {
+      if (this.discussionIndex == 0) {
+        return;
+      } else {
+        this.discussionIndex = this.discussionIndex - 1;
       }
     },
   },
