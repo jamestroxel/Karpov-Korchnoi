@@ -400,7 +400,7 @@
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">"Somewhere between belief and suspicion."</span
-        ><br />Illustration of the original "Mechanical Turk", first unveiled by Wolfgang von
+        ><br />The original "Mechanical Turk" was first unveiled by Wolfgang von
         Kempelen in 1770.
       </p>
     </div>

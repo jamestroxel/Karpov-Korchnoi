@@ -283,7 +283,7 @@ export default {
         .attr("markerHeight", 9)
         .attr("orient", "auto");
         blackDotStroke.append("circle").attr("r", 7).attr("cx",9).attr("cy",9);
-    },
+    }
   },
 };
 </script>
