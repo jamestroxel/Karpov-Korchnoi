@@ -56,6 +56,7 @@
   </div>
 </template>
 <script>
+import * as d3 from "d3";
 import ChessBoard from "chessboardjs-vue";
 import LowerThird from "../components/LowerThird.vue";
 // import ChessBoard from './ChessBoard.vue';
@@ -72,13 +73,13 @@ export default {
   name: "KvK",
   components: {
     LowerThird,
-    // Cors,
     // ChessBoard,
     Sankey,
     Story,
   },
   data() {
     return {
+      d3: d3,
       positionIndex: 0,
       moveIndex: 0,
       moves: moves,
@@ -149,12 +150,13 @@ export default {
         this.makePos();
       }
     },
+       
     makePos() {
       this.cb.position(this.opening[this.getPos].fen);
     },
     myEventHandler() {
     this.cb.resize()
-  }
+    }
   },
 };
 </script>

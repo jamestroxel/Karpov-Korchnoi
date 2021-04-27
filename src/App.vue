@@ -142,6 +142,9 @@ body {
   margin: 0px;
   overflow-y: scroll;
 }
+.bold{
+  font-family: "Univers LT W01_65 Bold1475968";
+}
 .item-a-logo {
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
@@ -187,7 +190,7 @@ body {
   display: grid;
   background-color: white;
   z-index: 400000;
-  grid-template-columns: 50px 1fr 50px minmax(350px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
 }
 
 .nav1 {
@@ -356,7 +359,7 @@ h1 {
 }
 .heading1 {
   font-family: "Univers LT W04_59 Ult Cond";
-  font-size: 3.45em;
+  font-size: 3.35em;
   margin-top: 0px;
   margin-bottom: 50px;
   text-transform: uppercase;
@@ -415,8 +418,10 @@ h2 {
   overflow: hidden;
 }
 .right-svgContainer {
-  width: 100%;
+  /* width: 100%; */
   position: relative;
+
+ background: red;
   /* height: 100%; */
   grid-column: 9 / 12;
   grid-row: 2;
@@ -587,7 +592,7 @@ h2 {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 50px 1fr 50px minmax(350px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
   overflow:hidden;
 }
@@ -595,8 +600,8 @@ h2 {
  width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 50px 1fr 50px minmax(350px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
-  grid-template-rows: 50px repeat(3, 1fr)50px;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-rows: 50px repeat(3, 1fr);
   overflow-y:scroll;
 }
 .item-a {
@@ -612,7 +617,6 @@ h2 {
   /* padding-right: 10px; */
   /* padding-top: 25px; */
   /* overflow-y: scroll; */
-  /* bottom: 150px; */
   height: 100%;
   border-top: 0px;
   border-bottom: 1px;
@@ -1021,6 +1025,12 @@ h2 {
   transition-timing-function: ease-in-out;
   /* transition-delay: 1s; */
 }
+.line {
+  transition: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  /* transition-delay: 1s; */
+}
 .nodes {
   transition: all;
   transition-duration: 0.25s;
@@ -1063,6 +1073,49 @@ h2 {
   transition:ease-in-out;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
+}
+.avatarContainer{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 60px;
+  height:20px;
+  width: 400px;
+  justify-content: center;
+  color: black;
+  grid-column: 6;
+  grid-row: 3;
+  padding-top: 0px;
+}
+.avatar1frame{
+  /* position: absolute;
+  right:0; */
+  height:20px;
+  width:30px;
+  /* padding-left:17.5px;
+  padding-right:17.5px; */
+  margin:0px;
+  background: white;
+   border-radius: 40px 40px 0px 0px;
+       -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+  /* float:right; */
+}
+.avatar2frame{
+  /* position: absolute;
+  left:0; */
+  height:20px;
+  width:30px;
+  /* padding-left:17.5px;
+  padding-right:17.5px; */
+  margin:0px;
+  background: white;
+   border-radius: 40px 40px 0px 0px;
+       -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+  /* float:right; */
 }
 .bulbContainer{
   display:flex;
@@ -1114,6 +1167,16 @@ h2 {
   transition:ease-in-out;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
+}
+.prologuePattern{
+   display:flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+   width: 100%;
+   height:50px;
+   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: black;
 }
 .statsLabel{
  font-family: "Univers LT W04_59 Ult Cond";

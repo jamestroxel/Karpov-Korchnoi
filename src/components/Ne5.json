@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    { "node": 0, "name": "Rc8" },
+    { "node": 1, "name": "Bb3" },
+    { "node": 2, "name": "0-0-0" },
+    { "node": 3, "name": "Nxc6" },
+    { "node": 4, "name": "h5" },
+    { "node": 5, "name": "Ne5" },
+    { "node": 6, "name": "Na5" },
+    { "node": 7, "name": "Qa5" },
+    { "node": 8, "name": "Nxd4" },
+    { "node": 9, "name": "Rxc6" }
+    
+    ],
+  "links": [
+    { "source": 0, "target": 1, "value": 476 },
+    { "source": 0, "target": 2, "value": 1 },
+    { "source": 0, "target": 3, "value": 1 },
+    { "source": 1, "target": 4, "value": 381 },
+    { "source": 1, "target": 5, "value": 250 },
+    { "source": 1, "target": 6, "value": 17 },
+    { "source": 1, "target": 7, "value": 5 },
+    { "source": 1, "target": 8, "value": 3 },
+    { "source": 2, "target": 4, "value": 78 },
+    { "source": 2, "target": 8, "value": 1 },
+    { "source": 3, "target": 9, "value": 1 }
+  ]
+}

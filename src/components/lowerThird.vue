@@ -2,6 +2,10 @@
 <div class="bulbContainer">
 <div class="bulb"></div>
 </div>
+<div class="avatarContainer">
+  <div class="avatar1frame"></div>
+  <div class="avatar2frame"></div>
+</div>
 <div class="gameStats">
 <div class="statsLabel">Game Stats</div>
 </div>

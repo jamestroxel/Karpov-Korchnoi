@@ -13,13 +13,7 @@
         ></g>
         <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
       </svg>
-      <div v-if="moveIndex > 42 && moveIndex < 44">
-      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartTitle">Correlations</p>
-      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSubTitle">
-        Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
-      </p>
-      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
-    </div>
+      
   </div>
 </template>
 
@@ -37,7 +31,7 @@ export default {
       d3: d3,
       width: 400,
       height: 400,
-      margin: 27,
+      margin: 27
     };
   },
   updated() {

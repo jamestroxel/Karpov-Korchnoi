@@ -99,14 +99,20 @@
   </div>
   <div v-if="moveIndex > 41 && moveIndex < 44" class="item-c-kvk">
     <Cors v-if="moveIndex > 41 && moveIndex < 44" :moveIndex="moveIndex"></Cors>
-    
+    <div v-if="moveIndex > 42 && moveIndex < 44">
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartTitle">Correlations</p>
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSubTitle">
+        Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players.
+      </p>
+      <p v-if="moveIndex > 42 && moveIndex < 44" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
+    </div>
   </div>
 </template>
 
 <script>
 import Cors from "./Correlations.vue";
 import * as d3 from "d3";
-import { sankey as d3Sankey, sankeyLinkHorizontal } from "d3-sankey";
+import { sankey as d3Sankey, sankeyLinkHorizontal} from "d3-sankey";
 
 import e4 from "./e4.json";
 import c5 from "./c5.json";
@@ -233,7 +239,7 @@ export default {
     labelAnchor(d) {
       return d.x0 < this.width / 2 ? "start" : "end";
     },
-
+    
     sankeyNodes() {
       const svg = d3.select("#sankey");
       svg

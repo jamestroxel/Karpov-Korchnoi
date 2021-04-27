@@ -226,17 +226,16 @@
       <div style="height:100%;">
         <h1 class="heading1">Introduction</h1>
         <p class="story">
-          The contrast between the 1974 Candidates Final and the 1978 World
-          Chess Championship could hardly be sharper. Game two of the 1974 match
-          in Moscow has come to be regarded as a modern classic in tactics,
-          strategy, and chess brilliance between two of the game’s best.
+          {{ this.intro[this.introIndex].text }}
         </p>
-        <p class="story">
-          The absurdist theatre witnessed throughout the entire 1978
-          Championship quickly earned notoriety as an example of the type of
-          superstition, paranoia, and scandal commonly observed in chess lore
-          throughout the game’s rich history.
-        </p>
+      </div>
+      <div class="block">
+        <button @click="introPrevious" id="previous" type="button">
+          &#60;
+        </button>
+        <button @click="introNext" id="next" type="button">
+          &#62;
+        </button>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;"
@@ -304,23 +303,11 @@
     <div class="right-imageContainer-landscape">
       <img class="right-image-landscape" src="../assets/karpov-korchnoi-small-2.png" />
     </div>
-    <!-- <img class="left-image" src="../assets/karpov-korchnoi-small-2.png" /> -->
     <div class="item-a">
       <div style="height:100%">
         <p class="story">
           {{ this.triflesThree[this.triflesThreeIndex].text }}
         </p>
-        <!-- <p class="story">
-          There was a growing awareness of Dr. Vladimir Zoukhar’s presence in
-          the room that appeared to arrive with the weather. The storm had
-          knocked out the power and a dim emergency lamp was all that lit the
-          main stage for a time. The opponents played fast. In the middle of
-          this, Petra Leeuwerik, Head of the Korchnoi Delegation, reportedly
-          rose from her party’s designated seating area in the back and, against
-          regulation, quietly advanced towards the front spectator rows. She sat
-          next to Dr. Zoukhar and handed him a copy of “The Gulag Archipelago.”
-          This was not a gift.
-        </p> -->
       </div>
       <div class="block">
         <button @click="triflesThreePrevious" id="previous" type="button">
@@ -390,9 +377,15 @@
   <div class="container">
     <div class="right-svgContainer">
       <img class="right-svg" src="../assets/MTurk-02.svg" />
+      <div class="prologuePattern">
+      </div>
     </div>
+    
     <div class="item-a-span">
       <div style="height:100%">
+        <h2 class="heading2">
+          The Bitter End
+        </h2>
         <p class="story">
           {{ this.analysisTwo[this.analysisTwoIndex].text }}
         </p>
@@ -407,7 +400,7 @@
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">"Somewhere between belief and suspicion."</span
-        ><br />The original "Mechanical Turk", first unveiled by Wolfgang von
+        ><br />Illustration of the original "Mechanical Turk", first unveiled by Wolfgang von
         Kempelen in 1770.
       </p>
     </div>
@@ -443,6 +436,7 @@
 </template>
 
 <script>
+import Intro from "../components/introduction.json";
 import baguio from "../components/1978.json";
 import PartTwo from "../components/1978PartTwo.json";
 import PartThree from "../components/1978PartThree.json";
@@ -458,12 +452,14 @@ export default {
   },
   data() {
     return {
+      introIndex:0,
       triflesIndex: 0,
       triflesTwoIndex: 0,
       triflesThreeIndex: 0,
       analysisIndex: 0,
       analysisTwoIndex: 0,
       discussionIndex: 0,
+      intro: Intro,
       trifles: baguio,
       triflesTwo: PartTwo,
       triflesThree: PartThree,
@@ -473,6 +469,20 @@ export default {
     };
   },
   methods: {
+    introNext() {
+      if (this.introIndex == 6) {
+        return;
+      } else {
+        this.introIndex = this.introIndex + 1;
+      }
+    },
+    introPrevious() {
+      if (this.introIndex == 0) {
+        return;
+      } else {
+        this.introIndex = this.introIndex - 1;
+      }
+    },
     triflesNext() {
       if (this.triflesIndex == 3) {
         return;
@@ -502,7 +512,7 @@ export default {
       }
     },
     triflesThreeNext() {
-      if (this.triflesThreeIndex == 3) {
+      if (this.triflesThreeIndex == 4) {
         return;
       } else {
         this.triflesThreeIndex = this.triflesThreeIndex + 1;
@@ -516,7 +526,7 @@ export default {
       }
     },
     analysisNext() {
-      if (this.analysisIndex == 3) {
+      if (this.analysisIndex == 6) {
         return;
       } else {
         this.analysisIndex = this.analysisIndex + 1;
