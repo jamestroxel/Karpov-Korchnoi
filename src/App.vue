@@ -255,6 +255,22 @@ a:active {color:red;}  /* Selected link   */
   margin-top: 15px;
    text-decoration: none;
 }
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-rows: 50px 2fr 12.5px 75px 50px;
+  overflow:hidden;
+}
+.bibContainer {
+ width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-rows: 50px repeat(3, 1fr);
+  overflow-y:scroll;
+}
 .KvKbody {
   font-family: "Univers LT W04_59 Ult Cond";
   color: black;
@@ -461,16 +477,6 @@ h2 {
   grid-column: 9 / 12;
   grid-row: 2;
 }
-.standBy{
-  color: red;
-  font-family: "Univers LT W04_59 Ult Cond";
-  font-size: 1.5em;
-  text-align: center;
-  line-height: 0;
-  margin-top: 50%;
-  margin-bottom: 50%;
-  text-transform: uppercase;
-}
 .annotation:before {
   font-family: "Univers LT W04_59 Ult Cond";
   color: black;
@@ -588,22 +594,7 @@ h2 {
   height: 100%;
   /* margin-top: 0px; */
 }
-.container {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
-  grid-template-rows: 50px 2fr 12.5px 75px 50px;
-  overflow:hidden;
-}
-.bibContainer {
- width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
-  grid-template-rows: 50px repeat(3, 1fr);
-  overflow-y:scroll;
-}
+
 .item-a {
   display: flex;
   flex-direction: column;
@@ -1004,6 +995,13 @@ h2 {
   /* font-weight: 700; */
   font-size: 14px;
 }
+.ticker {
+  cursor: default;
+  font-family: "Univers LT W04_59 Ult Cond";
+  /* font-weight: 700; */
+  font-size: 14px;
+  float: right;
+}
 .spaceAxis {
   cursor: default;
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1260,14 +1258,14 @@ button {
   /* padding: 1rem 2rem; */
   margin-right: 10px;
   padding-bottom: 10px;
-  padding-top: 5px;
+  padding-top: 4px;
   text-decoration: none;
   height: 25px;
   overflow: hidden;
   width: 25px;
   color: white;
-  font-family: sans-serif;
-  font-size: 1em;
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1.125em;
   line-height: 0.75;
   cursor: pointer;
   text-align: center;
@@ -1305,7 +1303,91 @@ button:active {
   box-shadow: inset 0 0 3px 3px black;
   
 }
+.posNav{
+  display:flex;
+  flex-direction: row;
+  /* position: relative;
+  bottom: 65px; */
+  /* height:25px; */
+  width: 400px;
+  justify-content: center;
+  align-content: center;
+  /* color: black; */
+  /* grid-column: 6;
+  grid-row: 3; */
+  /* padding: 0px; */
+}
+.standBy{
+  color: red;
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.5em;
+  text-align: center;
+  /* line-height: 0; */
+  /* height: 25px; */
+  margin:0px;
+  margin-top:10px;
+  padding:0px;
+  /* margin-top: -20px; */
+  /* margin-bottom: 50%; */
+  text-transform: uppercase;
+  width:400px;
+}
+.posBlock{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.posButton {
+background-color: white;
+  /* display: inline-block; */
+  border: none;
+ margin: 0px;
+ padding: 0px;
+  text-decoration: none;
+  /* height: 25px; */
+  /* overflow: hidden; */
+  /* width: 25px; */
+  color: black;
+   font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 2em;
+  /* line-height: 0.75; */
+  cursor: pointer;
+  text-align: center;
+  text-anchor: middle;
+  /* transition: background 250ms ease-in-out, transform 150ms ease; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
+.posButton:hover {
+  color: red;
+    /* background: white; */
+      -webkit-box-shadow: inset 0 0 3px 3px white;
+  -moz-box-shadow: inset 0 0 3px 3px white;
+  box-shadow: inset 0 0 3px 3px white;
+  
+}
+/* .posButton:focus {
+    background: none;
+    color: black;
+} */
+
+.posButton:focus {
+  outline: 0px solid white;
+  outline-offset: -4px;
+
+}
+
+.posButton:active {
+  transform: scale(0.99);
+  color:red;
+     /* background: white;
+      -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black; */
+  
+}
 #floorPlan {
   display: flex;
   flex-direction: column;

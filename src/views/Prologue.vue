@@ -236,6 +236,7 @@
         <button @click="introNext" id="next" type="button">
           &#62;
         </button>
+      <p class="ticker">{{this.introIndex +1 }} of {{this.intro.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;"
@@ -265,6 +266,7 @@
         <button @click="triflesNext" id="next" type="button">
           &#62;
         </button>
+        <p class="ticker">{{this.triflesIndex +1 }} of {{this.trifles.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">The insufferable glutton.</span><br />Karpov,
@@ -292,6 +294,7 @@
         <button @click="triflesTwoNext" id="next" type="button">
           &#62;
         </button>
+        <p class="ticker">{{this.triflesTwoIndex +1 }} of {{this.triflesTwo.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Dr. Vladimir Zoukhar.</span><br />Edmondson, E.
@@ -316,6 +319,7 @@
         <button @click="triflesThreeNext" id="next" type="button">
           &#62;
         </button>
+        <p class="ticker">{{this.triflesThreeIndex +1 }} of {{this.triflesThree.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Korchnoi's solar array.</span><br />Edmondson,
@@ -367,6 +371,7 @@
         <button @click="analysisNext" id="next" type="button">
           &#62;
         </button>
+        <p class="ticker">{{this.analysisIndex +1 }} of {{this.analysis.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">Concentration techniques.</span
@@ -390,13 +395,14 @@
           {{ this.analysisTwo[this.analysisTwoIndex].text }}
         </p>
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="analysisTwoPrevious" id="previous" type="button">
           &#60;
         </button>
         <button @click="analysisTwoNext" id="next" type="button">
           &#62;
         </button>
+         <p class="ticker">{{this.analysisTwoIndex +1 }} of {{this.analysisTwo.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">"Somewhere between belief and suspicion."</span
@@ -419,13 +425,14 @@
         </p>
         <router-link v-if="discussionIndex == 1" to="/kvk" class="KvKbody">Karpov vs. Korchnoi</router-link>
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="discussionPrevious" id="previous" type="button">
           &#60;
         </button>
         <button @click="discussionNext" id="next" type="button">
           &#62;
         </button>
+        <p class="ticker">{{this.discussionIndex +1 }} of {{this.discussion.length}}</p>
       </div>
       <p class="teaserAttribute">
         <span style="color:red;">The jurors.</span><br />Edmondson, E. B., and

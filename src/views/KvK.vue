@@ -4,17 +4,31 @@
       <div style="height:100%;">
       <Story :moveIndex="moveIndex"></Story>
       </div>
-      <div class="block" style="width: 400px">
+      <div class="block">
         <button @click="previousMove" id="previous" type="button">
           &#60;
         </button>
         <button @click="nextMove" id="next" type="button">
           &#62;
         </button>
+        <p class="ticker">{{this.moveIndex +1 }} of {{this.moves.length}}</p>
       </div>
     </div>
     <div class="item-b-kvk">
       <div id="board"></div>
+      <div v-if=" moveIndex > 0 && moveIndex < 2">
+      <div class="posNav" style="padding-top: 18px;">
+        <div class="posBlock" style="width: 400px">
+          <p class="posButton" @click="previousPos" id="previousPos" type="button">
+            &#60;
+          </p>
+        <p class="standBy">{{openings[positionIndex].move}}</p>
+          <p  @click="nextPos" class="posButton" id="nextPos" type="button">
+            &#62;
+          </p>
+        </div>
+      </div>
+    </div>
     </div>
     <div v-if="moveIndex == 3" class="item-c">
       <div style="height:100%">
@@ -27,19 +41,6 @@
     </div>
     <LowerThird :moveIndex="moveIndex"></LowerThird>
     <Sankey :moveIndex="moveIndex"></Sankey>
-    <div v-if=" moveIndex > 0 && moveIndex < 2" class="item-c-kvk" style="width: 400px">
-      <div style="padding-top: 18px;">
-        <h1 class="standBy">{{openings[positionIndex].move}}</h1>
-        <div class="block" style="width: 400px">
-          <button @click="previousPos" id="previousPos" type="button">
-            &#60;
-          </button>
-          <button @click="nextPos" id="nextPos" type="button">
-            &#62;
-          </button>
-        </div>
-      </div>
-    </div>
     <div v-if=" moveIndex > 34 && moveIndex < 42" class="item-c-kvk" style="width: 400px">
       <div style="padding-top: 18px;">
         <p class="annotationMove">{{annotation[moveIndex-35].move}}</p>

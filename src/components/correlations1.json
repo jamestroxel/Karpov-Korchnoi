@@ -1,0 +1,66 @@
+[
+  { "rank": "Standard & Blitz",
+    "cors": 
+    [
+      {
+        "format":"GM",
+        "value": -0.0175
+      },
+      {
+        "format":"IM",
+        "value": 0.307
+      },
+      {
+        "format":"FM",
+        "value": 0.433
+      },
+      {
+        "format":"None",
+        "value": 0.801
+      }
+    ]
+  },
+  { "rank": "Blitz & Bullet",
+    "cors":  
+    [
+      {
+        "format":"GM",
+        "value": 0.544
+      },
+      {
+        "format":"IM",
+        "value": 0.612
+      },
+      {
+        "format":"FM",
+        "value": 0.774
+      },
+      {
+        "format":"None",
+        "value": 0.952
+      }
+    ]
+  },
+  { "rank": "One & Five Minute",
+    "cors":  
+    [
+      {
+        "format":"GM",
+        "value": 0.351
+      },
+      {
+        "format":"IM",
+        "value": 0.526
+      },
+      {
+        "format":"FM",
+        "value": 0.672
+      },
+      {
+        "format":"None",
+        "value": 0.873
+      }
+    ]
+  }
+]
+
