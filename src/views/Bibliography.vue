@@ -3,9 +3,9 @@
         <div class="data">
           <p class="heading2">Data</p>
         </div>
-        <div class="data text">
-          <p class="bibStory">Chessbase Database</p>
-          <p class="bibStory">Stockfish 13 Engine Evaluation</p>
+        <div class="dataText">
+          <p class="bibStory">Chessbase <a href="https://database.chessbase.com/" target="_blank">Database</a></p>
+          <p class="bibStory"><a href="https://stockfishchess.org/" target="_blank">Stockfish 13</a> Engine Evaluation</p>
           <p class="bibStory">Correlation data kindly provided by Frenk van Harreveld, Eric-Jan Wagenmakers, and Han L. van der Maas</p>
         </div>
         <div class="references">
@@ -20,14 +20,14 @@
           <p class="bibStory"><span class="bold">Sigman, Mariano.</span><br/>“Response Time Distributions in Rapid Chess: a Large-Scale Decision Making Experiment.” Frontiers in Neuroscience 4 (2010). https://doi.org/10.3389/fnins.2010.00060.</p>
           <p class="bibStory"><span class="bold">Segal, Mark R.</span><br/> “Chess, Chance and Conspiracy.” Statistical Science 22, no. 1 (2007). https://doi.org/10.1214/088342306000000574.</p>
         </div>
-        <!-- <div class="code">
+        <div class="code">
           <p class="heading2">Code</p>
-        </div> -->
-        <div class="code text">
-          <p class="bibStory">Submitted in partial fulfillment of the requirements for the Master of Science degree in Data Visualization at Parsons School of Design</p>
         </div>
-      <!-- <div class="bottom"></div> -->
-    </div>
+        <div class="codeText">
+          <p class="bibStory">Chessboard created using <a href="https://chessboardjs.com/" target="_blank">chessboard.js</a> (MIT License)</p>
+          <p class="bibStory">Submitted in partial fulfillment of the requirements for the degree of Master Science in Data Visualization at Parsons School of Design.</p>
+        </div>
+      </div>
 </template>
 <script>
 

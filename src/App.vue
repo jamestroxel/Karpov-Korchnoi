@@ -1,6 +1,6 @@
 <template>
   <div class="titleContainer">
-    <p class="title">James Troxel, 2021</p>
+    <a href="https://github.com/jamestroxel/Karpov-Korchnoi" target="_blank" class="title">James Troxel, 2021</a>
   </div>
   <nav class="navContainer">
     <div class="nav1"></div>
@@ -165,7 +165,7 @@ body {
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .title {
@@ -182,6 +182,7 @@ body {
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   transform-origin: top left;
+  text-decoration: none;
 }
 .navContainer {
   position: fixed;
@@ -265,10 +266,10 @@ a:active {color:red;}  /* Selected link   */
 }
 .bibContainer {
  width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
-  grid-template-rows: 50px repeat(3, 1fr);
+  grid-template-rows: 50px ;
   overflow-y:scroll;
 }
 .KvKbody {
@@ -575,6 +576,7 @@ h2 {
   /* height: 100%; */
   margin-top: 0px;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 .story {
   font-family: "Univers LT W01_55 Roman1475956";
@@ -673,7 +675,7 @@ h2 {
   max-width: 350px;
 
 }
-.data.text {
+.dataText {
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 6;
   grid-column-end: 10;
@@ -714,7 +716,7 @@ h2 {
   padding-top: 25px;
  max-width: 350px;
 }
-.code.text {
+.codeText {
   font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 6;
   grid-column-end: 10;
