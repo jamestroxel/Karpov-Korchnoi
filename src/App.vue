@@ -445,11 +445,22 @@ h2 {
   overflow: hidden;
 }
 .right-svg {
-  height: 100%;
-  /* height: 110vh; */
+  height: 80%;
+   position: absolute;
   grid-column-start: 9;
   grid-column-end: 9;
   grid-row: 2;
+}
+.right-svgChecker {
+  width: 60%;
+  /* height: 100%; */
+    position: absolute;
+  top: 0px;
+  left: 400px;
+  /* bottom: 50%; */
+  /* grid-column-start: 9;
+  grid-column-end: 9;
+  grid-row: 2; */
 }
 .right-turk {
   width: 100%;

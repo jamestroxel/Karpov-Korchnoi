@@ -381,6 +381,7 @@
   </div>
   <div class="container">
     <div class="right-svgContainer">
+      <!-- <img class="right-svgChecker" src="../assets/trapezoid-01.svg" /> -->
       <img class="right-svg" src="../assets/MTurk-02.svg" />
       <div class="prologuePattern">
       </div>
