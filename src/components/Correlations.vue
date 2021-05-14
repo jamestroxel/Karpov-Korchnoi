@@ -25,7 +25,7 @@
 
 <script>
 import * as d3 from "d3";
-import data from "./correlations.json";
+import data from "../assets/correlations.json";
 
 export default {
   name: "Correlations",

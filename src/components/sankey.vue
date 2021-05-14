@@ -107,27 +107,27 @@ import Cors from "./Correlations.vue";
 import * as d3 from "d3";
 import { sankey as d3Sankey, sankeyLinkHorizontal} from "d3-sankey";
 
-import e4 from "./e4.json";
-import c5 from "./c5.json";
-import Nf3 from "./Nf3.json";
-import d6 from "./d6.json";
-import d4 from "./d4.json";
-import cxd4 from "./cxd4.json";
-import Nxd4 from "./Nxd4.json";
-import Nf6 from "./Nf6.json";
-import Nc3 from "./Nc3.json";
-import g6 from "./g6.json";
-import Be3 from "./Be3.json";
-import Bg7 from "./Bg7.json";
-import f3 from "./f3.json";
-import Nc6 from "./Nc6.json";
-import Qd2 from "./Qd2.json";
-import castle1 from "./0-0.json";
-import Bc4 from "./Bc4.json";
-import Bd7 from "./Bd7.json";
-import h4 from "./h4.json";
-import Rc8 from "./Rc8.json";
-import Bb3 from "./Bb3.json";
+import e4 from "../assets/e4.json";
+import c5 from "../assets/c5.json";
+import Nf3 from "../assets/Nf3.json";
+import d6 from "../assets/d6.json";
+import d4 from "../assets/d4.json";
+import cxd4 from "../assets/cxd4.json";
+import Nxd4 from "../assets/Nxd4.json";
+import Nf6 from "../assets/Nf6.json";
+import Nc3 from "../assets/Nc3.json";
+import g6 from "../assets/g6.json";
+import Be3 from "../assets/Be3.json";
+import Bg7 from "../assets/Bg7.json";
+import f3 from "../assets/f3.json";
+import Nc6 from "../assets/Nc6.json";
+import Qd2 from "../assets/Qd2.json";
+import castle1 from "../assets/0-0.json";
+import Bc4 from "../assets/Bc4.json";
+import Bd7 from "../assets/Bd7.json";
+import h4 from "../assets/h4.json";
+import Rc8 from "../assets/Rc8.json";
+import Bb3 from "../assets/Bb3.json";
 
 
 export default {

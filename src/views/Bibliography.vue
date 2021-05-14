@@ -25,7 +25,14 @@
         </div>
         <div class="codeText">
           <p class="bibStory">Chessboard created using <a href="https://chessboardjs.com/" target="_blank">chessboard.js</a> (MIT License)</p>
+        </div>
+        <div class="credit">
+          <p class="heading2">Acknowledgments</p>
+        </div>
+        <div class="creditText">
           <p class="bibStory">Submitted in partial fulfillment of the requirements for the degree of Master Science in Data Visualization at Parsons School of Design.</p>
+          <p class="bibStory">This project would not have been made possible without the expertise, guidance and dedication of the entire Parsons Data Visualization faculty, Daniel Sauter, Program Director, and my thesis advisor, Alec Barret. Thank you for teaching me how to fish.</p>
+          <p class="bibStory">Special thanks to Rahim Rajahi for your spirited tutelage, and the life you breathe into the West Villiage chess community.</p>
         </div>
       </div>
 </template>

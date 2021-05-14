@@ -191,7 +191,7 @@
   <div class="container" style="margin-top:50px;">
     <div class="item-a-span">
       <div style="height:100%;">
-        <p class="teaserHead">Dear colleagues!</p>
+        <p class="teaserHead">Dear Colleagues!</p>
         <p class="teaser">
           World Champion Anatoly Karpov has asked me, as press attaché of the
           Soviet delegation, to bring the following to the notice of the
@@ -381,7 +381,7 @@
   </div>
   <div class="container">
     <div class="right-svgContainer">
-      <!-- <img class="right-svgChecker" src="../assets/trapezoid-01.svg" /> -->
+      <img class="right-svgTrap" src="../assets/trapezoid-01-01.svg" />
       <img class="right-svg" src="../assets/MTurk-02.svg" />
       <div class="prologuePattern">
       </div>
@@ -444,13 +444,13 @@
 </template>
 
 <script>
-import Intro from "../components/introduction.json";
-import baguio from "../components/1978.json";
-import PartTwo from "../components/1978PartTwo.json";
-import PartThree from "../components/1978PartThree.json";
-import Analysis from "../components/1978Analysis.json";
-import AnalysisTwo from "../components/1978AnalysisPartTwo.json";
-import Discussion from "../components/Discussion.json";
+import Intro from "../assets/introduction.json";
+import baguio from "../assets/1978.json";
+import PartTwo from "../assets/1978PartTwo.json";
+import PartThree from "../assets/1978PartThree.json";
+import Analysis from "../assets/1978Analysis.json";
+import AnalysisTwo from "../assets/1978AnalysisPartTwo.json";
+import Discussion from "../assets/Discussion.json";
 import Hypnotists from "../components/Hypnotists.vue";
 
 export default {

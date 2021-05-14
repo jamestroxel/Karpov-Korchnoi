@@ -28,7 +28,7 @@
     </el-carousel> -->
 </template>
 <script>
-    import story from './story.json';
+    import story from '../assets/story.json';
     export default {
         name: 'Story',
         props: {

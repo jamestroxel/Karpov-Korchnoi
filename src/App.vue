@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import baguio from "./components/1978.json";
-import PartTwo from "./components/1978PartTwo.json";
-import PartThree from "./components/1978PartThree.json";
-import Analysis from "./components/1978Analysis.json";
-import AnalysisTwo from "./components/1978AnalysisPartTwo.json";
+import baguio from "./assets/1978.json";
+import PartTwo from "./assets/1978PartTwo.json";
+import PartThree from "./assets/1978PartThree.json";
+import Analysis from "./assets/1978Analysis.json";
+import AnalysisTwo from "./assets/1978AnalysisPartTwo.json";
 
 export default {
   name: "App",
@@ -462,6 +462,17 @@ h2 {
   grid-column-end: 9;
   grid-row: 2; */
 }
+.right-svgTrap {
+  height: 25%;
+  /* height: 100%; */
+    position: absolute;
+  bottom: -1px;
+  left: 0px;
+  /* bottom: 50%; */
+  /* grid-column-start: 9;
+  grid-column-end: 9;
+  grid-row: 2; */
+}
 .right-turk {
   width: 100%;
   margin-left: 100px;
@@ -733,6 +744,26 @@ h2 {
   grid-column-end: 10;
   grid-row-start: 4;
   grid-row-end: 4;
+  padding-right: 10px;
+  padding-top: 25px;
+  width:100%;
+}
+.credit {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  padding-right: 10px;
+  padding-top: 25px;
+ max-width: 350px;
+}
+.creditText {
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 5;
   padding-right: 10px;
   padding-top: 25px;
   width:100%;

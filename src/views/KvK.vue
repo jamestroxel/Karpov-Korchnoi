@@ -64,11 +64,11 @@ import LowerThird from "../components/LowerThird.vue";
 import Sankey from "../components/Sankey.vue";
 // import Cors from "./Correlations.vue";
 import Story from "../components/Story.vue";
-import moves from "../components/moves.json";
-import openings from "../components/openings.json";
+import moves from "../assets/moves.json";
+import openings from "../assets/openings.json";
 
-import annotation from "../components/Annotation.json";
-import annotationPartTwo from "../components/AnnotationPartTwo.json";
+import annotation from "../assets/Annotation.json";
+import annotationPartTwo from "../assets/AnnotationPartTwo.json";
 
 export default {
   name: "KvK",
