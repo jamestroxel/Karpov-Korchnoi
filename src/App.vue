@@ -1078,11 +1078,54 @@ h2 {
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
+.paraB{
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.25em;
+line-height:1;
+  text-align: center;
+  height:21px;
+  padding-left:17.5px;
+  padding-right:0px;
+  margin:0px;
+  margin-top:7px;
+  background: white;
+  text-transform: uppercase;
+    border: 1px;
+  border-right: 0px;
+   border-color: black;
+  border-style: solid;
+   border-radius: 40px 0px 0px 40px;
+  float:right;
+  position:absolute;
+  right:0px;
+}
 .B{
   height:25px;
   float:right;
   position:absolute;
   right:0px;
+}
+.paraW{
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.25em;
+  line-height:1;
+  text-align: left;
+  height:21px;
+  width:59.141px;
+  padding-left:0px;
+  padding-right:17.5px;
+  margin:0px;
+ margin-top:7px;
+  background: white;
+  text-transform: uppercase;
+  border: 1px;
+  border-left: 0px;
+   border-color: black;
+  border-style: solid;
+   border-radius: 0px 40px 40px 0px;
+  float:right;
+  position:absolute;
+  left:0px;
 }
 .W{
   height:25px;
@@ -1090,11 +1133,25 @@ h2 {
   position:absolute;
   left:0px;
 }
-.moveCount{
+.paraMoveCount{
   display:flex;
   flex-direction: row;
   position: relative;
   bottom: 30px;
+  height:10px;
+  /* border-radius: 200px 200px 0px 0px;
+      -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red; */
+  width: 400px;
+  justify-content: center;
+  color: black;
+}
+.moveCount{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 29px;
   height:10px;
   /* border-radius: 200px 200px 0px 0px;
       -webkit-box-shadow: inset 0 0 3px 3px red;
@@ -1185,6 +1242,31 @@ h2 {
   -moz-box-shadow: inset 0 0 3px 3px black;
   box-shadow: inset 0 0 3px 3px black;
 }
+.paraStats{
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  /* bottom: 51px; */
+  height:21px;
+      background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: black;
+  width: 400px;
+  justify-content: center;
+  color: black;
+  grid-column: 6;
+  grid-row: 3;
+  padding-top: 0px;
+       border-top: 1px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+  transition:ease-in-out;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
 .gameStats{
   display:flex;
   flex-direction: row;
@@ -1223,14 +1305,16 @@ h2 {
 .statsLabel{
  font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
+  color: white;
   line-height:1;
   text-align: center;
   height:20px;
+  padding-bottom: 1px;
   padding-left:17.5px;
   padding-right:17.5px;
   margin:0px;
   margin-top:-1px;
-  background: white;
+  background: black;
   text-transform: uppercase;
   border: 1px;
    border-color: black;
@@ -1238,6 +1322,45 @@ h2 {
    border-radius: 40px 40px 40px 40px;
 }
 
+.paraCount{
+ font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1.25em;
+  text-align: center;
+  height:15px;
+  padding-bottom: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  margin-top:31px;
+  background: white;
+}
+.paraScoreB{
+ font-family: "Univers LT W04_59 Ult Cond";
+  position: absolute;
+ right: 0px;
+  font-size: 1.25em;
+  text-align: right;
+  height:15px;
+  padding-bottom: 5px;
+  padding-left:10px;
+  padding-right:0px;
+  margin-top:31px;
+  background: white;
+  float: right;
+}
+.paraScoreW{
+ font-family: "Univers LT W04_59 Ult Cond";
+ position: absolute;
+ left: 0px;
+  font-size: 1.25em;
+  text-align: left;
+  height:15px;
+  padding-bottom: 5px;
+  padding-left:0px;
+  padding-right:10px;
+  margin-top:31px;
+  background: white;
+  float: left;
+}
 .count{
  font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1.25em;
@@ -1670,6 +1793,7 @@ background-color: white;
 }
 .slidecontainer {
   margin-top:20px;
+  margin-bottom: 25px;
   width: 100%; /* Width of the outside container */
 }
 

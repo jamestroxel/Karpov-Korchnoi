@@ -59,13 +59,10 @@
         <div v-if="zoukharIndex == 17" class="rowLeft seventeen">
           <img src="../assets/Zoukhar-01.png" class="zoukhar" />
         </div>
-        <div v-if="zoukharIndex == 18" class="rowLeft eighteen">
+        <div v-if="zoukharIndex > 17 && zoukharIndex < 32" class="rowLeft eighteen">
           <img src="../assets/Zoukhar-01.png" class="zoukhar" />
         </div>
-        <div v-if="zoukharIndex == 19" class="rowLeft eighteen">
-          <img src="../assets/Zoukhar-01.png" class="zoukhar" />
-        </div>
-        <div v-if="zoukharIndex == 20" class="rowLeft eighteen">
+         <div v-if="zoukharIndex == 32" class="rowLeft sixteen">
           <img src="../assets/Zoukhar-01.png" class="zoukhar" />
         </div>
       </div>
@@ -92,17 +89,28 @@
           v-model="zoukharIndex"
             type="range"
             min="1"
-            max="20"
+            max="32"
             class="slider"
             id="myRange"
           />
         </div>
-        <p class="spaceLabels">Game {{ parseInt((zoukharIndex+2)*.1) }}</p>
+        <!-- <p class="spaceLabels">Game {{ parseInt((zoukharIndex+2)*.1) }}</p> -->
+        <div class="paraStats">
+          <div class="statsLabel">Game</div>
+        </div>
+        <div class="paraMoveCount">
+          <h1 class="paraCount">- {{ parseInt((zoukharIndex+2)*.1) }} -</h1>
+          <p class="paraScoreW">{{ wScore[parseInt((zoukharIndex+3)*.1)] }}</p>
+          <p class="paraScoreB">{{ bScore[parseInt((zoukharIndex+3)*.1)] }}</p>
+          <p class="paraB">Korchnoi</p>
+          <p class="paraW">Karpov</p>
+        </div>
+        <!-- <p class="spaceLabels">Result {{ score[parseInt((zoukharIndex+3)*.1)] }}</p> -->
       </div>
     <div>
       <p class="chartTitle">Seating positions of hypnotists</p>
       <p class="chartSubTitle">
-        Approximate seating positions of Dr. Zoukhar and Dr. Berginer inside the Bagiuo City Convention Center for each game of the
+        Recorded seating positions of Dr. Zoukhar and Dr. Berginer, and corresponding results for each game of the
         tournament.
       </p>
       <p class="chartSource">Source: Edmondson, E. B., and Mikhail Tal.</p>
@@ -120,6 +128,8 @@ export default {
       width: 400,
       height: 400,
       zoukharIndex: -1,
+      wScore: ["", "1/2","1/2","1/2","1/2","1/2","1/2","1/2","1","1/2","1/2","0","1/2","1", "1","1/2","1/2","1","1/2","1/2","1/2","0","1/2","1/2","1/2","1/2","1/2","1", "0", "0", "1/2","0", "1"],
+      bScore: ["", "1/2","1/2","1/2","1/2","1/2","1/2","1/2","0","1/2","1/2","1","1/2","0", "0","1/2","1/2","0","1/2","1/2","1/2","1","1/2","1/2","1/2","1/2","1/2","0", "1", "1", "1/2","1", "0"]
     };
   },
   updated() {},
