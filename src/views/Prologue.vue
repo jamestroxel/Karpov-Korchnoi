@@ -341,11 +341,11 @@
     <div class="item-b">
         <img class="item-a-image" src="../assets/plate17.jpeg" />
         <p class="story">
-          The 1978 World Chess Championship was the inaugeral event of the Baguio City Convention Center. Not
+          The 1978 World Chess Championship was the inaugural event of the Baguio City Convention Center. Not
           long before the championship, Baguio City was designated as
           the country's official site for international, national and regional
           conventions. The convention center was built with this in mind and
-          modeled after a traditional Igorot hut, but capable of hosting 1,000
+          modeled after a traditional Igorot hut, but one capable of hosting 1,000
           spectators.
         </p>
     </div>
@@ -424,7 +424,7 @@
          <p class="story">
           {{ this.discussion[this.discussionIndex].text }} 
         </p>
-        <router-link v-if="discussionIndex == 1" to="/kvk" class="KvKbody">Karpov vs. Korchnoi</router-link>
+        <router-link v-if="discussionIndex == 1" to="/kvk" class="KvKbody">To Moscow</router-link>
       </div>
       <div class="block">
         <button @click="discussionPrevious" id="previous" type="button">

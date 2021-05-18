@@ -97,8 +97,8 @@
       <p class="chartSource">Source: Chessbase</p>
     </div>
   </div>
-  <div v-if="moveIndex > 41 && moveIndex < 45" class="item-c-kvk">
-    <Cors v-if="moveIndex > 41 && moveIndex < 45" :moveIndex="moveIndex"></Cors>
+  <div v-if="moveIndex > 28 && moveIndex < 34" class="item-c-kvk">
+    <Cors v-if="moveIndex > 28 && moveIndex < 34" :moveIndex="moveIndex"></Cors>
   </div>
 </template>
 

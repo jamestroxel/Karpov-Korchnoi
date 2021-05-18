@@ -264,6 +264,15 @@ a:active {color:red;}  /* Selected link   */
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
   overflow:hidden;
 }
+.kvk-container {
+  width: 100%;
+  height: 100vh;
+  margin-bottom:0px;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-rows: 50px 2fr 12.5px 75px 50px;
+  overflow:hidden;
+}
 .bibContainer {
  width: 100%;
   /* height: 100vh; */
@@ -374,6 +383,14 @@ h1 {
   text-transform: uppercase;
   column-span: all;
 }
+.kvkHeading1 {
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 3.35em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  column-span: all;
+}
 .heading1 {
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 3.35em;
@@ -386,6 +403,14 @@ h2 {
   font-family: "Univers LT W01_65 Bold1475968";
   font-size: 2em;
   margin-top: 0px;
+  margin-bottom: 50px;
+  column-span: all;
+  line-height: 1;
+}
+.kvkHeading2 {
+  font-family: "Univers LT W01_65 Bold1475968";
+  font-size: 2em;
+  margin-top: 50px;
   margin-bottom: 50px;
   column-span: all;
   line-height: 1;
@@ -535,6 +560,17 @@ h2 {
   grid-column: 6 / 12;
   grid-row: 2;
 }
+.kvkSubHead {
+  font-family: "Univers LT W01_65 Bold1475968";
+  font-size: 1.5em;
+  text-align: start;
+  line-height: 1.5;
+  /* min-height: 0; */
+  /* height: auto; */
+  /* height: 100%; */
+  margin-top: 25px;
+  overflow-y: scroll;
+}
 .subHead {
   font-family: "Univers LT W01_65 Bold1475968";
   font-size: 1.5em;
@@ -610,13 +646,14 @@ h2 {
   /* height: 100%; */
   margin-top: 0px;
   margin-bottom: 10px;
+  pointer-events: none;
 }
 .story:last-child {
   font-family: "Univers LT W01_55 Roman1475956";
-  /* text-align: start; */
-  /* position:relative; */
+  text-align: start;
+  position:relative;
   height: 100%;
-  /* margin-top: 0px; */
+  margin-top: 0px;
 }
 
 .item-a {
@@ -773,15 +810,15 @@ h2 {
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 5;
   /* max-width:400px; */
   width: 100%;
   /* min-height: 0; */
   padding-right: 10px;
   padding-top: 25px;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   /* bottom: 150px; */
-  height: 100%;
+  /* height: 100%; */
 }
 .item-b {
   grid-column-start: 6;
@@ -1470,6 +1507,60 @@ button:active {
   box-shadow: inset 0 0 3px 3px black;
   
 }
+.routerButton {
+
+  /* display: inline-block; */
+  border: none;
+    /* background: black; */
+    border-radius: 2px;
+  /* padding: 1rem 2rem; */
+  margin-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 4px;
+  text-decoration: none;
+  height: 25px;
+  overflow: hidden;
+  width: 25px;
+  color: white;
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1.125em;
+  line-height: 0.75;
+  cursor: pointer;
+  text-align: center;
+  text-anchor: middle;
+  /* transition: background 250ms ease-in-out, transform 150ms ease; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.routerButton:hover {
+  color: black;
+    background: white;
+      -webkit-box-shadow: inset 0 0 3px 3px red;
+  -moz-box-shadow: inset 0 0 3px 3px red;
+  box-shadow: inset 0 0 3px 3px red;
+  
+}
+/* .routerButton:focus {
+    background: none;
+    color: black;
+} */
+
+.routerButton:focus {
+  outline: 0px solid white;
+  outline-offset: -4px;
+
+}
+
+.routerButton:active {
+  transform: scale(0.99);
+  color:red;
+     background: white;
+      -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+  
+}
 .posNav{
   display:flex;
   flex-direction: row;
@@ -1792,7 +1883,7 @@ background-color: white;
   width:100px;
 }
 .slidecontainer {
-  margin-top:20px;
+  margin-top:19px;
   margin-bottom: 25px;
   width: 100%; /* Width of the outside container */
 }
@@ -1801,7 +1892,7 @@ background-color: white;
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 25%; /* Full-width */
+  width: 45%; /* Full-width */
   height: 2px; /* Specified height */
   background: black; /* Grey background */
   outline: none; /* Remove outline */

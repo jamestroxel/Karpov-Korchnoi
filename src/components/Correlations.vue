@@ -13,12 +13,12 @@
         ></g>
         <g class="axis y-axis" :transform="`translate(${margin}, 0)`"></g>
       </svg>
-      <div v-if="moveIndex > 41 && moveIndex < 45">
-      <p v-if="moveIndex > 41 && moveIndex < 45" class="chartTitle">Correlations</p>
-      <p v-if="moveIndex > 41 && moveIndex < 45" class="chartSubTitle">
+      <div v-if="moveIndex > 28 && moveIndex < 34">
+      <p v-if="moveIndex > 28 && moveIndex < 34" class="chartTitle">Correlations</p>
+      <p v-if="moveIndex > 28 && moveIndex < 34" class="chartSubTitle">
         Relationship strength between chess ratings and time controls for Grandmasters, International Masters, FIDE Masters and untitled players. 
       </p>
-      <p v-if="moveIndex > 41 && moveIndex < 45" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
+      <p v-if="moveIndex > 28 && moveIndex < 34" class="chartSource">Source: Van Harreveld, F., Wagenmakers, E., Van der Maas, H. L.</p>
     </div>
   </div>
 </template>
