@@ -641,12 +641,14 @@ h2 {
   font-size: 1.25em;
   line-height: 1.5;
   text-align: start;
+  display: block;
   /* min-height: 0; */
   /* height: auto; */
   /* height: 100%; */
   margin-top: 0px;
   margin-bottom: 10px;
   pointer-events: none;
+  widows: 3;
 }
 .story:last-child {
   font-family: "Univers LT W01_55 Roman1475956";
@@ -654,6 +656,7 @@ h2 {
   position:relative;
   height: 100%;
   margin-top: 0px;
+  widows: 3;
 }
 
 .item-a {

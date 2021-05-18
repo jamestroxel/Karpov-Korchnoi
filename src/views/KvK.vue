@@ -10,7 +10,7 @@
           example that further illustrates the role of pattern recognition
           within grandmaster-level chess, but in a much more controlled
           environment that allows us to analyze the statistical patterns on the
-          chessboard more carefully.
+          chessboard more&nbsp;carefully.
         </p>
         <p class="kvkHeading2">The Opening</p>
         <p class="story">
@@ -24,7 +24,7 @@
           opening move sequences collected from centuries of precedent in the
           Encyclopedia of Chess Openings (ECO). These moves have become known as
           book moves and account for approximately the first ten moves of the
-          game
+          game.
         </p>
         <p class="story">
           Openings can be visualized as tree diagrams, with each branch tracing
@@ -32,7 +32,7 @@
           give the game a different shape. Will it be the “open” Sicilian or the
           “closed” variation? Is it the Queen’s Gambit “accepted”, or
           “declined?” Players commonly decide which line to take based on their
-          own preferred playing style and that of their opponent
+          own preferred playing style and that of their&nbsp;opponent.
         </p>
         <p class="story">
           In Karpov’s words, “It is necessary to understand yourself and your
@@ -45,13 +45,13 @@
           King’s Pawn Opening. This is by far the most common first move for
           White due in part to the way it controls the center squares, a key
           objective in the opening phase. Korchnoi responded with c5, which
-          initiates the Sicilian Defense, another common opening.
+          initiates the Sicilian Defense, another common&nbsp;opening.
         </p>
         <p class="story">
           The game continued in a rather straightforward line until Korchnoi
           deviated with 5.g6. Follow each player's red-colored move selections
           in the flow diagram to the right as you step through the next few
-          moves in the opening sequence.
+          moves in the opening&nbsp;sequence.
         </p>
         <p class="story">
           As it turns out, Karpov had made a good study of Korchnoi,
@@ -66,7 +66,7 @@
           player today who still employs it. In particular, this opening was
           twice used by him in his candidates match in 1971 with Geller,” Karpov
           states, ”of course, in 1974 I did not overlook the possibility of
-          meeting this variation.”
+          meeting this&nbsp;variation.”
         </p>
         <p class="story">
           When Karpov sees the formation of the Dragon, he quickly switches
@@ -119,7 +119,7 @@
           would amount to the strongest evidence yet to indicate any
           irregularity in this type of underlying pattern. The data shows yet
           another example of a grandmaster-level chess player distracted by
-          patterns that aren’t there.
+          patterns that aren’t&nbsp;there.
         </p>
         <p class="story">
           As we follow the game from its root to outer-most branch, the amount
@@ -183,8 +183,7 @@
         <p class="story">
           Their research does, in fact, show that as time pressure increases,
           its relationship with player strength increases. This would indicate
-          that sensitivity to pattern recognition is highest under time
-          pressure.
+          that sensitivity to pattern recognition is highest under time&nbsp;pressure.
         </p>
         <p class="story">
           While the authors highlight the fact that this positive trend is
@@ -226,7 +225,7 @@
           entertains a number of possible responses to various moves while
           pointing out the themes on the board that make these either good or
           bad decisions. Board awareness and the ability to recognize the shape
-          of the game inform each player on what strategy to take.
+          of the game inform each player on what strategy to&nbsp;take.
         </p>
         <p class="story">
           The two main openings in this game were the Open Sicilian Defense and
@@ -234,7 +233,7 @@
           strategies that helped to determine the asymmetrical shape of this
           position. Rahim Rajahi, a well known figure in the West Village chess
           community, believes that the Open Sicilian gives you “less space but
-          more time.”
+          more&nbsp;time.”
         </p>
         <p class="story">
           Here, Korchnoi might be in trouble but his Queen and Rook pose very
@@ -248,14 +247,14 @@
         <p class="story">
           Korchnoi resigns after briefly giving chase to the long-awaited
           26. Qxh7+. Rajahi observes that “grandmasters don’t play the books or
-          the lines, they play each other.”
+          the lines, they play each&nbsp;other.”
         </p>
         <p class="story">
           Karpov was prepared for Korchnoi by studying his behavioral patterns
           far beyond this single game. He attributes his win merely to “the
           wrong choice of opening variation.” This is, of course, an over
           simplification. The reason it was the wrong opening variation is
-          because Karpov was prepared for it in granular detail.
+          because Karpov was prepared for it in granular&nbsp;detail.
         </p>
         <p class="story">
           Developing tactics and strategy based on your opponent’s tendencies is
@@ -286,7 +285,7 @@
           paranoia in order to exploit that of his opponent. As previously
           stated, Korchnoi’s attitudes towards parapsychology were well-known by
           1978, and it would be naive to claim that Karpov was not aware of this
-          when he invited his own parapsychologist to the Philippines.
+          when he invited his own parapsychologist to the&nbsp;Philippines.
         </p>
         <p class="story">
           Are there parallels to be drawn between the pressures experienced by a
