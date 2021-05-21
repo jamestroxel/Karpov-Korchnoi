@@ -201,18 +201,16 @@ body {
  
 }
 .navContainer {
-  mix-blend-mode: difference;
   position: fixed;
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: black;
+  background-color: white;
   z-index: 400000;
   grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
 }
 
 .nav1 {
-   mix-blend-mode: difference;
   grid-column-start: 2;
   grid-column-end: 12;
   grid-row: 1;
@@ -225,7 +223,7 @@ body {
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
-  border-color: white;
+  border-color: black;
   border-style: solid;
 }
 
@@ -244,7 +242,6 @@ body {
   border-style: solid;
 }
 .prologue {
-  mix-blend-mode: difference;
   font-family: "Univers LT W04_59 Ult Cond";
   grid-column-start: 4;
   grid-column-end: 4;
@@ -1644,7 +1641,7 @@ button:active {
   flex-direction: row;
   /* position: relative;
   bottom: 65px; */
-  /* height:25px; */
+  margin-left: 4px;
   width: 400px;
   justify-content: center;
   align-content: center;
