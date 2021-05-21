@@ -1,13 +1,13 @@
 <template>
-  <div class="titleContainer">
-    <a href="https://github.com/jamestroxel/Karpov-Korchnoi" target="_blank" class="title">James Troxel, 2021</a>
-  </div>
   <nav class="navContainer">
     <div class="nav1"></div>
     <router-link to="/prologue" class="prologue">Prologue</router-link>
     <router-link to="/kvk" class="KvK">Karpov vs. Korchnoi</router-link>
     <router-link to="/bibliography" class="play">Bibliography</router-link>
   </nav>
+  <div class="titleContainer">
+    <a href="https://github.com/jamestroxel/Karpov-Korchnoi" target="_blank" class="title">James Troxel, 2021</a>
+  </div>
   <router-view/>
 </template>
 
@@ -140,6 +140,8 @@ export default {
 body {
   padding: 0px;
   margin: 0px;
+  background-color: white;
+  /* mix-blend-mode: difference; */
   overflow-y: scroll;
 }
 .bold{
@@ -147,34 +149,47 @@ body {
 }
 .item-a-logo {
   font-family: "Univers LT W01_55 Roman1475956";
+  display:flex;
+  justify-content: center;
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
   height: 100%;
-  margin-top: -40px;
+  /* margin-top: 25%; */
+  margin-top:50px;
 }
 
 .titleContainer {
+  mix-blend-mode: difference;
   padding: 0px;
   margin:0px;
   position: fixed;
   display: flex;
   height: 100%;
+  width:50px;
   align-content: center;
   align-items: center;
   justify-content: space-around;
+  color: white;
+  /* background-color: black; */
   /* pointer-events: none; */
+   z-index: 1;
 }
-
+/* a {
+  color: white;
+} */
 .title {
+  mix-blend-mode: difference;
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1em;
   text-align: center;
   margin-left: 12.5px;
+  margin-right:-50px;
   margin-bottom: -110px;
   padding: 0px;
+  color:white;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -183,18 +198,21 @@ body {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   transform-origin: top left;
   text-decoration: none;
+ 
 }
 .navContainer {
+  mix-blend-mode: difference;
   position: fixed;
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: white;
+  background-color: black;
   z-index: 400000;
   grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
 }
 
 .nav1 {
+   mix-blend-mode: difference;
   grid-column-start: 2;
   grid-column-end: 12;
   grid-row: 1;
@@ -207,7 +225,7 @@ body {
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
-  border-color: black;
+  border-color: white;
   border-style: solid;
 }
 
@@ -226,6 +244,7 @@ body {
   border-style: solid;
 }
 .prologue {
+  mix-blend-mode: difference;
   font-family: "Univers LT W04_59 Ult Cond";
   grid-column-start: 4;
   grid-column-end: 4;
@@ -239,10 +258,10 @@ body {
 .prologue.router-link-active{
   color: red;
 }
-a {color:black;}         /* Unvisited link  */
-a:visited {color:black;} /* Visited link    */
-a:hover {color:red;}   /* Mouse over link */
-a:active {color:red;}  /* Selected link   */
+a {color:inherit;}         
+a:visited {color:inherit;} 
+a:hover {color:red;}   
+a:active {color:red;}    
 .KvK {
   font-family: "Univers LT W04_59 Ult Cond";
   color: black;
@@ -257,12 +276,27 @@ a:active {color:red;}  /* Selected link   */
    text-decoration: none;
 }
 .container {
+  background-color: white;
   width: 100%;
   height: 100vh;
+  margin-bottom:0px;
   display: grid;
   grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
   grid-template-rows: 50px 2fr 12.5px 75px 50px;
   overflow:hidden;
+}
+.teaser-container {
+  /* mix-blend-mode: difference; */
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  color: white;
+  padding-top:50px;
+  background-color: black;
+  grid-template-columns: 50px 1fr 50px minmax(325px, 400px) 50px 200px 200px 50px 400px 50px 1fr 50px;
+  grid-template-rows: 50px 2fr 12.5px 75px 50px;
+  overflow:hidden;
+  /* z-index: 1; */
 }
 .kvk-container {
   width: 100%;
@@ -290,16 +324,18 @@ a:active {color:red;}  /* Selected link   */
   grid-row-end: 1;
   width: auto;
   /* padding-right: 10px; */
-  padding-top: 0px;
+  padding-top: 5px;
   margin-top: 10px;
- padding-bottom: 15px;
+ padding-bottom: 5px;
+ padding-right: 5px;
    text-decoration: none;
-   border-top: 0px;
+   border-top: 1px;
   border-bottom: 1px;
   border-left: 0px;
-  border-right: 0px;
+  border-right: 1px;
   border-color: black;
   border-style: solid;
+  border-radius: 0px 2px 2px 0px;
 }
 .KvK.router-link-active{
   color: red;
@@ -453,10 +489,13 @@ h2 {
   overflow: hidden;
 }
 .right-titleImageContainer {
+  display:block;
   width: 100%;
-  height: 100vh;
+  /* padding-bottom:50px; */
+  position:relative;
   grid-column: 9 / 12;
-  grid-row: 2;
+   grid-row-start: 2;
+  grid-row-end: 5;
   overflow: hidden;
 }
 .right-svgContainer {
@@ -516,6 +555,18 @@ h2 {
   width: 100%;
   /* height: 100vh; */
   grid-column: 9 / 12;
+  grid-row: 2;
+}
+.right-image-title {
+  width: 100%;
+  height: 100vh;
+  object-fit:cover;
+  /* width: 100%; */
+  position:absolute;
+    margin:auto;
+    top:0;right:0;bottom:100;left:0;
+  /* bottom:50px; */
+  grid-column: 9 / 13;
   grid-row: 2;
 }
 .kvk-image {
@@ -584,7 +635,7 @@ h2 {
 }
 .teaser{
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 1.5;
   text-align: start;
   /* min-height: 0; */
@@ -607,7 +658,7 @@ h2 {
 }
 .teaserHead {
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 1.25em;
+  font-size: 1.5em;
   line-height: 1.5;
   text-align: start;
   /* min-height: 0; */
@@ -646,7 +697,7 @@ h2 {
   /* height: auto; */
   /* height: 100%; */
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   pointer-events: none;
   widows: 3;
 }
@@ -724,6 +775,30 @@ h2 {
   border-left: 0px;
   border-right: 0px;
   border-color: black;
+  border-style: solid;
+}
+.item-a-teaser {
+  display: flex;
+  flex-direction: column;
+  font-family: "Univers LT W01_55 Roman1475956";
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  /* columns: 2; */
+
+  /* min-height: 0; */
+  /* padding-right: 10px; */
+  /* padding-top: 25px; */
+  /* overflow-y: scroll; */
+  /* bottom: 150px; */
+  height: 100%;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: white;
   border-style: solid;
 }
 .data {
@@ -1933,8 +2008,8 @@ background-color: white;
   font-family: "Univers LT W04_59 Ult Cond";
   font-size: 1em;
   width:auto;
-  color: black;
-  background: white;
+  color: white;
+  background: black;
     border-radius: 2px;
   text-align: left;
     padding-left:7px;
@@ -1944,9 +2019,9 @@ background-color: white;
   /* margin-left: 5px; */
   margin-top: 20px;
   text-transform: uppercase;
-        -webkit-box-shadow: inset 0 0 3px 3px black;
+        /* -webkit-box-shadow: inset 0 0 3px 3px black;
   -moz-box-shadow: inset 0 0 3px 3px black;
-  box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black; */
 }
 .depth{
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1963,6 +2038,26 @@ background-color: white;
   /* margin-left: 2px;  */
   /* border-radius: 2px; */
 }
-
-/* Button styles end */
+.scroll{
+  font-family: "Univers LT W04_59 Ult Cond";
+  font-size: 1em;
+  grid-column: 4;
+  grid-column-end: 4;
+  grid-row: 4;
+  position: absolute;
+  top: 50px;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top:2px;
+  padding-bottom: 2px;
+  margin: 0px;
+  margin-left:-5px;
+  height: 20px;
+  color: black;
+  background: white;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 0px 0px 2px 2px;
+}
 </style>

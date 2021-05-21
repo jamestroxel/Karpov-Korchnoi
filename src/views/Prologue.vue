@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <svg
+    <!-- <svg
       class="item-a-logo"
       xmlns="http://www.w3.org/2000/svg"
       width="300"
@@ -182,19 +182,19 @@
         d="M188.17,96.16c0-1.33.81-2,2.41-2s2.39.61,2.39,2.19v7h-1.58v-.93c-.2.2-.31.38-.49.56a1.76,1.76,0,0,1-1.2.48c-1,0-1.66-.3-1.66-2.46,0-1.82.15-2.24.61-2.72s.69-.56,2.63-.56V96.25c0-.52-.12-.86-.7-.86s-.72.19-.72.75V97h-1.69Zm2.57,2.74c-.79,0-1,.43-1,1.85s.13,1.51.67,1.51.88-.43.88-1V98.9Z"
         fill="#231f20"
       />
-    </svg>
+    </svg> -->
+    <img class="item-a-logo" src="../assets/KvK_lockup-02-01.svg" />
     <div class="right-titleImageContainer">
-      <img class="right-image" src="../assets/GettyImages-535003872.jpg" />
+      <img class="right-image-title" src="../assets/GettyImages-535003872.jpg" />
     </div>
   </div>
   <!--  -->
-  <div class="container" style="margin-top:50px;">
-    <div class="item-a-span">
+  <div class="teaser-container">
+    <div class="item-a-teaser">
       <div style="height:100%;">
         <p class="teaserHead">Dear Colleagues!</p>
         <p class="teaser">
-          World Champion Anatoly Karpov has asked me, as press attaché of the
-          Soviet delegation, to bring the following to the notice of the
+          World Champion Anatoly Karpov has asked me, as press attaché of the&nbsp;Soviet delegation, to bring the following to the notice of the
           representatives of the press. Over a number of years Korchnoi has made
           insulting remarks about Karpov, other grandmasters, and well-known chess
           officials. Nevertheless, following the principles of sportsmanship and
@@ -330,7 +330,7 @@
   <div class="container">
     <div class="item-a-span">
       <div style="height:100%">
-      <p><span class="in">In</span><span class="depth">Depth</span></p>
+      <p><span class="in">Instant</span><span class="depth">Replay</span></p>
       <p class="heading2">The Baguio City<br>Convention Center</p>
       </div>
       <p class="teaserAttribute">
@@ -424,7 +424,7 @@
          <p class="story">
           {{ this.discussion[this.discussionIndex].text }} 
         </p>
-        <router-link v-if="discussionIndex == 1" to="/kvk" class="KvKbody">To Moscow</router-link>
+        <router-link v-if="discussionIndex == 1" to="/kvk" class="KvKbody">Go to Moscow</router-link>
       </div>
       <div class="block">
         <button @click="discussionPrevious" id="previous" type="button">

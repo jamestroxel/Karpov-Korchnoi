@@ -327,6 +327,7 @@
         </button>
         <p class="ticker">{{this.moveIndex +1 }} of {{this.moves.length}}</p>
       </div> -->
+      <p v-if="moveIndex < 2" class="scroll">Scroll Down</p>
     </div>
     <div class="item-b-kvk">
       <div id="board"></div>
