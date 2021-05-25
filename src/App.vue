@@ -6,7 +6,7 @@
     <router-link to="/bibliography" class="play">Bibliography</router-link>
   </nav>
   <div class="titleContainer">
-    <a href="https://github.com/jamestroxel/Karpov-Korchnoi" target="_blank" class="title">James Troxel, 2021</a>
+    <a href="https://github.com/jamestroxel/Karpov-Korchnoi" target="_blank" class="author">James Troxel, 2021</a>
   </div>
   <router-view/>
 </template>
@@ -158,6 +158,65 @@ body {
   width: 100%;
   height: 100%;
   /* margin-top: 25%; */
+  margin-top:-35px;
+}
+.title {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
+  /* line-height: 1.5; */
+  text-align: start;
+  display: block;
+  grid-column-start:2;
+  grid-column-end: 2;
+  grid-row:5;
+  /* height: auto; */
+  /* height: 100%; */
+  margin-top: 12.5px;
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+.subTitle {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
+  /* line-height: 1.5; */
+  text-align: start;
+  display: block;
+  grid-column-start:4;
+  grid-column-end: 8;
+  grid-row:5;
+  /* height: auto; */
+  /* height: 100%; */
+  margin-top: 12.5px;
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+.boilerplate {
+  font-family: "Univers LT W01_55 Roman1475956";
+  font-size: 1em;
+  /* line-height: 1.5; */
+  /* text-align: start; */
+  display: block;
+  grid-column-start:4;
+  grid-column-end: 10;
+  grid-row:5;
+  /* height: auto; */
+  /* height: 100%; */
+  margin-top: 12.5px;
+  margin-bottom: 0px;
+  pointer-events: none;
+}
+.logo-container {
+  font-family: "Univers LT W01_55 Roman1475956";
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 25%; */
   margin-top:50px;
 }
 
@@ -168,7 +227,7 @@ body {
   position: fixed;
   display: flex;
   height: 100%;
-  width:50px;
+  /* width:50px; */
   align-content: center;
   align-items: center;
   justify-content: space-around;
@@ -180,9 +239,9 @@ body {
 /* a {
   color: white;
 } */
-.title {
+.author {
   mix-blend-mode: difference;
-  font-family: "Univers LT W04_59 Ult Cond";
+  font-family: "Univers LT W01_55 Roman1475956";
   font-size: 1em;
   text-align: center;
   margin-left: 12.5px;
@@ -242,7 +301,7 @@ body {
   border-style: solid;
 }
 .prologue {
-  font-family: "Univers LT W04_59 Ult Cond";
+  font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -260,7 +319,7 @@ a:visited {color:inherit;}
 a:hover {color:red;}   
 a:active {color:red;}    
 .KvK {
-  font-family: "Univers LT W04_59 Ult Cond";
+  font-family: "Univers LT W01_55 Roman1475956";
   color: black;
   grid-column-start: 6;
   grid-column-end: 7;
@@ -321,18 +380,25 @@ a:active {color:red;}
   grid-row-end: 1;
   width: auto;
   /* padding-right: 10px; */
-  padding-top: 5px;
+  padding-top: 4px;
   margin-top: 10px;
+  margin-left: 0px;
  padding-bottom: 5px;
  padding-right: 5px;
+ padding-left: 5px;
    text-decoration: none;
    border-top: 1px;
   border-bottom: 1px;
-  border-left: 0px;
+  border-left: 1px;
   border-right: 1px;
   border-color: black;
   border-style: solid;
-  border-radius: 0px 2px 2px 0px;
+  border-radius: 2px 2px 2px 2px;
+   -webkit-animation: slideright .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: slideright .5s; /* Firefox < 16 */
+        -ms-animation: slideright .5s; /* Internet Explorer */
+         -o-animation: slideright .5s; /* Opera < 12.1 */
+            animation: slideright .5s;
 }
 .KvK.router-link-active{
   color: red;
@@ -374,7 +440,7 @@ a:active {color:red;}
   overflow-y: scroll;
 }
 .play {
-  font-family: "Univers LT W04_59 Ult Cond";
+  font-family: "Univers LT W01_55 Roman1475956";
   grid-column-start: 9;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -665,7 +731,7 @@ h2 {
 }
 .teaserHead:before {
   font-family: "Univers LT W01_55 Roman1475956";
-  font-size: 6vw;
+  font-size: 3.5em;
   color: red;
   line-height: 0.8;
   content: "“";
@@ -698,6 +764,7 @@ h2 {
   pointer-events: none;
   widows: 3;
 }
+
 .story:last-child {
   font-family: "Univers LT W01_55 Roman1475956";
   text-align: start;
@@ -954,6 +1021,11 @@ h2 {
   border-right: 0px;
   border-color: black;
   border-style: solid;
+       -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .5s; /* Firefox < 16 */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera < 12.1 */
+            animation: fadein .5s;
 }
 .item-c-kvk {
   display: flex;
@@ -964,6 +1036,11 @@ h2 {
   grid-row-end: 3;
   width: 100%;
   height: 100%;
+       -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .5s; /* Firefox < 16 */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera < 12.1 */
+            animation: fadein .5s;
 }
 .bottom {
   grid-column: 1;
@@ -1495,19 +1572,25 @@ line-height:1;
   text-align: center;
   height: 30px;
   width: 55px;
+  opacity:1;
   border-radius: 50px 0px 0px 50px;
   justify-content: center;
   color: black;
   padding-top:2.5px;
   margin-top: 20;
   margin-right: 0px;
-  transition:ease-in-out;
-  transition-duration: 1s;
+  transition-duration: .5s;
   transition-timing-function: ease-in-out;
     -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
   box-shadow: inset 0 0 3px 3px red;
+     -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .5s; /* Firefox < 16 */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera < 12.1 */
+            animation: fadein .5s;
 }
+
 .black {
   /* display:flex; */
   font-family: "Univers LT W04_59 Ult Cond";
@@ -1526,6 +1609,11 @@ line-height:1;
     -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
   box-shadow: inset 0 0 3px 3px red;
+     -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .5s; /* Firefox < 16 */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera < 12.1 */
+            animation: fadein .5s;
 }
 
 button {
@@ -1644,11 +1732,11 @@ button:active {
   margin-left: 4px;
   width: 400px;
   justify-content: center;
-  align-content: center;
-  /* color: black; */
-  /* grid-column: 6;
-  grid-row: 3; */
-  /* padding: 0px; */
+      -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .5s; /* Firefox < 16 */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera < 12.1 */
+            animation: fadein .5s;
 }
 .standBy{
   color: red;
@@ -1814,7 +1902,13 @@ background-color: white;
     -webkit-box-shadow: inset 0 0 3px 3px black;
   -moz-box-shadow: inset 0 0 3px 3px black;
   box-shadow: inset 0 0 3px 3px black;
+   -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .5s; /* Firefox < 16 */
+        -ms-animation: fadein .5s; /* Internet Explorer */
+         -o-animation: fadein .5s; /* Opera < 12.1 */
+            animation: fadein .5s;
 }
+
 .rowLeft.one{
   position: absolute;
   top:50px;
@@ -2056,5 +2150,79 @@ background-color: white;
   border-color: black;
   border-style: solid;
   border-radius: 0px 0px 2px 2px;
+   -webkit-animation: slidedown .5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: slidedown .5s; /* Firefox < 16 */
+        -ms-animation: slidedown .5s; /* Internet Explorer */
+         -o-animation: slidedown .5s; /* Opera < 12.1 */
+            animation: slidedown .5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes slidedown {
+    from { top: 0; }
+    to   { top: 50; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slidedown {
+    from { top: 0; }
+    to   { top: 50; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slidedown {
+    from { top: 0; }
+    to   { top: 50; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidedown {
+    from { top: 0; }
+    to   { top: 50; }
+}
+
+@keyframes slideright {
+    from { left: 0; }
+    to   { left: 50; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideright {
+    from { left: 0; }
+    to   { left: 50; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideright {
+    from { left: 0; }
+    to   { left: 50; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideright {
+    from { left: 0; }
+    to   { left: 50; }
 }
 </style>

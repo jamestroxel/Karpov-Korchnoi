@@ -276,8 +276,8 @@
         <p class="story">
           We saw this again in 1978 when his awareness and accounting of
           external factors were much more apparent, however misguided, in
-          viewing Karpov and his delegation as if some twisted version of the
-          Mechanical Turk.
+          viewing Karpov and his delegation as if some twisted version of von Kempelen's
+          Mechanical&nbsp;Turk.
         </p>
         <p class="story">
           Karpov on the other hand, while demonstrating an acute sensitivity to

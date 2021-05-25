@@ -183,7 +183,11 @@
         fill="#231f20"
       />
     </svg> -->
+    <div class="logo-container">
     <img class="item-a-logo" src="../assets/KvK_lockup-02-01.svg" />
+    </div>
+    <p class="subTitle">Karpov vs. Korchnoi / Visualizing Chess, Patterns &amp; Paranoia</p>
+    <!-- <p class="boilerplate">Submitted in partial fulfillment of the requirements for the degree of Master Science in Data Visualization at Parsons School of Design.</p> -->
     <div class="right-titleImageContainer">
       <img class="right-image-title" src="../assets/GettyImages-535003872.jpg" />
     </div>
