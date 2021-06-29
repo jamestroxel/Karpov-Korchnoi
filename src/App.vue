@@ -12,102 +12,11 @@
 </template>
 
 <script>
-import baguio from "./assets/1978.json";
-import PartTwo from "./assets/1978PartTwo.json";
-import PartThree from "./assets/1978PartThree.json";
-import Analysis from "./assets/1978Analysis.json";
-import AnalysisTwo from "./assets/1978AnalysisPartTwo.json";
 
 export default {
   name: "App",
   components: {
-  },
-  data() {
-    return {
-      triflesIndex: 0,
-      triflesTwoIndex: 0,
-      triflesThreeIndex: 0,
-      analysisIndex: 0,
-      analysisTwoIndex: 0,
-      trifles: baguio,
-      triflesTwo: PartTwo,
-      triflesThree: PartThree,
-      analysis: Analysis,
-      analysisTwo: AnalysisTwo,
-    };
-  },
-  methods: {
-    triflesNext() {
-      if (this.triflesIndex == 3) {
-        return;
-      } else {
-        this.triflesIndex = this.triflesIndex + 1;
-      }
-    },
-    triflesPrevious() {
-      if (this.triflesIndex == 0) {
-        return;
-      } else {
-        this.triflesIndex = this.triflesIndex - 1;
-      }
-    },
-    triflesTwoNext() {
-      if (this.triflesTwoIndex == 1) {
-        return;
-      } else {
-        this.triflesTwoIndex = this.triflesTwoIndex + 1;
-      }
-    },
-    triflesTwoPrevious() {
-      if (this.triflesTwoIndex == 0) {
-        return;
-      } else {
-        this.triflesTwoIndex = this.triflesTwoIndex - 1;
-      }
-    },
-    triflesThreeNext() {
-      if (this.triflesThreeIndex == 3) {
-        return;
-      } else {
-        this.triflesThreeIndex = this.triflesThreeIndex + 1;
-      }
-    },
-    triflesThreePrevious() {
-      if (this.triflesThreeIndex == 0) {
-        return;
-      } else {
-        this.triflesThreeIndex = this.triflesThreeIndex - 1;
-      }
-    },
-    analysisNext() {
-      if (this.analysisIndex == 3) {
-        return;
-      } else {
-        this.analysisIndex = this.analysisIndex + 1;
-      }
-    },
-    analysisPrevious() {
-      if (this.analysisIndex == 0) {
-        return;
-      } else {
-        this.analysisIndex = this.analysisIndex - 1;
-      }
-    },
-    analysisTwoNext() {
-      if (this.analysisTwoIndex == 3) {
-        return;
-      } else {
-        this.analysisTwoIndex = this.analysisTwoIndex + 1;
-      }
-    },
-    analysisTwoPrevious() {
-      if (this.analysisTwoIndex == 0) {
-        return;
-      } else {
-        this.analysisTwoIndex = this.analysisTwoIndex - 1;
-      }
-    },
-  },
+  }
 };
 </script>
 
@@ -594,7 +503,7 @@ h2 {
   /* height: 100%; */
     position: absolute;
   bottom: -1px;
-  left: 0px;
+  left: -1px;
   /* bottom: 50%; */
   /* grid-column-start: 9;
   grid-column-end: 9;
@@ -1418,9 +1327,24 @@ line-height:1;
   grid-row: 3;
   padding-top: 0px;
 }
+.avatar1frame{
+  /* position: absolute;
+  right:0; */
+  height:20px;
+  width:30px;
+  /* padding-left:17.5px;
+  padding-right:17.5px; */
+  margin:0px;
+  background: white;
+   border-radius: 40px 40px 0px 0px;
+       -webkit-box-shadow: inset 0 0 3px 3px black;
+  -moz-box-shadow: inset 0 0 3px 3px black;
+  box-shadow: inset 0 0 3px 3px black;
+  /* float:right; */
+}
 
 .bulb{
-  height:20px;
+  height:30px;
   /* width:5px; */
   padding-left:17.5px;
   padding-right:17.5px;
@@ -2003,6 +1927,7 @@ background-color: white;
 }
 .zoukhar{
   color: none;
+  height:100%;
   /* z-index: 400000; */
       /* -webkit-box-shadow: inset 0 0 3px 3px red;
   -moz-box-shadow: inset 0 0 3px 3px red;
