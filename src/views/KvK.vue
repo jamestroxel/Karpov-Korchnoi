@@ -452,10 +452,10 @@ export default {
     },
   },
   methods: {
-    onScroll(event) {
-      console.log(this.scroller.scrollY, event);
-      console.log(this.scroller.scrollTop);
-      console.log(this.moveIndex);
+    onScroll() {
+      // console.log(this.scroller.scrollY, event);
+      // console.log(this.scroller.scrollTop);
+      // console.log(this.moveIndex);
       this.moveIndex = Math.floor(this.scroller.scrollTop / 200);
       // this.makeMove();
     },

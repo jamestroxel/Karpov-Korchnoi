@@ -42,7 +42,7 @@ export default {
   },
   mounted: function() {
     this.data = data;
-    this.gm = this.gm();
+    this.drawChart = this.drawChart();
     this.xAxis = d3.axisBottom(this.xScale);
     this.yAxis = d3.axisLeft(this.yScale);
     d3.select(".x-axis").call(this.xAxis);
@@ -69,7 +69,7 @@ export default {
     },
   },
   methods: {
-    gmLine() {
+    drawLine() {
       return d3
         .line()
         .x((d) => {
@@ -85,7 +85,7 @@ export default {
           return y;
         });
     },
-    gm() {
+    drawChart() {
       const svg = d3.select("#viz");
       var ref = this;
 
@@ -158,7 +158,7 @@ export default {
         })
         .attr("stroke-width", 1)
         .attr("d", function(d) {
-          const line = ref.gmLine()(d.cors);
+          const line = ref.drawLine()(d.cors);
           return line;
         });
        
